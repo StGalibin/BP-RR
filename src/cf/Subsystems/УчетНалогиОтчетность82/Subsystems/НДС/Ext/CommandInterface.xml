@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandsVisibility>
+		<Command name="Report.ЖурналУчетаСчетовФактур.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.РеестрДокументовПодтверждающихНалоговуюЛьготуПоНДС.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.КнигаПокупок.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.КнигаПродаж.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.НаличиеСчетовФактур.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.АнализРаспределенияНДС.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.АнализСостоянияНалоговогоУчетаПоНДС.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПомощникПоУчетуНДС.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ФормированиеЗаписейКнигиПокупок.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ФормированиеЗаписейКнигиПродаж.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.НачислениеНДСпоСМРхозспособом.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.СписаниеНДС.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВосстановлениеНДС.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВосстановлениеНДСПоОбъектамНедвижимости.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПодтверждениеНулевойСтавкиНДС.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.РаспределениеНДС.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.РегистрацияСчетовФактурНаСуммовыеРазницы">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ФормированиеЗаписейРаздела7ДекларацииНДС.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Report.ЖурналУчетаСчетовФактур.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.РеестрДокументовПодтверждающихНалоговуюЛьготуПоНДС.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.КнигаПокупок.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.КнигаПродаж.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.НаличиеСчетовФактур.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.АнализРаспределенияНДС.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.АнализСостоянияНалоговогоУчетаПоНДС.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Report.ЖурналУчетаСчетовФактур.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+		</Command>
+		<Command name="Report.РеестрДокументовПодтверждающихНалоговуюЛьготуПоНДС.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+		</Command>
+		<Command name="Report.КнигаПокупок.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+		</Command>
+		<Command name="Report.КнигаПродаж.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+		</Command>
+		<Command name="Report.НаличиеСчетовФактур.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+		</Command>
+		<Command name="Report.АнализРаспределенияНДС.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+		</Command>
+		<Command name="Report.АнализСостоянияНалоговогоУчетаПоНДС.StandardCommand.Open">
+			<CommandGroup>CommandGroup.ОтчетыПоНДС</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПомощникПоУчетуНДС.Command.ПомощникПоУчетуНДС">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DocumentJournal.РегламентныеОперацииНДС.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ОтражениеНачисленияНДС.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ОтражениеНДСКВычету.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ФормированиеЗаписейКнигиПокупок.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ФормированиеЗаписейКнигиПродаж.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.НачислениеНДСпоСМРхозспособом.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.СписаниеНДС.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ВосстановлениеНДС.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ВосстановлениеНДСПоОбъектамНедвижимости.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ПодтверждениеНулевойСтавкиНДС.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.РаспределениеНДС.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.РегистрацияСчетовФактурНаАванс">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.РегистрацияСчетовФактурНаСуммовыеРазницы">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.РегистрацияСчетовФактурНалоговогоАгента">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DocumentJournal.ДокументыПоУчетуНДСДляПередачиВЭлектронномВиде.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.НастройкиНДС82">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ФормированиеЗаписейРаздела7ДекларацииНДС.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.ОтчетыПоНДС</Group>
+		<Group>ActionsPanelReports</Group>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>

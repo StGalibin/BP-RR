@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Group>Horizontal</Group>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаАдминистрирование" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Администрирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа администрирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаАдминистрированиеРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияПоддержкаИОбслуживание" id="5">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поддержка и обслуживание</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияПоддержкаИОбслуживаниеКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ДекорацияПоддержкаИОбслуживаниеРасширеннаяПодсказка" id="7"/>
+					<Events>
+						<Event name="Click">ДекорацияПоддержкаИОбслуживаниеНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияОбщиеНастройки" id="8">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияОбщиеНастройкиКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ДекорацияОбщиеНастройкиРасширеннаяПодсказка" id="10"/>
+					<Events>
+						<Event name="Click">ДекорацияОбщиеНастройкиНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияИнтерфейс" id="11">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интерфейс</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияИнтерфейсКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ДекорацияИнтерфейсРасширеннаяПодсказка" id="13"/>
+					<Events>
+						<Event name="Click">ДекорацияИнтерфейсНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияПараметрыУчета" id="14">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры учета</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияПараметрыУчетаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ДекорацияПараметрыУчетаРасширеннаяПодсказка" id="16"/>
+					<Events>
+						<Event name="Click">ДекорацияПараметрыУчетаНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияПроведениеДокументов" id="17">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проведение документов</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияПроведениеДокументовКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ДекорацияПроведениеДокументовРасширеннаяПодсказка" id="19"/>
+					<Events>
+						<Event name="Click">ДекорацияПроведениеДокументовНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияНастройкиПользователейИПрав" id="20">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки пользователей и прав</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияНастройкиПользователейИПравКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ДекорацияНастройкиПользователейИПравРасширеннаяПодсказка" id="22"/>
+					<Events>
+						<Event name="Click">ДекорацияНастройкиПользователейИПравНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияОрганайзер" id="23">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Органайзер</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияОрганайзерКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДекорацияОрганайзерРасширеннаяПодсказка" id="25"/>
+					<Events>
+						<Event name="Click">ДекорацияОрганайзерНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияНастройкиРаботыСФайлами" id="26">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки работы с файлами</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияНастройкиРаботыСФайламиКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДекорацияНастройкиРаботыСФайламиРасширеннаяПодсказка" id="28"/>
+					<Events>
+						<Event name="Click">ДекорацияНастройкиРаботыСФайламиНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияНастройкиСинхронизацииДанных" id="29">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки синхронизации данных</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияНастройкиСинхронизацииДанныхКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ДекорацияНастройкиСинхронизацииДанныхРасширеннаяПодсказка" id="31"/>
+					<Events>
+						<Event name="Click">ДекорацияНастройкиСинхронизацииДанныхНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияПечатныеФормыОтчетыОбработки" id="32">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печатные формы, отчеты и обработки</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияПечатныеФормыОтчетыОбработкиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ДекорацияПечатныеФормыОтчетыОбработкиРасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="Click">ДекорацияПечатныеФормыОтчетыОбработкиНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияНастройкиРегистровУчета" id="35">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки регистров учета</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияНастройкиРегистровУчетаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ДекорацияНастройкиРегистровУчетаРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="Click">ДекорацияНастройкиРегистровУчетаНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияНастройкаКолонтитулов" id="38">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка колонтитулов</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияНастройкаКолонтитуловКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ДекорацияНастройкаКолонтитуловРасширеннаяПодсказка" id="40"/>
+					<Events>
+						<Event name="Click">ДекорацияНастройкаКолонтитуловНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияОбменЭлектроннымиДокументами" id="41">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен электронными документами</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияОбменЭлектроннымиДокументамиКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ДекорацияОбменЭлектроннымиДокументамиРасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="Click">ДекорацияОбменЭлектроннымиДокументамиНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияПодключаемоеОборудование" id="44">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подключаемое оборудование</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияПодключаемоеОборудованиеКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ДекорацияПодключаемоеОборудованиеРасширеннаяПодсказка" id="46"/>
+					<Events>
+						<Event name="Click">ДекорацияПодключаемоеОборудованиеНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияИнтернетПоддержкаПользователей" id="47">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Интернет-поддержка пользователей</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияИнтернетПоддержкаПользователейКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ДекорацияИнтернетПоддержкаПользователейРасширеннаяПодсказка" id="49"/>
+					<Events>
+						<Event name="Click">ДекорацияИнтернетПоддержкаПользователейНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияНастройкаОбменаСИнтернетМагазином" id="67">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка обмена с интернет-магазином</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияНастройкаОбменаСИнтернетМагазиномКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ДекорацияНастройкаОбменаСИнтернетМагазиномРасширеннаяПодсказка" id="69"/>
+					<Events>
+						<Event name="Click">ДекорацияНастройкаОбменаСИнтернетМагазиномНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияПерсональныеНастройки" id="50">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Персональные настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияПерсональныеНастройкиКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ДекорацияПерсональныеНастройкиРасширеннаяПодсказка" id="52"/>
+					<Events>
+						<Event name="Click">ДекорацияПерсональныеНастройкиНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИнтервал" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа интервал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа интервал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИнтервалРасширеннаяПодсказка" id="63"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияИнтервал" id="64">
+					<Width>10</Width>
+					<ContextMenu name="ДекорацияИнтервалКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ДекорацияИнтервалРасширеннаяПодсказка" id="66"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСервис" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервис</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа сервис</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаСервисРасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияВыгрузитьДанныеВЛокальнуюВерсию" id="53">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузить данные в локальную версию</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияВыгрузитьДанныеВЛокальнуюВерсиюКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ДекорацияВыгрузитьДанныеВЛокальнуюВерсиюРасширеннаяПодсказка" id="55"/>
+					<Events>
+						<Event name="Click">ДекорацияВыгрузитьДанныеВЛокальнуюВерсиюНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияУдалениеПомеченныхОбъектов" id="56">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Удаление помеченных объектов</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияУдалениеПомеченныхОбъектовКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ДекорацияУдалениеПомеченныхОбъектовРасширеннаяПодсказка" id="58"/>
+					<Events>
+						<Event name="Click">ДекорацияУдалениеПомеченныхОбъектовНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияЗагрузкаИз1СПредприятия77" id="59">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузка из 1С:Предприятия 7.7</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ДекорацияЗагрузкаИз1СПредприятия77КонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ДекорацияЗагрузкаИз1СПредприятия77РасширеннаяПодсказка" id="61"/>
+					<Events>
+						<Event name="Click">ДекорацияЗагрузкаИз1СПредприятия77Нажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+</Form>

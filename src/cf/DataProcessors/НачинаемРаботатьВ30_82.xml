@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<DataProcessor uuid="5c652967-d61a-42dc-adc7-161f4eae505e">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.НачинаемРаботатьВ30_82" category="Object">
+				<xr:TypeId>5c3f2535-1753-4c86-85ef-fc6b3cd17a48</xr:TypeId>
+				<xr:ValueId>1394c2d9-22d6-401e-ac13-4b4af7f46532</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.НачинаемРаботатьВ30_82" category="Manager">
+				<xr:TypeId>01f3ef4c-d53c-4de8-a6d6-008defa7d3e9</xr:TypeId>
+				<xr:ValueId>fb08b381-ade8-4895-aa74-c0ca7eb34c62</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>НачинаемРаботатьВ30_82</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Знакомство с программой</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.НачинаемРаботатьВ30_82.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Template>Начало</Template>
+			<Template>НовыйИнтерфейс</Template>
+			<Template>РаботаСоСписками</Template>
+			<Template>РаботаСоСправочникамиИДокументами</Template>
+			<Template>ФункциональностьПрограммы</Template>
+			<Template>НумерацияДокументов</Template>
+			<Template>УчетЗарплаты</Template>
+			<Template>Поддержка</Template>
+			<Template>ЧастоЗадаваемыеВопросы</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

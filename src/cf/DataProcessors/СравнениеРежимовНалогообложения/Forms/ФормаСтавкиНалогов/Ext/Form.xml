@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Ставки налогов</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<VerticalSpacing>Double</VerticalSpacing>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КнопкаОК" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.КомандаОК</CommandName>
+				<ExtendedTooltip name="КнопкаОКРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="КнопкаОтмена" id="3">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Cancel</CommandName>
+				<ExtendedTooltip name="КнопкаОтменаРасширеннаяПодсказка" id="4"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="УСН" id="5">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>УСН</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<VerticalSpacing>Single</VerticalSpacing>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="УСНРасширеннаяПодсказка" id="6"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСтавкаУСНДоходы" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ставка УСНДоходы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ставка УСНДоходы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСтавкаУСНДоходыРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<InputField name="СтавкаУСНДоходы" id="20">
+							<DataPath>СтавкаУСНДоходы</DataPath>
+							<ChoiceButton>false</ChoiceButton>
+							<MinValue xsi:type="xs:decimal">0</MinValue>
+							<MaxValue xsi:type="xs:decimal">6</MaxValue>
+							<ContextMenu name="СтавкаУСНДоходыКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="СтавкаУСНДоходыРасширеннаяПодсказка" id="22"/>
+						</InputField>
+						<LabelDecoration name="Декорация1" id="37">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>%</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="39"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСтавкаУСНДоходыРасходы" id="40">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ставка УСНДоходы расходы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ставка УСНДоходы расходы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСтавкаУСНДоходыРасходыРасширеннаяПодсказка" id="41"/>
+					<ChildItems>
+						<InputField name="СтавкаУСНДоходыРасходы" id="23">
+							<DataPath>СтавкаУСНДоходыРасходы</DataPath>
+							<ChoiceButton>false</ChoiceButton>
+							<MinValue xsi:type="xs:decimal">0</MinValue>
+							<MaxValue xsi:type="xs:decimal">15</MaxValue>
+							<ContextMenu name="СтавкаУСНДоходыРасходыКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="СтавкаУСНДоходыРасходыРасширеннаяПодсказка" id="25"/>
+						</InputField>
+						<LabelDecoration name="Декорация2" id="42">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>%</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="44"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="СсылкаНаРегиональныеОсобенностиУСН" id="11">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;link СсылкаУСН&gt;Ставки УСН в вашем регионе&lt;/&gt;</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СсылкаНаРегиональныеОсобенностиУСНКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="СсылкаНаРегиональныеОсобенностиУСНРасширеннаяПодсказка" id="13"/>
+					<Events>
+						<Event name="URLProcessing">СсылкаНаРегиональныеОсобенностиУСНОбработкаНавигационнойСсылки</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ЕНВД" id="7">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ЕНВД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<VerticalSpacing>Single</VerticalSpacing>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ЕНВДРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСтавкаЕНВД" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ставка ЕНВД</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ставка ЕНВД</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСтавкаЕНВДРасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<InputField name="СтавкаЕНВД" id="26">
+							<DataPath>СтавкаЕНВД</DataPath>
+							<ChoiceButton>false</ChoiceButton>
+							<MinValue xsi:type="xs:decimal">7.5</MinValue>
+							<MaxValue xsi:type="xs:decimal">15</MaxValue>
+							<ContextMenu name="СтавкаЕНВДКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="СтавкаЕНВДРасширеннаяПодсказка" id="28"/>
+						</InputField>
+						<LabelDecoration name="Декорация3" id="47">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>%</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="49"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="К2" id="29">
+					<DataPath>К2</DataPath>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<ChoiceButton>false</ChoiceButton>
+					<MinValue xsi:type="xs:decimal">0.005</MinValue>
+					<MaxValue xsi:type="xs:decimal">1</MaxValue>
+					<ContextMenu name="К2КонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="К2РасширеннаяПодсказка" id="31">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Коэффициент, учитывающий особенности ведения предпринимательской деятельности</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+				</InputField>
+				<LabelDecoration name="СсылкаНаРегиональныеОсобенностиЕНВД" id="14">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;link СсылкаЕНВД&gt;Ставка ЕНВД и К2 в вашем регионе&lt;/&gt;</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СсылкаНаРегиональныеОсобенностиЕНВДКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СсылкаНаРегиональныеОсобенностиЕНВДРасширеннаяПодсказка" id="16"/>
+					<Events>
+						<Event name="URLProcessing">СсылкаНаРегиональныеОсобенностиЕНВДОбработкаНавигационнойСсылки</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="НалогНаПрибыль" id="9">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Налог на прибыль</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<VerticalSpacing>Single</VerticalSpacing>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НалогНаПрибыльРасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСтавкаОСНО" id="50">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ставка ОСНО</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ставка ОСНО</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСтавкаОСНОРасширеннаяПодсказка" id="51"/>
+					<ChildItems>
+						<InputField name="СтавкаНалогаНаПрибыльРегиональная" id="32">
+							<DataPath>СтавкаНалогаНаПрибыльРегиональная</DataPath>
+							<ChoiceButton>false</ChoiceButton>
+							<MinValue xsi:type="xs:decimal">0</MinValue>
+							<MaxValue xsi:type="xs:decimal">18</MaxValue>
+							<ContextMenu name="СтавкаНалогаНаПрибыльРегиональнаяКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="СтавкаНалогаНаПрибыльРегиональнаяРасширеннаяПодсказка" id="34"/>
+						</InputField>
+						<LabelDecoration name="Декорация4" id="52">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>%</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация4КонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="54"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="СсылкаНарегиональныеОсобенностиОСНО" id="17">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="true">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;link СсылкаОСНО&gt;Ставка налога на прибыль в вашем регионе&lt;/&gt;</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="СсылкаНарегиональныеОсобенностиОСНОКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СсылкаНарегиональныеОсобенностиОСНОРасширеннаяПодсказка" id="19"/>
+					<Events>
+						<Event name="URLProcessing">СсылкаНарегиональныеОсобенностиОСНООбработкаНавигационнойСсылки</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.СравнениеРежимовНалогообложения</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СтавкаУСНДоходы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ставка УСН (доходы)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СтавкаУСНДоходыРасходы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ставка УСН (доходы - расходы)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СтавкаЕНВД" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ставка ЕНВД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="К2" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коэффициент К2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СтавкаНалогаНаПрибыльРегиональная" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ставка налога на прибыль (региональная)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаОК</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="СтавкаУСНДоходы">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="СтавкаУСНДоходыРасходы">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="СтавкаЕНВД">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="К2">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>3</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="СтавкаНалогаНаПрибыльРегиональная">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="УплачиваетсяУСН">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="УплачиваетсяЕНВД">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="УплачиваетсяНалогНаПрибыль">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="КодРегиона">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>2</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

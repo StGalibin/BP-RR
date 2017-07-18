@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandsVisibility>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизацию">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.ОткрытьТекущиеДелаЭДО">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиПокупки">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.ДокументыНаПодпись">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.ОтправитьИПолучитьЭД">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.ПроизвольныеЭлектронныеДокументы">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.АрхивЭлектронныхДокументов">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизацию">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.ОткрытьТекущиеДелаЭДО">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиПокупки">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.Новости_Покупки">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизацию">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.ОткрытьТекущиеДелаЭДО">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиПокупки">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОтчетыПокупки">
+			<CommandGroup>CommandGroup.Отчеты</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.ДокументыНаПодпись">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.ОтправитьИПолучитьЭД">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Покупки.Subsystem.ПокупкиГлавное</Subsystem>
+		<Subsystem>Subsystem.Покупки.Subsystem.РасчетыСКонтрагентами</Subsystem>
+		<Subsystem>Subsystem.Покупки.Subsystem.АвизоРасчеты</Subsystem>
+		<Subsystem>Subsystem.Покупки.Subsystem.НДС</Subsystem>
+		<Subsystem>Subsystem.Покупки.Subsystem.ЭлектронныеДокументы</Subsystem>
+		<Subsystem>Subsystem.Покупки.Subsystem.ЕГАИС</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Информация</Group>
+		<Group>CommandGroup.Сервис</Group>
+		<Group>CommandGroup.Отчеты</Group>
+		<Group>CommandGroup.СтандартныеОтчеты</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+	</GroupsOrder>
+</CommandInterface>

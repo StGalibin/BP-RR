@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandsVisibility>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизациюОСНМА">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОбъектыПереданныеВАренду.Command.ОбъектыПереданныеВАренду">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Report.ОбъектыПереданныеВАренду.Command.ОбъектыПереданныеВАренду">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.Новости_ОСиНМА">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизациюОСНМА">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Report.ВедомостьАмортизацииОСБухгалтерскийУчет.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИнвентарнаяКнигаОС.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОбъектыПереданныеВАренду.Command.ОбъектыПереданныеВАренду">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.ОСИНМА.Subsystem.ПоступлениеОсновныхСредств</Subsystem>
+		<Subsystem>Subsystem.ОСИНМА.Subsystem.УчетОсновныхСредств</Subsystem>
+		<Subsystem>Subsystem.ОСИНМА.Subsystem.ВыбытиеОсновныхСредств</Subsystem>
+		<Subsystem>Subsystem.ОСИНМА.Subsystem.АмортизацияОС</Subsystem>
+		<Subsystem>Subsystem.ОСИНМА.Subsystem.АвизоОС</Subsystem>
+		<Subsystem>Subsystem.ОСИНМА.Subsystem.НематериальныеАктивы</Subsystem>
+		<Subsystem>Subsystem.ОСИНМА.Subsystem.АмортизацияНМА</Subsystem>
+		<Subsystem>Subsystem.ОСИНМА.Subsystem.Налоги</Subsystem>
+		<Subsystem>Subsystem.ОСИНМА.Subsystem.ДополнительныеОтчетыОбработки</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Информация</Group>
+		<Group>CommandGroup.Отчеты</Group>
+		<Group>CommandGroup.СтандартныеОтчеты</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>ActionsPanelReports</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelImportant</Group>
+	</GroupsOrder>
+</CommandInterface>

@@ -1,0 +1,1764 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="95">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:БыстрыеОтборыФонГруппы</BackColor>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="294"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПериод" id="405">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="406"/>
+					<ChildItems>
+						<Button name="УменьшитьПериод" id="410">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УменьшитьПериод</CommandName>
+							<ExtendedTooltip name="УменьшитьПериодРасширеннаяПодсказка" id="411"/>
+						</Button>
+						<InputField name="ПредставлениеПериодаРегистрации" id="276">
+							<DataPath>ПредставлениеПериодаРегистрации</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Период</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<Width>14</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ChoiceButton>true</ChoiceButton>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="ПредставлениеПериодаРегистрацииКонтекстноеМеню" id="277"/>
+							<ExtendedTooltip name="ПредставлениеПериодаРегистрацииExtendedTooltip" id="295"/>
+							<Events>
+								<Event name="StartChoice">ПредставлениеПериодаРегистрацииНачалоВыбора</Event>
+								<Event name="Clearing">ПредставлениеПериодаРегистрацииОчистка</Event>
+								<Event name="ChoiceProcessing">ПредставлениеПериодаРегистрацииОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+						<Button name="УвеличитьПериод" id="415">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УвеличитьПериод</CommandName>
+							<ExtendedTooltip name="УвеличитьПериодРасширеннаяПодсказка" id="416"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Организация" id="91">
+					<DataPath>Объект.Организация</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<TitleLocation>None</TitleLocation>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="ОрганизацияExtendedTooltip" id="296"/>
+					<Events>
+						<Event name="OnChange">ОрганизацияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelDecoration name="НадписьНедостаточноПрав" id="455">
+					<Visible>false</Visible>
+					<TextColor>style:SpecialTextColor</TextColor>
+					<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Недостаточно прав</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьНедостаточноПравКонтекстноеМеню" id="456"/>
+					<ExtendedTooltip name="НадписьНедостаточноПравРасширеннаяПодсказка" id="457"/>
+				</LabelDecoration>
+				<UsualGroup name="ГруппаКнопки" id="453">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="454"/>
+					<ChildItems>
+						<Button name="Обновить" id="371">
+							<Type>UsualButton</Type>
+							<OnlyInAllActions>true</OnlyInAllActions>
+							<CommandName>Form.Command.Обновить</CommandName>
+							<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="372"/>
+						</Button>
+						<Button name="Справка" id="282">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<OnlyInAllActions>true</OnlyInAllActions>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="СправкаExtendedTooltip" id="299"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКонтрольПоследовательности" id="283">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перепроведение документов</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:ШрифтЗаголовкаИнформационнойПанели" kind="StyleItem"/>
+			<Width>98</Width>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<BackColor>style:ГруппаОперацийФонГруппы</BackColor>
+			<ExtendedTooltip name="ГруппаКонтрольПоследовательностиExtendedTooltip" id="300"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаКонтрольПоследовательности1" id="391">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контроль последовательности1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контроль последовательности1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКонтрольПоследовательности1РасширеннаяПодсказка" id="392"/>
+					<ChildItems>
+						<PictureDecoration name="СтатусКонтрольПоследовательности1" id="284">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контроль последовательности (статус) за первый месяц</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СтатусКонтрольПоследовательности1КонтекстноеМеню" id="285"/>
+							<ExtendedTooltip name="СтатусКонтрольПоследовательности1РасширеннаяПодсказка" id="301"/>
+						</PictureDecoration>
+						<LabelDecoration name="КонтрольПоследовательности1" id="376">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>октябрь (начиная с 5 числа)</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="КонтрольПоследовательности1КонтекстноеМеню" id="377"/>
+							<ExtendedTooltip name="КонтрольПоследовательности1РасширеннаяПодсказка" id="378"/>
+							<Events>
+								<Event name="Click">КонтрольПоследовательностиНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКонтрольПоследовательности2" id="393">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контроль последовательности2</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контроль последовательности2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКонтрольПоследовательности2РасширеннаяПодсказка" id="394"/>
+					<ChildItems>
+						<PictureDecoration name="СтатусКонтрольПоследовательности2" id="385">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контроль последовательности (статус) за второй месяц</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СтатусКонтрольПоследовательности2КонтекстноеМеню" id="386"/>
+							<ExtendedTooltip name="СтатусКонтрольПоследовательности2РасширеннаяПодсказка" id="387"/>
+						</PictureDecoration>
+						<LabelDecoration name="КонтрольПоследовательности2" id="379">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ноябрь</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="КонтрольПоследовательности2КонтекстноеМеню" id="380"/>
+							<ExtendedTooltip name="КонтрольПоследовательности2РасширеннаяПодсказка" id="381"/>
+							<Events>
+								<Event name="Click">КонтрольПоследовательностиНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКонтрольПоследовательности3" id="395">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контроль последовательности3</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа контроль последовательности3</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКонтрольПоследовательности3РасширеннаяПодсказка" id="396"/>
+					<ChildItems>
+						<PictureDecoration name="СтатусКонтрольПоследовательности3" id="388">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контроль последовательности (статус) за третий месяц</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СтатусКонтрольПоследовательности3КонтекстноеМеню" id="389"/>
+							<ExtendedTooltip name="СтатусКонтрольПоследовательности3РасширеннаяПодсказка" id="390"/>
+						</PictureDecoration>
+						<LabelDecoration name="КонтрольПоследовательности3" id="382">
+							<HorizontalStretch>true</HorizontalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>декабрь</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="КонтрольПоследовательности3КонтекстноеМеню" id="383"/>
+							<ExtendedTooltip name="КонтрольПоследовательности3РасширеннаяПодсказка" id="384"/>
+							<Events>
+								<Event name="Click">КонтрольПоследовательностиНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРегламентныеОперацииИОтчеты" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентные операции и отчеты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ГруппаРегламентированныеОперацииИОтчеты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРегламентныеОперацииИОтчетыРасширеннаяПодсказка" id="303"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРегламентныеОперации" id="61">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регламентные операции</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:ШрифтЗаголовкаИнформационнойПанели" kind="StyleItem"/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регламентные операции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>48</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<BackColor>style:ГруппаОперацийФонГруппы</BackColor>
+					<ExtendedTooltip name="ГруппаРегламентныеОперацииExtendedTooltip" id="304"/>
+					<ChildItems>
+						<LabelField name="ИнформационноеСообщение" id="239">
+							<DataPath>ИнформационноеСообщение</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Font ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							<ContextMenu name="ИнформационноеСообщениеКонтекстноеМеню" id="240"/>
+							<ExtendedTooltip name="ИнформационноеСообщениеExtendedTooltip" id="307"/>
+						</LabelField>
+						<UsualGroup name="ГруппаОбработкаНомеровСчетовФактур" id="437">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обработка номеров счетов-фактур</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обработка номеров счетов-фактур</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбработкаНомеровСчетовФактурРасширеннаяПодсказка" id="438"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусОбработкаНомеровСчетовФактур" id="439">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус обработка номеров счетов-фактур</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусОбработкаНомеровСчетовФактурКонтекстноеМеню" id="440"/>
+									<ExtendedTooltip name="СтатусОбработкаНомеровСчетовФактурРасширеннаяПодсказка" id="441"/>
+								</PictureDecoration>
+								<LabelDecoration name="ОбработкаНомеровСчетовФактур" id="442">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обработка номеров счетов-фактур</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ОбработкаНомеровСчетовФактурКонтекстноеМеню" id="443"/>
+									<ExtendedTooltip name="ОбработкаНомеровСчетовФактурРасширеннаяПодсказка" id="444">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Приведение номеров счетов-фактур к формату, принятому в той программе, в которой они были оформлены.
+</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПереходНаРаздельныйУчетНДСНаСчете19" id="289">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа переход на раздельный учет НДСНа счете19</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа переход на раздельный учет НДСНа счете19</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПереходНаРаздельныйУчетНДСНаСчете19ExtendedTooltip" id="308"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусПереходНаРаздельныйУчетНДСНаСчете19" id="290">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус переход на раздельный учет НДСНа счете19</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусПереходНаРаздельныйУчетНДСНаСчете19КонтекстноеМеню" id="291"/>
+									<ExtendedTooltip name="СтатусПереходНаРаздельныйУчетНДСНаСчете19ExtendedTooltip" id="309"/>
+								</PictureDecoration>
+								<LabelDecoration name="ПереходНаРаздельныйУчетНДСНаСчете19" id="292">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Переход на раздельный учет НДС на счете 19</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ПереходНаРаздельныйУчетНДСНаСчете19КонтекстноеМеню" id="293"/>
+									<ExtendedTooltip name="ПереходНаРаздельныйУчетНДСНаСчете19ExtendedTooltip" id="310"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРегистрацияСчетовФактурНаАванс" id="161">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регистрация счетов-фактур на аванс</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регистрация счетов-фактур на аванс</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРегистрацияСчетовФактурНаАвансExtendedTooltip" id="311"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусРегистрацияСчетовФактурНаАванс" id="162">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус регистрация счетов-фактур на аванс</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусРегистрацияСчетовФактурНаАвансКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="СтатусРегистрацияСчетовФактурНаАвансExtendedTooltip" id="312"/>
+								</PictureDecoration>
+								<LabelDecoration name="РегистрацияСчетовФактурНаАванс" id="164">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Регистрация счетов-фактур на аванс</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="РегистрацияСчетовФактурНаАвансКонтекстноеМеню" id="165"/>
+									<ExtendedTooltip name="РегистрацияСчетовФактурНаАвансExtendedTooltip" id="313"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРегистрацияСчетовФактурНалоговогоАгента" id="166">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регистрация счетов-фактур налогового агента</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регистрация счетов-фактур налогового агента</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРегистрацияСчетовФактурНалоговогоАгентаExtendedTooltip" id="314"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусРегистрацияСчетовФактурНалоговогоАгента" id="167">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус регистрация счетов-фактур налогового агента</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусРегистрацияСчетовФактурНалоговогоАгентаКонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="СтатусРегистрацияСчетовФактурНалоговогоАгентаExtendedTooltip" id="315"/>
+								</PictureDecoration>
+								<LabelDecoration name="РегистрацияСчетовФактурНалоговогоАгента" id="169">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Регистрация счетов-фактур налогового агента</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="РегистрацияСчетовФактурНалоговогоАгентаКонтекстноеМеню" id="170"/>
+									<ExtendedTooltip name="РегистрацияСчетовФактурНалоговогоАгентаExtendedTooltip" id="316"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРегистрацияСчетовФактурНаСуммовыеРазницы" id="196">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регистрация счетов-фактур на суммовые разницы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регистрация счетов-фактур на суммовые разницы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРегистрацияСчетовФактурНаСуммовыеРазницыExtendedTooltip" id="317"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусРегистрацияСчетовФактурНаСуммовыеРазницы" id="197">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус регистрация счетов-фактур на суммовые разницы</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусРегистрацияСчетовФактурНаСуммовыеРазницыКонтекстноеМеню" id="198"/>
+									<ExtendedTooltip name="СтатусРегистрацияСчетовФактурНаСуммовыеРазницыExtendedTooltip" id="318"/>
+								</PictureDecoration>
+								<LabelDecoration name="РегистрацияСчетовФактурНаСуммовыеРазницы" id="199">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Регистрация счетов-фактур на суммовые разницы</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="РегистрацияСчетовФактурНаСуммовыеРазницыКонтекстноеМеню" id="200"/>
+									<ExtendedTooltip name="РегистрацияСчетовФактурНаСуммовыеРазницыExtendedTooltip" id="319"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПодтверждениеНулевойСтавкиНДС" id="171">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подтверждение нулевой ставки НДС</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подтверждение нулевой ставки НДС</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПодтверждениеНулевойСтавкиНДСExtendedTooltip" id="320"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусПодтверждениеНулевойСтавкиНДС" id="172">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус подтверждение нулевой ставки НДС</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусПодтверждениеНулевойСтавкиНДСКонтекстноеМеню" id="173"/>
+									<ExtendedTooltip name="СтатусПодтверждениеНулевойСтавкиНДСExtendedTooltip" id="321"/>
+								</PictureDecoration>
+								<LabelDecoration name="ПодтверждениеНулевойСтавкиНДС" id="174">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подтверждение нулевой ставки НДС</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ПодтверждениеНулевойСтавкиНДСКонтекстноеМеню" id="175"/>
+									<ExtendedTooltip name="ПодтверждениеНулевойСтавкиНДСExtendedTooltip" id="322"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПодтверждениеОплатыНДСВБюджет" id="429">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подтверждение оплаты НДСВБюджет</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа подтверждение оплаты НДСВБюджет</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПодтверждениеОплатыНДСВБюджетРасширеннаяПодсказка" id="430"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусПодтверждениеОплатыНДСВБюджет" id="431">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус подтверждение оплаты НДСВБюджет</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусПодтверждениеОплатыНДСВБюджетКонтекстноеМеню" id="432"/>
+									<ExtendedTooltip name="СтатусПодтверждениеОплатыНДСВБюджетРасширеннаяПодсказка" id="433"/>
+								</PictureDecoration>
+								<LabelDecoration name="ПодтверждениеОплатыНДСВБюджет" id="434">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подтверждение оплаты НДС в бюджет</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ПодтверждениеОплатыНДСВБюджетКонтекстноеМеню" id="435"/>
+									<ExtendedTooltip name="ПодтверждениеОплатыНДСВБюджетРасширеннаяПодсказка" id="436"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВосстановлениеНДСПоОбъектамНедвижимости" id="176">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа восстановление НДСПо объектам недвижимости</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа восстановление НДСПо объектам недвижимости</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВосстановлениеНДСПоОбъектамНедвижимостиExtendedTooltip" id="323"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусВосстановлениеНДСПоОбъектамНедвижимости" id="177">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус восстановление НДСПо объектам недвижимости</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусВосстановлениеНДСПоОбъектамНедвижимостиКонтекстноеМеню" id="178"/>
+									<ExtendedTooltip name="СтатусВосстановлениеНДСПоОбъектамНедвижимостиExtendedTooltip" id="324"/>
+								</PictureDecoration>
+								<LabelDecoration name="ВосстановлениеНДСПоОбъектамНедвижимости" id="179">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Восстановление НДС по объектам недвижимости</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ВосстановлениеНДСПоОбъектамНедвижимостиКонтекстноеМеню" id="180"/>
+									<ExtendedTooltip name="ВосстановлениеНДСПоОбъектамНедвижимостиExtendedTooltip" id="325"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаФормированиеЗаписейКнигиПродаж" id="181">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа формирование записей книги продаж</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа формирование записей книги продаж</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФормированиеЗаписейКнигиПродажExtendedTooltip" id="326"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусФормированиеЗаписейКнигиПродаж" id="182">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус формирование записей книги продаж</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусФормированиеЗаписейКнигиПродажКонтекстноеМеню" id="183"/>
+									<ExtendedTooltip name="СтатусФормированиеЗаписейКнигиПродажExtendedTooltip" id="327"/>
+								</PictureDecoration>
+								<LabelDecoration name="ФормированиеЗаписейКнигиПродаж" id="184">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формирование записей книги продаж</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ФормированиеЗаписейКнигиПродажКонтекстноеМеню" id="185"/>
+									<ExtendedTooltip name="ФормированиеЗаписейКнигиПродажExtendedTooltip" id="328"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаФормированиеЗаписейКнигиПродаж0" id="206">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа формирование записей книги продаж0</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа формирование записей книги продаж0</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФормированиеЗаписейКнигиПродаж0ExtendedTooltip" id="329"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусФормированиеЗаписейКнигиПродаж0" id="207">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус формирование записей книги продаж0</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусФормированиеЗаписейКнигиПродаж0КонтекстноеМеню" id="208"/>
+									<ExtendedTooltip name="СтатусФормированиеЗаписейКнигиПродаж0ExtendedTooltip" id="330"/>
+								</PictureDecoration>
+								<LabelDecoration name="ФормированиеЗаписейКнигиПродаж0" id="209">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формирование записей книги продаж (0%)</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ФормированиеЗаписейКнигиПродаж0КонтекстноеМеню" id="210"/>
+									<ExtendedTooltip name="ФормированиеЗаписейКнигиПродаж0ExtendedTooltip" id="331"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНачислениеНДСпоСМРхозспособом" id="5">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа начисление НДСпо СМРхозспособом</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа начисление НДСпо СМРхозспособом</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНачислениеНДСпоСМРхозспособомExtendedTooltip" id="332"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусНачислениеНДСпоСМРхозспособом" id="136">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус начисление НДСпо СМРхозспособом</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусНачислениеНДСпоСМРхозспособомКонтекстноеМеню" id="137"/>
+									<ExtendedTooltip name="СтатусНачислениеНДСпоСМРхозспособомExtendedTooltip" id="333"/>
+								</PictureDecoration>
+								<LabelDecoration name="НачислениеНДСпоСМРхозспособом" id="131">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Начисление НДС по СМР (хозспособ)</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="НачислениеНДСпоСМРхозспособомКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="НачислениеНДСпоСМРхозспособомExtendedTooltip" id="334"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРаспределениеНДС" id="7">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа распределение НДС</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа распределение НДС</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРаспределениеНДСExtendedTooltip" id="335"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусРаспределениеНДС" id="139">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус распределение НДС</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусРаспределениеНДСКонтекстноеМеню" id="140"/>
+									<ExtendedTooltip name="СтатусРаспределениеНДСExtendedTooltip" id="336"/>
+								</PictureDecoration>
+								<LabelDecoration name="РаспределениеНДС" id="133">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Распределение НДС</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="РаспределениеНДСКонтекстноеМеню" id="134"/>
+									<ExtendedTooltip name="РаспределениеНДСExtendedTooltip" id="337"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВосстановлениеНДС" id="141">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа восстановление НДС</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа восстановление НДС</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВосстановлениеНДСExtendedTooltip" id="338"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусВосстановлениеНДС" id="142">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус восстановление НДС</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусВосстановлениеНДСКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="СтатусВосстановлениеНДСExtendedTooltip" id="339"/>
+								</PictureDecoration>
+								<LabelDecoration name="ВосстановлениеНДС" id="144">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Восстановление НДС</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ВосстановлениеНДСКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ВосстановлениеНДСExtendedTooltip" id="340"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаФормированиеЗаписейКнигиПокупок" id="146">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа формирование записей книги покупок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа формирование записей книги покупок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФормированиеЗаписейКнигиПокупокExtendedTooltip" id="341"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусФормированиеЗаписейКнигиПокупок" id="147">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус формирование записей книги покупок</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусФормированиеЗаписейКнигиПокупокКонтекстноеМеню" id="148"/>
+									<ExtendedTooltip name="СтатусФормированиеЗаписейКнигиПокупокExtendedTooltip" id="342"/>
+								</PictureDecoration>
+								<LabelDecoration name="ФормированиеЗаписейКнигиПокупок" id="149">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формирование записей книги покупок</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ФормированиеЗаписейКнигиПокупокКонтекстноеМеню" id="150"/>
+									<ExtendedTooltip name="ФормированиеЗаписейКнигиПокупокExtendedTooltip" id="343"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаФормированиеЗаписейКнигиПокупок0" id="151">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа формирование записей книги покупок0</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа формирование записей книги покупок0</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФормированиеЗаписейКнигиПокупок0ExtendedTooltip" id="344"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусФормированиеЗаписейКнигиПокупок0" id="152">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус формирование записей книги покупок0</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусФормированиеЗаписейКнигиПокупок0КонтекстноеМеню" id="153"/>
+									<ExtendedTooltip name="СтатусФормированиеЗаписейКнигиПокупок0ExtendedTooltip" id="345"/>
+								</PictureDecoration>
+								<LabelDecoration name="ФормированиеЗаписейКнигиПокупок0" id="154">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формирование записей книги покупок (0%)</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ФормированиеЗаписейКнигиПокупок0КонтекстноеМеню" id="155"/>
+									<ExtendedTooltip name="ФормированиеЗаписейКнигиПокупок0ExtendedTooltip" id="346"/>
+									<Events>
+										<Event name="Click">РегламентнаяОперацияНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаФормированиеЗаписейРаздела7ДекларацииНДС" id="458">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа формирование записей раздела7 декларации НДС</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа формирование записей раздела7 декларации НДС</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаФормированиеЗаписейРаздела7ДекларацииНДСРасширеннаяПодсказка" id="459"/>
+							<ChildItems>
+								<PictureDecoration name="СтатусФормированиеЗаписейРаздела7ДекларацииНДС" id="460">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Статус формирование записей раздела 7 декларации НДС</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СтатусФормированиеЗаписейРаздела7ДекларацииНДСКонтекстноеМеню" id="461"/>
+									<ExtendedTooltip name="СтатусФормированиеЗаписейРаздела7ДекларацииНДСРасширеннаяПодсказка" id="462"/>
+								</PictureDecoration>
+								<LabelDecoration name="ФормированиеЗаписейРаздела7ДекларацииНДС" id="463">
+									<TextColor>style:FormTextColor</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Формирование записей раздела 7 декларации по НДС</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ФормированиеЗаписейРаздела7ДекларацииНДСКонтекстноеМеню" id="464"/>
+									<ExtendedTooltip name="ФормированиеЗаписейРаздела7ДекларацииНДСРасширеннаяПодсказка" id="465"/>
+									<Events>
+										<Event name="Click">ФормированиеЗаписейРаздела7ДекларацииНДСНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОтчетыИНалоговаяДекларация" id="288">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты</v8:content>
+						</v8:item>
+					</Title>
+					<TitleFont ref="style:ШрифтЗаголовкаИнформационнойПанели" kind="StyleItem"/>
+					<Width>49</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<BackColor>style:ГруппаОперацийФонГруппы</BackColor>
+					<ExtendedTooltip name="ГруппаОтчетыИНалоговаяДекларацияExtendedTooltip" id="357"/>
+					<ChildItems>
+						<LabelDecoration name="СверкаДанныхУчетаНДС" id="450">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сверка данных учета НДС</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="СверкаДанныхУчетаНДСКонтекстноеМеню" id="451"/>
+							<ExtendedTooltip name="СверкаДанныхУчетаНДСРасширеннаяПодсказка" id="452"/>
+							<Events>
+								<Event name="Click">РегламентнаяОперацияНажатие</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="ЖурналУчетаСчетовФактур" id="244">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Журнал учета счетов-фактур</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ЖурналУчетаСчетовФактурКонтекстноеМеню" id="245"/>
+							<ExtendedTooltip name="ЖурналУчетаСчетовФактурExtendedTooltip" id="361"/>
+							<Events>
+								<Event name="Click">РегламентнаяОперацияНажатие</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="КнигаПродаж" id="189">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Книга продаж</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="КнигаПродажКонтекстноеМеню" id="190"/>
+							<ExtendedTooltip name="КнигаПродажExtendedTooltip" id="364"/>
+							<Events>
+								<Event name="Click">РегламентнаяОперацияНажатие</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="КнигаПокупок" id="159">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Книга покупок</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="КнигаПокупокКонтекстноеМеню" id="160"/>
+							<ExtendedTooltip name="КнигаПокупокExtendedTooltip" id="367"/>
+							<Events>
+								<Event name="Click">РегламентнаяОперацияНажатие</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="Декларация" id="194">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Налоговая декларация по НДС</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ДекларацияКонтекстноеМеню" id="195"/>
+							<ExtendedTooltip name="ДекларацияExtendedTooltip" id="370"/>
+							<Events>
+								<Event name="Click">РегламентнаяОперацияНажатие</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="РеестрКРазделу7Декларации" id="466">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реестр к разделу 7 декларации</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="РеестрКРазделу7ДекларацииКонтекстноеМеню" id="467"/>
+							<ExtendedTooltip name="РеестрКРазделу7ДекларацииРасширеннаяПодсказка" id="468"/>
+							<Events>
+								<Event name="Click">РегламентнаяОперацияНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСтатусы" id="211">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа статусы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа статусы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>NormalSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСтатусыExtendedTooltip" id="347"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОперацияВыполненаАктуальна" id="212">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа операция выполнена актуальна</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа операция выполнена актуальна</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОперацияВыполненаАктуальнаExtendedTooltip" id="348"/>
+					<ChildItems>
+						<PictureDecoration name="СтатусОперацияВыполненаАктуальна" id="213">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поле галки1</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.ОперацияВыполненаУспешно</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:TransparentPixel x="4" y="2"/>
+							</Picture>
+							<ContextMenu name="СтатусОперацияВыполненаАктуальнаКонтекстноеМеню" id="214"/>
+							<ExtendedTooltip name="СтатусОперацияВыполненаАктуальнаExtendedTooltip" id="349"/>
+						</PictureDecoration>
+						<LabelDecoration name="ОперацияВыполненаАктуальна" id="215">
+							<Height>1</Height>
+							<TextColor>web:Green</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполнена, актуальна</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОперацияВыполненаАктуальнаКонтекстноеМеню" id="216"/>
+							<ExtendedTooltip name="ОперацияВыполненаАктуальнаExtendedTooltip" id="350"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОперацияВыполненаНоНеАктуальна" id="217">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа операция выполнена но не актуальна</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа операция выполнена но не актуальна</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОперацияВыполненаНоНеАктуальнаExtendedTooltip" id="351"/>
+					<ChildItems>
+						<PictureDecoration name="СтатусОперацияВыполненаНоНеАктуальна" id="218">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поле галки1</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.ОперациюНеобходимоПовторить</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:TransparentPixel x="4" y="2"/>
+							</Picture>
+							<ContextMenu name="СтатусОперацияВыполненаНоНеАктуальнаКонтекстноеМеню" id="219"/>
+							<ExtendedTooltip name="СтатусОперацияВыполненаНоНеАктуальнаExtendedTooltip" id="352"/>
+						</PictureDecoration>
+						<LabelDecoration name="ОперацияВыполненаНоНеАктуальна" id="220">
+							<Height>1</Height>
+							<TextColor>web:CadetBlue</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполнена, не актуальна</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОперацияВыполненаНоНеАктуальнаКонтекстноеМеню" id="221"/>
+							<ExtendedTooltip name="ОперацияВыполненаНоНеАктуальнаExtendedTooltip" id="353"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОперацияОжидающаяВыполнения" id="229">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа операция ожидающая выполнения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа операция ожидающая выполнения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОперацияОжидающаяВыполненияExtendedTooltip" id="354"/>
+					<ChildItems>
+						<PictureDecoration name="СтатусОперацияОжидающаяВыполнения" id="230">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поле галки1</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.СтрелкаНаправоЖелтая</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="СтатусОперацияОжидающаяВыполненияКонтекстноеМеню" id="231"/>
+							<ExtendedTooltip name="СтатусОперацияОжидающаяВыполненияExtendedTooltip" id="355"/>
+						</PictureDecoration>
+						<LabelDecoration name="ОперацияОжидающаяВыполнения" id="232">
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ожидает выполнения</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОперацияОжидающаяВыполненияКонтекстноеМеню" id="233"/>
+							<ExtendedTooltip name="ОперацияОжидающаяВыполненияExtendedTooltip" id="356"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОперацияПропущена" id="397">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа операция пропущена</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа операция пропущена</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОперацияПропущенаРасширеннаяПодсказка" id="398"/>
+					<ChildItems>
+						<PictureDecoration name="СтатусОперацияПропущена" id="399">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поле галки1</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.ОперацияПропущена</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="СтатусОперацияПропущенаКонтекстноеМеню" id="400"/>
+							<ExtendedTooltip name="СтатусОперацияПропущенаРасширеннаяПодсказка" id="401"/>
+						</PictureDecoration>
+						<LabelDecoration name="ОперацияПропущена" id="402">
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пропущена</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ОперацияПропущенаКонтекстноеМеню" id="403"/>
+							<ExtendedTooltip name="ОперацияПропущенаРасширеннаяПодсказка" id="404"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПомощникПоУчетуНДС</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПолноеДеревоОпераций" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное дерево операций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Узел" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Узел</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.РегламентныеОперации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Связи" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Связи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Контроль" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контроль</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Актуальна" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Актуальна</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Выполнена" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СостояниеОпераций" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние операций</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+				</Column>
+				<AdditionalColumns table="ПолноеДеревоОпераций.СостояниеОпераций">
+					<Column name="РегламентнаяОперация" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Регламентная операция</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:EnumRef.РегламентныеОперации</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Актуальна" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Актуальна</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Регистратор" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Регистратор</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:DocumentRef.ФормированиеЗаписейКнигиПокупок</v8:Type>
+							<v8:Type>cfg:DocumentRef.РаспределениеНДС</v8:Type>
+							<v8:Type>cfg:DocumentRef.ВосстановлениеНДС</v8:Type>
+							<v8:Type>cfg:DocumentRef.ПодтверждениеНулевойСтавкиНДС</v8:Type>
+							<v8:Type>cfg:DocumentRef.ФормированиеЗаписейРаздела7ДекларацииНДС</v8:Type>
+							<v8:Type>cfg:DocumentRef.РегламентированныйОтчет</v8:Type>
+							<v8:Type>cfg:DocumentRef.ФормированиеЗаписейКнигиПродаж</v8:Type>
+							<v8:Type>cfg:DocumentRef.НачислениеНДСпоСМРхозспособом</v8:Type>
+							<v8:Type>cfg:DocumentRef.ВосстановлениеНДСПоОбъектамНедвижимости</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТаблицаОпераций" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица операций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="РегламентнаяОперация" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регламентная операция</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.РегламентныеОперации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Действие" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действие</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяОперации" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя операции</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИнформационноеСообщение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационное сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Декларация" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декларация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.РегламентированныйОтчет</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользуетсяПостановлениеНДС1137" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используется постановление НДС1137</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПредставлениеПериодаРегистрации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ИдентификаторЗадания" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресХранилища" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкиПредупреждений" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки предупреждений</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="УменьшитьПериод" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уменьшить период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УменьшитьПериод</Action>
+		</Command>
+		<Command name="УвеличитьПериод" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Увеличить период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УвеличитьПериод</Action>
+		</Command>
+	</Commands>
+</Form>

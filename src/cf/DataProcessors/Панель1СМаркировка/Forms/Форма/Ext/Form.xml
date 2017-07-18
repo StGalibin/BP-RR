@@ -1,0 +1,1246 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>1С:Маркировка</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаИнформация" id="319">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа информация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="320"/>
+			<ChildItems>
+				<Button name="ФормаВыполнитьОбмен" id="40">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыполнитьОбмен</CommandName>
+					<ExtendedTooltip name="ФормаВыполнитьОбменРасширеннаяПодсказка" id="41"/>
+				</Button>
+				<Button name="ФормаОбновить" id="15">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>3</Width>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="16"/>
+				</Button>
+				<PictureDecoration name="ДекорацияДокументыОжидающиеОтправки" id="237">
+					<Width>2</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация документы ожидающие отправки</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.ИнформацияГИСМ</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияДокументыОжидающиеОтправкиКонтекстноеМеню" id="238"/>
+					<ExtendedTooltip name="ДекорацияДокументыОжидающиеОтправкиРасширеннаяПодсказка" id="239"/>
+				</PictureDecoration>
+				<LabelDecoration name="НадписьДокументыОжидающиеОтправки" id="232">
+					<TextColor>style:ЦветГиперссылкиГИСМ</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть документы, ожидающие отправки в ГИСМ (4), выполните обмен.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НадписьДокументыОжидающиеОтправкиКонтекстноеМеню" id="233"/>
+					<ExtendedTooltip name="НадписьДокументыОжидающиеОтправкиРасширеннаяПодсказка" id="234"/>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияРастяжка" id="325">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ДекорацияРастяжкаКонтекстноеМеню" id="326"/>
+					<ExtendedTooltip name="ДекорацияРастяжкаРасширеннаяПодсказка" id="327"/>
+				</LabelDecoration>
+				<CommandBar name="ГруппаПанельКоманд" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команды</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа панель команд</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="ГруппаПанельКомандРасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<Button name="ИзменитьФорму" id="38">
+							<Type>CommandBarButton</Type>
+							<Representation>Picture</Representation>
+							<OnlyInAllActions>true</OnlyInAllActions>
+							<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+							<ExtendedTooltip name="ИзменитьФормуРасширеннаяПодсказка" id="39"/>
+						</Button>
+						<Button name="Справка" id="36">
+							<Type>CommandBarButton</Type>
+							<Representation>Picture</Representation>
+							<OnlyInAllActions>true</OnlyInAllActions>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<ExtendedTooltip name="СправкаРасширеннаяПодсказка" id="37"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Панель" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отборы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ПанельРасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<InputField name="Организация" id="29">
+					<DataPath>Организация</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>25</MaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ClearButton>true</ClearButton>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;по всем организациям&gt;</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="31"/>
+					<Events>
+						<Event name="OnChange">ОрганизацияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Ответственный" id="229">
+					<DataPath>Ответственный</DataPath>
+					<Visible>false</Visible>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>25</MaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ClearButton>true</ClearButton>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>&lt;по всем ответственным&gt;</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="230"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="231"/>
+					<Events>
+						<Event name="OnChange">ОтветственныйПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройки" id="249">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки и справочники</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="250"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастройкиЛево" id="321">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>40</Width>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиЛевоРасширеннаяПодсказка" id="322"/>
+					<ChildItems>
+						<Button name="НастройкаМаркировки" id="255">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастройкаМаркировки</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="НастройкаМаркировкиРасширеннаяПодсказка" id="256">
+								<Height>2</Height>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="ОткрытьКодыТНВЭД" id="289">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьКодыТНВЭД</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьКодыТНВЭДРасширеннаяПодсказка" id="290">
+								<Height>2</Height>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="ОткрытьВидыМеха" id="287">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьВидыМеха</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьВидыМехаРасширеннаяПодсказка" id="288">
+								<Height>2</Height>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНастройкиПраво" id="323">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройки право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>40</Width>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиПравоРасширеннаяПодсказка" id="324"/>
+					<ChildItems>
+						<Button name="ОткрытьВидыноменклатуры" id="253">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьВидыНоменклатуры</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьВидыноменклатурыРасширеннаяПодсказка" id="254">
+								<Height>2</Height>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="ОткрытьНоменклатуру" id="251">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОткрытьНоменклатуру</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОткрытьНоменклатуруРасширеннаяПодсказка" id="252">
+								<Height>2</Height>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСпискиДокументов" id="188">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списки документов</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСпискиДокументовРасширеннаяПодсказка" id="189"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="336">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа 1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="337"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗакупки1" id="9">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Закупки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закупки1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаЗакупки1РасширеннаяПодсказка" id="10"/>
+							<ChildItems>
+								<Button name="ОткрытьУведомленияОПоступленииМаркированныхТоваров" id="19">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьУведомленияОПоступленииМаркированныхТоваров</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ExtendedTooltip name="ОткрытьУведомленияОПоступленииМаркированныхТоваровРасширеннаяПодсказка" id="20"/>
+								</Button>
+								<Button name="ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭС" id="23">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭС</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ExtendedTooltip name="ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСРасширеннаяПодсказка" id="24"/>
+								</Button>
+								<Button name="ОткрытьУведомленияОбИмпортеМаркированныхТоваров" id="21">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьУведомленияОбИмпортеМаркированныхТоваров</CommandName>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ExtendedTooltip name="ОткрытьУведомленияОбИмпортеМаркированныхТоваровРасширеннаяПодсказка" id="22"/>
+								</Button>
+								<Button name="ОтчетПоступленияБезДокументовГИСМ" id="332">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОтчетПоступленияБезДокументовГИСМ</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поступления без уведомлений</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОтчетПоступленияБезДокументовГИСМРасширеннаяПодсказка" id="333"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСклад1" id="353">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Склад</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закупки1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаСклад1РасширеннаяПодсказка" id="354"/>
+							<ChildItems>
+								<Button name="ОткрытьСписанияКиЗМаркировки" id="27">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьСписанияКиЗМаркировки</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ExtendedTooltip name="ОткрытьСписанияКиЗМаркировкиРасширеннаяПодсказка" id="28"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПродажи1" id="361">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Продажи</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закупки1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПродажи1РасширеннаяПодсказка" id="362"/>
+							<ChildItems>
+								<Button name="ОткрытьУведомленияОбОтгрузке" id="5">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьУведомленияОбОтгрузке</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ExtendedTooltip name="ОткрытьУведомленияОбОтгрузкеРасширеннаяПодсказка" id="6"/>
+								</Button>
+								<Button name="ОткрытьОтчетыОРозничныхПродажах" id="3">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьОтчетыОРозничныхПродажах</CommandName>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ExtendedTooltip name="ОткрытьОтчетыОРозничныхПродажахРасширеннаяПодсказка" id="4"/>
+								</Button>
+								<Button name="ОткрытьВозвратыТоваровОтРозничныхКлиентов" id="1">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьВозвратыТоваровОтРозничныхКлиентов</CommandName>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ExtendedTooltip name="ОткрытьВозвратыТоваровОтРозничныхКлиентовРасширеннаяПодсказка" id="2"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="338">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа 2</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="339"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗакупки2" id="344">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закупки отчеты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаЗакупки2РасширеннаяПодсказка" id="345"/>
+							<ChildItems>
+								<LabelDecoration name="ОткрытьУведомленияОПоступленииМаркированныхТоваровОформите" id="350">
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ОткрытьУведомленияОПоступленииМаркированныхТоваровОформитеКонтекстноеМеню" id="351"/>
+									<ExtendedTooltip name="ОткрытьУведомленияОПоступленииМаркированныхТоваровОформитеРасширеннаяПодсказка" id="352"/>
+								</LabelDecoration>
+								<Button name="ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОформите" id="310">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОформите</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<ExtendedTooltip name="ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОформитеРасширеннаяПодсказка" id="311"/>
+								</Button>
+								<Button name="ОткрытьУведомленияОбИмпортеМаркированныхТоваровОформите" id="220">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьУведомленияОбИмпортеМаркированныхТоваровОформите</CommandName>
+									<ExtendedTooltip name="ОткрытьУведомленияОбИмпортеМаркированныхТоваровОформитеРасширеннаяПодсказка" id="221"/>
+								</Button>
+								<LabelDecoration name="ОтчетПоступленияБезДокументовГИСМ2" id="381">
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ОтчетПоступленияБезДокументовГИСМ2КонтекстноеМеню" id="382"/>
+									<ExtendedTooltip name="ОтчетПоступленияБезДокументовГИСМ2РасширеннаяПодсказка" id="383"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСклад2" id="355">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закупки1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаСклад2РасширеннаяПодсказка" id="356"/>
+							<ChildItems>
+								<Button name="ОткрытьСписанияКиЗМаркировкиОформите" id="303">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьСписанияКиЗМаркировкиОформите</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<ExtendedTooltip name="ОткрытьСписанияКиЗМаркировкиОформитеРасширеннаяПодсказка" id="304"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПродажи2" id="363">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закупки1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПродажи2РасширеннаяПодсказка" id="364"/>
+							<ChildItems>
+								<Button name="ОткрытьУведомленияОбОтгрузкеОформите" id="296">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьУведомленияОбОтгрузкеОформите</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<ExtendedTooltip name="ОткрытьУведомленияОбОтгрузкеОформитеРасширеннаяПодсказка" id="297"/>
+								</Button>
+								<LabelDecoration name="ОткрытьОтчетыОРозничныхПродажахОформите" id="375">
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ОткрытьОтчетыОРозничныхПродажахОформитеКонтекстноеМеню" id="376"/>
+									<ExtendedTooltip name="ОткрытьОтчетыОРозничныхПродажахОформитеРасширеннаяПодсказка" id="377"/>
+								</LabelDecoration>
+								<LabelDecoration name="ОткрытьВозвратыТоваровОтРозничныхКлиентовОформите" id="378">
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ОткрытьВозвратыТоваровОтРозничныхКлиентовОформитеКонтекстноеМеню" id="379"/>
+									<ExtendedTooltip name="ОткрытьВозвратыТоваровОтРозничныхКлиентовОформитеРасширеннаяПодсказка" id="380"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="340">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа 3</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа3</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="341"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗакупки3" id="346">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закупки отчеты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаЗакупки3РасширеннаяПодсказка" id="347"/>
+							<ChildItems>
+								<Button name="ОткрытьУведомленияОПоступленииМаркированныхТоваровОтработайте" id="120">
+									<Type>Hyperlink</Type>
+									<Width>10</Width>
+									<CommandName>Form.Command.ОткрытьУведомленияОПоступленииМаркированныхТоваровОтработайте</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<ExtendedTooltip name="ОткрытьУведомленияОПоступленииМаркированныхТоваровОтработайтеРасширеннаяПодсказка" id="121"/>
+								</Button>
+								<Button name="ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОтработайте" id="213">
+									<Type>Hyperlink</Type>
+									<Width>10</Width>
+									<CommandName>Form.Command.ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОтработайте</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<ExtendedTooltip name="ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОтработайтеРасширеннаяПодсказка" id="214"/>
+								</Button>
+								<Button name="ОткрытьУведомленияОбИмпортеМаркированныхТоваровОтработайте" id="159">
+									<Type>Hyperlink</Type>
+									<Width>10</Width>
+									<CommandName>Form.Command.ОткрытьУведомленияОбИмпортеМаркированныхТоваровОтработайте</CommandName>
+									<ExtendedTooltip name="ОткрытьУведомленияОбИмпортеМаркированныхТоваровОтработайтеРасширеннаяПодсказка" id="160"/>
+								</Button>
+								<LabelDecoration name="ОтчетПоступленияБезДокументовГИСМ3" id="384">
+									<Width>10</Width>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ОтчетПоступленияБезДокументовГИСМ3КонтекстноеМеню" id="385"/>
+									<ExtendedTooltip name="ОтчетПоступленияБезДокументовГИСМ3РасширеннаяПодсказка" id="386"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСклад3" id="357">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закупки1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаСклад3РасширеннаяПодсказка" id="358"/>
+							<ChildItems>
+								<Button name="ОткрытьСписанияКиЗМаркировкиОтработайте" id="227">
+									<Type>Hyperlink</Type>
+									<Width>10</Width>
+									<CommandName>Form.Command.ОткрытьСписанияКиЗМаркировкиОтработайте</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<ExtendedTooltip name="ОткрытьСписанияКиЗМаркировкиОтработайтеРасширеннаяПодсказка" id="228"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПродажи3" id="365">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закупки1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПродажи3РасширеннаяПодсказка" id="366"/>
+							<ChildItems>
+								<Button name="ОткрытьУведомленияОбОтгрузкеОтработайте" id="199">
+									<Type>Hyperlink</Type>
+									<Width>10</Width>
+									<CommandName>Form.Command.ОткрытьУведомленияОбОтгрузкеОтработайте</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<ExtendedTooltip name="ОткрытьУведомленияОбОтгрузкеОтработайтеРасширеннаяПодсказка" id="200"/>
+								</Button>
+								<Button name="ОткрытьОтчетыОРозничныхПродажахОтработайте" id="50">
+									<Type>Hyperlink</Type>
+									<Width>10</Width>
+									<CommandName>Form.Command.ОткрытьОтчетыОРозничныхПродажахОтработайте</CommandName>
+									<ExtendedTooltip name="ОткрытьОтчетыОРозничныхПродажахОтработайтеРасширеннаяПодсказка" id="51"/>
+								</Button>
+								<Button name="ОткрытьВозвратыТоваровОтРозничныхКлиентовОтработайте" id="54">
+									<Type>Hyperlink</Type>
+									<Width>10</Width>
+									<CommandName>Form.Command.ОткрытьВозвратыТоваровОтРозничныхКлиентовОтработайте</CommandName>
+									<ExtendedTooltip name="ОткрытьВозвратыТоваровОтРозничныхКлиентовОтработайтеРасширеннаяПодсказка" id="55"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа4" id="342">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа 4</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа4</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="343"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗакупки4" id="348">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закупки отчеты</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаЗакупки4РасширеннаяПодсказка" id="349"/>
+							<ChildItems>
+								<Button name="ОткрытьУведомленияОПоступленииМаркированныхТоваровОжидайте" id="278">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьУведомленияОПоступленииМаркированныхТоваровОжидайте</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<ExtendedTooltip name="ОткрытьУведомленияОПоступленииМаркированныхТоваровОжидайтеРасширеннаяПодсказка" id="279"/>
+								</Button>
+								<Button name="ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОжидайте" id="157">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОжидайте</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<ExtendedTooltip name="ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОжидайтеРасширеннаяПодсказка" id="158"/>
+								</Button>
+								<Button name="ОткрытьУведомленияОбИмпортеМаркированныхТоваровОжидайте" id="285">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьУведомленияОбИмпортеМаркированныхТоваровОжидайте</CommandName>
+									<ExtendedTooltip name="ОткрытьУведомленияОбИмпортеМаркированныхТоваровОжидайтеРасширеннаяПодсказка" id="286"/>
+								</Button>
+								<LabelDecoration name="ОтчетПоступленияБезДокументовГИСМ4" id="387">
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ОтчетПоступленияБезДокументовГИСМ4КонтекстноеМеню" id="388"/>
+									<ExtendedTooltip name="ОтчетПоступленияБезДокументовГИСМ4РасширеннаяПодсказка" id="389"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСклад4" id="359">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закупки1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаСклад4РасширеннаяПодсказка" id="360"/>
+							<ChildItems>
+								<Button name="ОткрытьСписанияКиЗМаркировкиОжидайте" id="186">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьСписанияКиЗМаркировкиОжидайте</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<ExtendedTooltip name="ОткрытьСписанияКиЗМаркировкиОжидайтеРасширеннаяПодсказка" id="187"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПродажи4" id="367">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа закупки1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаПродажи4РасширеннаяПодсказка" id="368"/>
+							<ChildItems>
+								<Button name="ОткрытьУведомленияОбОтгрузкеОжидайте" id="269">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьУведомленияОбОтгрузкеОжидайте</CommandName>
+									<TextColor>style:ЦветТекстаНеТребуетВниманияГИСМ</TextColor>
+									<ExtendedTooltip name="ОткрытьУведомленияОбОтгрузкеОжидайтеРасширеннаяПодсказка" id="270"/>
+								</Button>
+								<Button name="ОткрытьОтчетыОРозничныхПродажахОжидайте" id="262">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьОтчетыОРозничныхПродажахОжидайте</CommandName>
+									<ExtendedTooltip name="ОткрытьОтчетыОРозничныхПродажахОжидайтеРасширеннаяПодсказка" id="263"/>
+								</Button>
+								<Button name="ОткрытьВозвратыТоваровОтРозничныхКлиентовОжидайте" id="247">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьВозвратыТоваровОтРозничныхКлиентовОжидайте</CommandName>
+									<ExtendedTooltip name="ОткрытьВозвратыТоваровОтРозничныхКлиентовОжидайтеРасширеннаяПодсказка" id="248"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ДекорацияОтступ" id="392">
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="393"/>
+					<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="394"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКабинет" id="330">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кабинет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кабинет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКабинетРасширеннаяПодсказка" id="331"/>
+			<ChildItems>
+				<Button name="ЛичныйКабинет" id="390">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ЛичныйКабинетГИСМ</CommandName>
+					<ExtendedTooltip name="ЛичныйКабинетРасширеннаяПодсказка" id="391"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Панель1СМаркировка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Организация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.Организация</v8:TypeSet>
+			</Type>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНесколькоОрганизацийБухгалтерскийУчет</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="Ответственный" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьОтчетыОРозничныхПродажах" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления о розничных продажах (13)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления о розничных продажах</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьОтчетыОРозничныхПродажах</Action>
+		</Command>
+		<Command name="ОткрытьВозвратыТоваровОтРозничныхКлиентов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления о розничных возвратах (6)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления о розничных возвратах товаров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьВозвратыТоваровОтРозничныхКлиентов</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОбОтгрузке" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления об отгрузке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления об отгрузке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьУведомленияОбОтгрузке</Action>
+		</Command>
+		<Command name="Обновить" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Обновить</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОПоступленииМаркированныхТоваров" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления о поступлении и возврате</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления о поступлении и возврате</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьУведомленияОПоступленииМаркированныхТоваров</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОбИмпортеМаркированныхТоваров" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления об импорте (5)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления об импорте</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьУведомленияОбИмпортеМаркированныхТоваров</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭС" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления о ввозе из ЕАЭС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уведомления о ввозе из ЕАЭС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭС</Action>
+		</Command>
+		<Command name="ОткрытьСписанияКиЗМаркировки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списания КиЗ маркировки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Списания КиЗ маркировки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСписанияКиЗМаркировки</Action>
+		</Command>
+		<Command name="ВыполнитьОбмен" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обмен</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить обмен</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВыполнитьОбменГИСМ</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьОбмен</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьОтчетыОРозничныхПродажахОтработайте" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>отработайте (11)</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьОтчетыОРозничныхПродажахОтработайте</Action>
+		</Command>
+		<Command name="ОткрытьВозвратыТоваровОтРозничныхКлиентовОтработайте" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>отработайте (3)</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьВозвратыТоваровОтРозничныхКлиентовОтработайте</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОПоступленииМаркированныхТоваровОтработайте" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>отработайте</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьУведомленияОПоступленииМаркированныхТоваровОтработайте</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОжидайте" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ожидайте</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОжидайте</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОбИмпортеМаркированныхТоваровОтработайте" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>отработайте (2)</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьУведомленияОбИмпортеМаркированныхТоваровОтработайте</Action>
+		</Command>
+		<Command name="ОткрытьСписанияКиЗМаркировкиОжидайте" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ожидайте</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьСписанияКиЗМаркировкиОжидайте</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОбОтгрузкеОтработайте" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>отработайте</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьУведомленияОбОтгрузкеОтработайте</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОтработайте" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>отработайте</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОтработайте</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОбИмпортеМаркированныхТоваровОформите" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>оформите (3)</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьУведомленияОбИмпортеМаркированныхТоваровОформите</Action>
+		</Command>
+		<Command name="ОткрытьСписанияКиЗМаркировкиОтработайте" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>отработайте</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьСписанияКиЗМаркировкиОтработайте</Action>
+		</Command>
+		<Command name="ОткрытьВозвратыТоваровОтРозничныхКлиентовОжидайте" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ожидайте (3)</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьВозвратыТоваровОтРозничныхКлиентовОжидайте</Action>
+		</Command>
+		<Command name="ОткрытьНоменклатуру" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заведите номенклатуру КиЗ (контрольные идентификационные знаки) и маркируемую продукцию.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьНоменклатуру</Action>
+		</Command>
+		<Command name="ОткрытьВидыНоменклатуры" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройте виды номенклатуры для КиЗ (контрольные идентификационные знаки) и маркируемой продукции.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьВидыНоменклатуры</Action>
+		</Command>
+		<Command name="НастройкаМаркировки" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка 1С:Маркировки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройте интеграцию с ГИСМ (Государственная Информационная Система Маркировки).</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкаМаркировки</Action>
+		</Command>
+		<Command name="ОткрытьОтчетыОРозничныхПродажахОжидайте" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ожидайте (2)</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьОтчетыОРозничныхПродажахОжидайте</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОбОтгрузкеОжидайте" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ожидайте</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьУведомленияОбОтгрузкеОжидайте</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОПоступленииМаркированныхТоваровОжидайте" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ожидайте</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьУведомленияОПоступленииМаркированныхТоваровОжидайте</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОбИмпортеМаркированныхТоваровОжидайте" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ожидайте (2)</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьУведомленияОбИмпортеМаркированныхТоваровОжидайте</Action>
+		</Command>
+		<Command name="ОткрытьКодыТНВЭД" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коды ТН ВЭД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполните классификатор ТН ВЭД для отправки уведомлений об импорте в ГИСМ.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьКодыТНВЭД</Action>
+		</Command>
+		<Command name="ОткрытьВидыМеха" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Виды меха ГИСМ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполните классификатор видов меха для отправки уведомлений об импорте маркируемой продукции в ГИСМ.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьВидыМеха</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОбОтгрузкеОформите" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>оформите</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьУведомленияОбОтгрузкеОформите</Action>
+		</Command>
+		<Command name="ОткрытьСписанияКиЗМаркировкиОформите" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>оформите</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьСписанияКиЗМаркировкиОформите</Action>
+		</Command>
+		<Command name="ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОформите" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>оформите</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ОткрытьУведомленияОВвозеМаркированныхТоваровИзЕАЭСОформите</Action>
+		</Command>
+		<Command name="ОтчетПоступленияБезДокументовГИСМ" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поступления без документов ГИСМ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет поступления без документов ГИСМ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчетПоступленияБезДокументовГИСМ</Action>
+		</Command>
+		<Command name="ЛичныйКабинетГИСМ" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Личный кабинет ГИСМ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Личный кабинет ГИСМ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЛичныйКабинет</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="РазделПродажи">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="РазделЗакупки">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="РазделСклад">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="104">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="105"/>
+			<ChildItems>
+				<LabelDecoration name="ОписаниеРаздела" id="26">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки параметров ведения учета в программе.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ОписаниеРазделаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ОписаниеРазделаРасширеннаяПодсказка" id="28"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНастройки" id="102">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="103"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛевая" id="98">
+					<Width>43</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛеваяРасширеннаяПодсказка" id="99"/>
+					<ChildItems>
+						<LabelDecoration name="НастройкаПланаСчетов" id="77">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;link e1cib/command/ОбщаяКоманда.НастройкаПланаСчетов&gt;Настройка&lt;/&gt;&lt;link e1cib/command/ОбщаяКоманда.НастройкаПланаСчетов&gt; плана счетов&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="НастройкаПланаСчетовКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="НастройкаПланаСчетовРасширеннаяПодсказка" id="79">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Настройка состава субконто на счетах бухгалтерского учета.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</LabelDecoration>
+						<LabelDecoration name="СрокиОплатыПокупателями" id="74">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;link e1cib/command/ОбщаяКоманда.СрокиОплатыПокупателями&gt;Сроки оплаты покупателя&lt;/&gt;&lt;link e1cib/command/ОбщаяКоманда.СрокиОплатыПокупателями&gt;ми&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="СрокиОплатыПокупателямиКонтекстноеМеню" id="75"/>
+							<ExtendedTooltip name="СрокиОплатыПокупателямиРасширеннаяПодсказка" id="76">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Настройка сроков, после которых задолженность покупателей считается просроченной.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</LabelDecoration>
+						<LabelDecoration name="НастройкиЗарплаты" id="83">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;link e1cib/command/ОбщаяКоманда.НастройкиЗарплаты&gt;Настройки&lt;/&gt;&lt;link e1cib/command/ОбщаяКоманда.НастройкиЗарплаты&gt; зарплаты&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="НастройкиЗарплатыКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="НастройкиЗарплатыРасширеннаяПодсказка" id="85">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Настройки учета заработной платы, учета НДФЛ и страховых взносов, а также кадрового учета.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</LabelDecoration>
+						<LabelDecoration name="ЗаполнениеЦенПродажи" id="106">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;link e1cib/data/Обработка.ПанельАдминистрированияБП.Форма.ФормаНастройкиЦеныПродажи/&gt;Заполнение цен продажи&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="ЗаполнениеЦенПродажиКонтекстноеМеню" id="107"/>
+							<ExtendedTooltip name="ЗаполнениеЦенПродажиРасширеннаяПодсказка" id="108">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Настройка заполнения цены продажи в документах (счетах, актах, накладных).</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПравая" id="100">
+					<Width>43</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПраваяРасширеннаяПодсказка" id="101"/>
+					<ChildItems>
+						<LabelDecoration name="ПечатьАртикулов" id="95">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;link e1cib/command/Обработка.ПанельАдминистрированияБП.Команда.ПечатьАртикулов&gt;Печать&lt;/&gt;&lt;link e1cib/command/Обработка.ПанельАдминистрированияБП.Команда.ПечатьАртикулов&gt; артикулов&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="ПечатьАртикуловКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="ПечатьАртикуловРасширеннаяПодсказка" id="97">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Вывод артикулов номенклатуры в печатных формах.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</LabelDecoration>
+						<LabelDecoration name="СрокОплатыПоставщикам" id="80">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;link e1cib/command/ОбщаяКоманда.СрокОплатыПоставщикам&gt;Срок&lt;/&gt;&lt;link e1cib/command/ОбщаяКоманда.СрокОплатыПоставщикам&gt; оплаты поставщикам&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="СрокОплатыПоставщикамКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="СрокОплатыПоставщикамРасширеннаяПодсказка" id="82">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Настройка срока, после которого задолженность поставщикам считается просроченной.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</LabelDecoration>
+						<LabelDecoration name="ТипПлановыхЦен" id="90">
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;link e1cib/command/ОбщаяКоманда.ТипПлановыхЦен&gt;Т&lt;/&gt;&lt;link e1cib/command/ОбщаяКоманда.ТипПлановыхЦен&gt;ип плановых цен&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ContextMenu name="ТипПлановыхЦенКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="ТипПлановыхЦенРасширеннаяПодсказка" id="92">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Настройка плановых цен, используемых в производственных документах.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+</Form>

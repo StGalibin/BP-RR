@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandsVisibility>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизацию">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.КассоваяКнига.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ЖурналРегистрацииКассовыхДокументов.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОтчетыБанкИКасса">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="CommonCommand.ДополнительныеОтчетыБанкИКасса">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="0:b95d6e12-ab5e-4738-b2db-8b7c4c02938d">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизацию">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиБанкИКасса">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Report.КассоваяКнига.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ЖурналРегистрацииКассовыхДокументов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОтчетыБанкИКасса">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.БанкИКасса.Subsystem.Банк</Subsystem>
+		<Subsystem>Subsystem.БанкИКасса.Subsystem.ДенежныеДокументы</Subsystem>
+		<Subsystem>Subsystem.БанкИКасса.Subsystem.Касса</Subsystem>
+		<Subsystem>Subsystem.БанкИКасса.Subsystem.БанкИКассаНДС</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Отчеты</Group>
+		<Group>CommandGroup.СтандартныеОтчеты</Group>
+		<Group>CommandGroup.Информация</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>ActionsPanelReports</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelImportant</Group>
+	</GroupsOrder>
+</CommandInterface>

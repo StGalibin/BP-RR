@@ -1,0 +1,1019 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Список задач</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="638">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:БыстрыеОтборыФонГруппы</BackColor>
+			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="3398"/>
+			<ChildItems>
+				<InputField name="Организация" id="558">
+					<DataPath>Организация</DataPath>
+					<TitleLocation>Left</TitleLocation>
+					<ClearButton>true</ClearButton>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По всем организациям</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОрганизацияКонтекстноеМеню" id="559"/>
+					<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="3399"/>
+					<Events>
+						<Event name="OnChange">ОрганизацияПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelField name="ОрганизацияПредставление" id="4016">
+					<DataPath>ОрганизацияПредставление</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="ОрганизацияПредставлениеКонтекстноеМеню" id="4017"/>
+					<ExtendedTooltip name="ОрганизацияПредставлениеРасширеннаяПодсказка" id="4018"/>
+				</LabelField>
+				<CommandBar name="КоманднаяПанель" id="4546">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="КоманднаяПанельРасширеннаяПодсказка" id="4547"/>
+					<ChildItems>
+						<Button name="ФормаИзменить" id="4544">
+							<Type>CommandBarButton</Type>
+							<OnlyInAllActions>false</OnlyInAllActions>
+							<CommandName>Form.StandardCommand.Change</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполнить задачу</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ФормаИзменитьРасширеннаяПодсказка" id="4545"/>
+						</Button>
+						<Button name="ОтметитьЗадачуКакВыполненную" id="4548">
+							<Type>CommandBarButton</Type>
+							<OnlyInAllActions>false</OnlyInAllActions>
+							<CommandName>Form.Command.ПоместитьЗадачуВАрхив</CommandName>
+							<ExtendedTooltip name="ОтметитьЗадачуКакВыполненнуюРасширеннаяПодсказка" id="4549"/>
+						</Button>
+						<Button name="НастройкаСинхронизацииСКалендаремGoogle" id="4558">
+							<Type>CommandBarButton</Type>
+							<OnlyInAllActions>false</OnlyInAllActions>
+							<CommandName>Form.Command.НастройкаСинхронизацииСКалендаремGoogle</CommandName>
+							<ExtendedTooltip name="НастройкаСинхронизацииСКалендаремGoogleРасширеннаяПодсказка" id="4559"/>
+						</Button>
+						<SearchStringAddition name="СтрокаПоиска" id="4552">
+							<AdditionSource>
+								<Item>СписокЗадач</Item>
+								<Type>SearchStringRepresentation</Type>
+							</AdditionSource>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Строка поиска</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СтрокаПоискаКонтекстноеМеню" id="4553"/>
+							<ExtendedTooltip name="СтрокаПоискаРасширеннаяПодсказка" id="4554"/>
+						</SearchStringAddition>
+						<SearchControlAddition name="УправлениеПоиском" id="4555">
+							<AdditionSource>
+								<Item>СписокЗадач</Item>
+								<Type>SearchControl</Type>
+							</AdditionSource>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Управление поиском</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="УправлениеПоискомКонтекстноеМеню" id="4556"/>
+							<ExtendedTooltip name="УправлениеПоискомРасширеннаяПодсказка" id="4557"/>
+						</SearchControlAddition>
+						<ButtonGroup name="КоманднаяПанельФормы" id="4536">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Командная панель формы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Командная панель формы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<CommandSource>Form</CommandSource>
+							<ExtendedTooltip name="КоманднаяПанельФормыРасширеннаяПодсказка" id="4537"/>
+						</ButtonGroup>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="КоманднаяПанельСсылки" id="4516">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель ссылки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель ссылки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КоманднаяПанельСсылкиРасширеннаяПодсказка" id="4517"/>
+			<ChildItems>
+				<Button name="КалендарьНаИТС" id="874">
+					<Type>Hyperlink</Type>
+					<Representation>Text</Representation>
+					<CommandName>Form.Command.КалендарьНаИТС</CommandName>
+					<ExtendedTooltip name="КалендарьНаИТСРасширеннаяПодсказка" id="3401"/>
+				</Button>
+				<Button name="ВыполненныеЗадачи" id="841">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ЗадачиВАрхиве</CommandName>
+					<ExtendedTooltip name="ВыполненныеЗадачиРасширеннаяПодсказка" id="3402"/>
+				</Button>
+				<UsualGroup name="КоманднаяПанельПраво" id="4534">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Командная панель право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<HorizontalAlign>Right</HorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="КоманднаяПанельПравоРасширеннаяПодсказка" id="4535"/>
+					<ChildItems>
+						<Button name="НастройкаСпискаНалоговОтчетов" id="2560">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастройкаСпискаНалоговОтчетов</CommandName>
+							<ExtendedTooltip name="НастройкаСпискаНалоговОтчетовРасширеннаяПодсказка" id="3404"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЗадачиБухгалтера" id="4026">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа задачи бухгалтера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗадачиБухгалтераРасширеннаяПодсказка" id="4027"/>
+			<ChildItems>
+				<Table name="СписокЗадач" id="4039">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<SelectionMode>SingleRow</SelectionMode>
+					<RowSelectionMode>Row</RowSelectionMode>
+					<Header>false</Header>
+					<HorizontalLines>false</HorizontalLines>
+					<VerticalLines>false</VerticalLines>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<DataPath>СписокЗадач</DataPath>
+					<RowPictureDataPath>СписокЗадач.КартинкаЗадачи</RowPictureDataPath>
+					<RowsPicture>
+						<xr:Ref>CommonPicture.КоллекцияЗадачБухгалтера</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</RowsPicture>
+					<BorderColor>style:FormBackColor</BorderColor>
+					<CommandSet>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>Create</ExcludedCommand>
+						<ExcludedCommand>ListSettings</ExcludedCommand>
+						<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+						<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Choose</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+					</CommandSet>
+					<AutoRefresh>true</AutoRefresh>
+					<AutoRefreshPeriod>10800</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<ContextMenu name="СписокЗадачКонтекстноеМеню" id="4040">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="СписокЗадачКонтекстноеМенюИзменить" id="4550">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.StandardCommand.Change</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Выполнить задачу</v8:content>
+									</v8:item>
+								</Title>
+								<ExtendedTooltip name="СписокЗадачКонтекстноеМенюИзменитьРасширеннаяПодсказка" id="4551"/>
+							</Button>
+							<Button name="СписокЗадачКонтекстноеМенюПоместитьЗадачуВАрхив" id="4532">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПоместитьЗадачуВАрхив</CommandName>
+								<Picture>
+									<xr:Ref>CommonPicture.ОтметитьЗадачуКакВыполненную</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="СписокЗадачКонтекстноеМенюПоместитьЗадачуВАрхивРасширеннаяПодсказка" id="4533"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="СписокЗадачКоманднаяПанель" id="4041"/>
+					<ExtendedTooltip name="СписокЗадачРасширеннаяПодсказка" id="4042"/>
+					<SearchStringAddition name="СписокЗадачСтрокаПоиска" id="4496">
+						<AdditionSource>
+							<Item>СписокЗадач</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокЗадачСтрокаПоискаКонтекстноеМеню" id="4497"/>
+						<ExtendedTooltip name="СписокЗадачСтрокаПоискаРасширеннаяПодсказка" id="4498"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокЗадачСостояниеПросмотра" id="4499">
+						<AdditionSource>
+							<Item>СписокЗадач</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокЗадачСостояниеПросмотраКонтекстноеМеню" id="4500"/>
+						<ExtendedTooltip name="СписокЗадачСостояниеПросмотраРасширеннаяПодсказка" id="4501"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокЗадачУправлениеПоиском" id="4502">
+						<AdditionSource>
+							<Item>СписокЗадач</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокЗадачУправлениеПоискомКонтекстноеМеню" id="4503"/>
+						<ExtendedTooltip name="СписокЗадачУправлениеПоискомРасширеннаяПодсказка" id="4504"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnActivateField">СписокЗадачПриАктивизацииПоля</Event>
+						<Event name="BeforeRowChange">СписокЗадачПередНачаломИзменения</Event>
+						<Event name="BeforeLoadUserSettingsAtServer">СписокЗадачПередЗагрузкойПользовательскихНастроекНаСервере</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="СписокЗадачСрок" id="4048">
+							<DataPath>СписокЗадач.Срок</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Срок</v8:content>
+								</v8:item>
+							</Title>
+							<Width>9</Width>
+							<Height>3</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ='d MMMM, dddd'</v8:content>
+								</v8:item>
+							</Format>
+							<ContextMenu name="СписокЗадачСрокКонтекстноеМеню" id="4049"/>
+							<ExtendedTooltip name="СписокЗадачСрокРасширеннаяПодсказка" id="4050"/>
+						</LabelField>
+						<ColumnGroup name="СписокЗадачГруппаПредставление" id="4054">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Представление</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Представление</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="СписокЗадачГруппаПредставлениеРасширеннаяПодсказка" id="4055"/>
+							<ChildItems>
+								<LabelField name="СписокЗадачНаименование" id="4043">
+									<DataPath>СписокЗадач.Наименование</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование</v8:content>
+										</v8:item>
+									</Title>
+									<CellHyperlink>true</CellHyperlink>
+									<Width>14</Width>
+									<ContextMenu name="СписокЗадачНаименованиеКонтекстноеМеню" id="4044"/>
+									<ExtendedTooltip name="СписокЗадачНаименованиеРасширеннаяПодсказка" id="4045"/>
+								</LabelField>
+								<LabelField name="СписокЗадачОрганизация" id="4056">
+									<DataPath>СписокЗадач.Организация</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Организация</v8:content>
+										</v8:item>
+									</Title>
+									<Width>14</Width>
+									<ContextMenu name="СписокЗадачОрганизацияКонтекстноеМеню" id="4057"/>
+									<ExtendedTooltip name="СписокЗадачОрганизацияРасширеннаяПодсказка" id="4058"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<LabelField name="СписокЗадачОсталосьДней" id="4059">
+							<DataPath>СписокЗадач.ОсталосьДней</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Осталось</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<Width>14</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="СписокЗадачОсталосьДнейКонтекстноеМеню" id="4060"/>
+							<ExtendedTooltip name="СписокЗадачОсталосьДнейРасширеннаяПодсказка" id="4061"/>
+						</LabelField>
+						<ColumnGroup name="СписокЗадачГруппаЗавершить" id="4521">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список задач группа завершить</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список задач группа завершить</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ExtendedTooltip name="СписокЗадачГруппаЗавершитьРасширеннаяПодсказка" id="4522"/>
+							<ChildItems>
+								<PictureField name="СписокЗадачЗавершитьЗадачу" id="4523">
+									<DataPath>СписокЗадач.ЗавершитьЗадачу</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отметить задачу как выполненную</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalAlign>Right</HorizontalAlign>
+									<CellHyperlink>true</CellHyperlink>
+									<HeaderHorizontalAlign>Right</HeaderHorizontalAlign>
+									<FooterHorizontalAlign>Right</FooterHorizontalAlign>
+									<Width>1</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.ЗавершитьЗадачу</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="СписокЗадачЗавершитьЗадачуКонтекстноеМеню" id="4524"/>
+									<ExtendedTooltip name="СписокЗадачЗавершитьЗадачуРасширеннаяПодсказка" id="4525"/>
+								</PictureField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВсеЗадачиВыполнены" id="4089">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Все задачи выполнены</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа все задачи выполнены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<Group>Vertical</Group>
+			<HorizontalAlign>Center</HorizontalAlign>
+			<VerticalAlign>Center</VerticalAlign>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВсеЗадачиВыполненыРасширеннаяПодсказка" id="4090"/>
+			<ChildItems>
+				<LabelDecoration name="ВсеЗадачиВыполнены" id="851">
+					<Height>2</Height>
+					<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Замечательно! На сегодня актуальных задач нет.</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="ВсеЗадачиВыполненыКонтекстноеМеню" id="852"/>
+					<ExtendedTooltip name="ВсеЗадачиВыполненыExtendedTooltip" id="4009"/>
+				</LabelDecoration>
+				<LabelDecoration name="НовыеЗадачиПоявятся" id="3394">
+					<Height>2</Height>
+					<Font ref="sys:DefaultGUIFont" height="10" kind="WindowsFont"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новые задачи появятся %1.</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="НовыеЗадачиПоявятсяКонтекстноеМеню" id="3395"/>
+					<ExtendedTooltip name="НовыеЗадачиПоявятсяExtendedTooltip" id="4011"/>
+				</LabelDecoration>
+				<LabelDecoration name="АрхивЗадачОписание" id="866">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Все выполненные задачи сохранены:</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<ContextMenu name="АрхивЗадачОписаниеКонтекстноеМеню" id="867"/>
+					<ExtendedTooltip name="АрхивЗадачОписаниеExtendedTooltip" id="4013"/>
+				</LabelDecoration>
+				<LabelDecoration name="АрхивЗадачСсылка" id="868">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задачи в архиве</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<ContextMenu name="АрхивЗадачСсылкаКонтекстноеМеню" id="869"/>
+					<ExtendedTooltip name="АрхивЗадачСсылкаExtendedTooltip" id="4014"/>
+					<Events>
+						<Event name="Click">ЗадачиВАрхиве</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОжидание" id="4091">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ожидание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ожидание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОжиданиеРасширеннаяПодсказка" id="4092"/>
+			<ChildItems>
+				<PictureDecoration name="Ждать" id="872">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ждать</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ЖдатьКонтекстноеМеню" id="873"/>
+					<ExtendedTooltip name="ЖдатьExtendedTooltip" id="3405"/>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Организация" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНесколькоОрганизацийБухгалтерскийУчет</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ТекущаяДата" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая дата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФоновоеЗаданиеЗадачБухгалтераИдентификатор" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фоновое задание задач бухгалтера идентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФоновоеЗаданиеЗадачБухгалтераЗапущено" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фоновое задание задач бухгалтера запущено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресНаИТС" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес на ИТС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОрганизацияПредставление" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<FunctionalOptions>
+				<Item>FunctionalOption.НеИспользоватьНесколькоОрганизацийБухгалтерскийУчет</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="СписокЗадач" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список задач</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>СписокЗадач.Срок</Field>
+				<Field>СписокЗадач.РегистрацияВНалоговомОргане</Field>
+				<Field>СписокЗадач.Правило</Field>
+				<Field>СписокЗадач.ПлановаяПроверка</Field>
+				<Field>СписокЗадач.Периодичность</Field>
+				<Field>СписокЗадач.ПериодСобытия</Field>
+				<Field>СписокЗадач.Организация</Field>
+				<Field>СписокЗадач.НачалоВыполнения</Field>
+				<Field>СписокЗадач.Наименование</Field>
+				<Field>СписокЗадач.ИдентификаторПравила</Field>
+				<Field>СписокЗадач.ИдентификаторЗадачи</Field>
+				<Field>СписокЗадач.Задача</Field>
+				<Field>СписокЗадач.ЕстьИнформацияНаИТС</Field>
+				<Field>СписокЗадач.Действие</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ВЫБОР
+		КОГДА Требования.Владелец.Код = "НДФЛ_Агент_Уплата"
+			ТОГДА "Зарплата"
+		КОГДА ПравилаРегулярныхПлатежей.Ссылка ЕСТЬ НЕ NULL 
+			ТОГДА "Регулярный платеж"
+		КОГДА Патенты.Ссылка ЕСТЬ НЕ NULL 
+			ТОГДА "Уплата налога"
+		КОГДА Требования.Действие = ЗНАЧЕНИЕ(Перечисление.ВидыДействийКалендаряБухгалтера.УплатаНалога)
+			ТОГДА "Уплата налога"
+		ИНАЧЕ ""
+	КОНЕЦ КАК ТипЗадачи,
+	ЗадачиБухгалтера.Организация КАК Организация,
+	ЕСТЬNULL(Организации.Наименование, "") КАК ОрганизацияНаименование,
+	ЗадачиБухгалтера.РегистрацияВНалоговомОргане,
+	ЗадачиБухгалтера.ПериодСобытия,
+	ЗадачиБухгалтера.Правило,
+	Требования.Код КАК ИдентификаторПравила,
+	Требования.Владелец КАК Задача,
+	Требования.Владелец.Код КАК ИдентификаторЗадачи,
+	ЕСТЬNULL(Требования.Владелец.РеквизитДопУпорядочивания, 0) КАК РегулярнаяЗадачаПорядок,
+	ВЫБОР
+		КОГДА ПроверкиКонтролирующимиОрганами.Ссылка ЕСТЬ НЕ NULL 
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ВидыДействийКалендаряБухгалтера.Проверка)
+		КОГДА Патенты.Ссылка ЕСТЬ НЕ NULL 
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ВидыДействийКалендаряБухгалтера.УплатаНалога)
+		ИНАЧЕ ЕСТЬNULL(Требования.Действие, ЗНАЧЕНИЕ(Перечисление.ВидыДействийКалендаряБухгалтера.ПустаяСсылка))
+	КОНЕЦ КАК Действие,
+	ВЫБОР
+		КОГДА ПравилаРегулярныхПлатежей.Ссылка ЕСТЬ НЕ NULL 
+			ТОГДА 3
+		КОГДА Патенты.Ссылка ЕСТЬ НЕ NULL 
+			ТОГДА 3
+		КОГДА ПроверкиКонтролирующимиОрганами.Ссылка ЕСТЬ НЕ NULL 
+			ТОГДА 4
+		КОГДА Требования.Действие ЕСТЬ NULL
+			ТОГДА 1
+		КОГДА Требования.Действие = ЗНАЧЕНИЕ(Перечисление.ВидыДействийКалендаряБухгалтера.Отчет)
+			ТОГДА 2
+		КОГДА Требования.Действие = ЗНАЧЕНИЕ(Перечисление.ВидыДействийКалендаряБухгалтера.УплатаНалога)
+			ТОГДА 3
+		КОГДА Требования.Действие = ЗНАЧЕНИЕ(Перечисление.ВидыДействийКалендаряБухгалтера.Зарплата)
+			ТОГДА 7
+		ИНАЧЕ 0
+	КОНЕЦ КАК КартинкаЗадачи,
+	ЕСТЬNULL(Требования.Действие.Порядок, 0) КАК ДействиеПорядок,
+	ЕСТЬNULL(Требования.РеквизитДопУпорядочивания, 0) КАК ПравилоПорядок,
+	ЕСТЬNULL(Требования.ЕстьИнформацияНаИТС, ЛОЖЬ) КАК ЕстьИнформацияНаИТС,
+	ЗадачиБухгалтера.Срок,
+	ВЫБОР
+		КОГДА Требования.Ссылка ЕСТЬ NULL
+				И ПравилаРегулярныхПлатежей.Ссылка ЕСТЬ NULL
+				И ПроверкиКонтролирующимиОрганами.Ссылка ЕСТЬ NULL
+				И Патенты.Ссылка ЕСТЬ NULL
+			ТОГДА 999
+		ИНАЧЕ РАЗНОСТЬДАТ(&amp;ТекущаяДата, ЗадачиБухгалтера.Срок, ДЕНЬ)
+	КОНЕЦ КАК ОсталосьДней,
+	ЗадачиБухгалтера.НачалоВыполнения,
+	ЗадачиБухгалтера.Наименование КАК Наименование,
+	ЗадачиБухгалтера.Периодичность,
+	ЕСТЬNULL(ЗадачиНачалаРаботы.Порядок, 0) КАК ЗадачиНачалаРаботыПорядок,
+	ЕСТЬNULL(ПроверкиКонтролирующимиОрганами.ПлановаяПроверка, ЛОЖЬ) КАК ПлановаяПроверка,
+	0 КАК ЗавершитьЗадачу,
+	ЗадачиБухгалтера.Статус
+ИЗ
+	РегистрСведений.ЗадачиБухгалтера КАК ЗадачиБухгалтера
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ПравилаПредставленияОтчетовУплатыНалогов КАК Требования
+		ПО ЗадачиБухгалтера.Правило = Требования.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Перечисление.ЗадачиНачалаРаботы КАК ЗадачиНачалаРаботы
+		ПО ЗадачиБухгалтера.Правило = ЗадачиНачалаРаботы.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ПравилаРегулярныхПлатежей КАК ПравилаРегулярныхПлатежей
+		ПО ЗадачиБухгалтера.Правило = ПравилаРегулярныхПлатежей.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Патенты КАК Патенты
+		ПО ЗадачиБухгалтера.Правило = Патенты.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ПроверкиКонтролирующимиОрганами КАК ПроверкиКонтролирующимиОрганами
+		ПО ЗадачиБухгалтера.Правило = ПроверкиКонтролирующимиОрганами.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Организации КАК Организации
+		ПО ЗадачиБухгалтера.Организация = Организации.Ссылка
+ГДЕ
+	НЕ ЗадачиБухгалтера.ВАрхиве
+{ГДЕ
+	(ЕСТЬNULL(ЗадачиНачалаРаботы.Ссылка, ЗНАЧЕНИЕ(Перечисление.ЗадачиНачалаРаботы.ПустаяСсылка))) КАК ЗадачаНачалаРаботы}</QueryText>
+				<MainTable>InformationRegister.ЗадачиБухгалтера</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Срок</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ДействиеПорядок</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПериодСобытия</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>РегулярнаяЗадачаПорядок</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ПравилоПорядок</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ЗадачиНачалаРаботыПорядок</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ОрганизацияНаименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВариантРабочегоСтола" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант рабочего стола</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокЗадачПустой" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список задач пустой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаПоявленияЗадач" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новые задачи появятся</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокЗадачАктуален" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список задач актуален</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИнтервалОбновления" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интервал обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Новости" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новости</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ФормаОткрытаОтдельнойЗакладкой" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Форма открыта отдельной закладкой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОрганизацияОтступ" id="50">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьНесколькоОрганизацийБухгалтерскийУчет</Item>
+			</FunctionalOptions>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗадачиВАрхиве" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи в архиве</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи в архиве</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗадачиВАрхиве</Action>
+		</Command>
+		<Command name="НастройкаСпискаНалоговОтчетов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка списка налогов и отчетов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить список налогов и отчетов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкаСпискаНалоговОтчетов</Action>
+		</Command>
+		<Command name="КалендарьНаИТС" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Календарь на ИТС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Календарь бухгалтера на ИТС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КалендарьНаИТС</Action>
+		</Command>
+		<Command name="ОбновитьСписокЗадач" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список задач</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F5</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьСписокЗадач</Action>
+		</Command>
+		<Command name="ПоместитьЗадачуВАрхив" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поместить задачу в архив</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поместить задачу в архив</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ОтметитьЗадачуКакВыполненную</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоместитьЗадачуВАрхив</Action>
+			<Representation>Text</Representation>
+		</Command>
+		<Command name="НастройкаСинхронизацииСКалендаремGoogle" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка синхронизации с календарем Google</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка синхронизации с календарем google</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкаСинхронизацииСКалендаремGoogle</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ОткрыватьВНовойЗакладке">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="Организация">
+			<Type/>
+		</Parameter>
+	</Parameters>
+</Form>

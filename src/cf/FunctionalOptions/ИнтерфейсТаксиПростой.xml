@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<FunctionalOption uuid="dfebbe95-7fbe-4366-8d5e-ae7d2f43b03a">
+		<Properties>
+			<Name>ИнтерфейсТаксиПростой</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интерфейс "Такси" (простой)</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Location>Constant.ИнтерфейсТаксиПростой</Location>
+			<PrivilegedGetMode>true</PrivilegedGetMode>
+			<Content>
+				<xr:Object>CommonCommand.НачальнаяСтраница</xr:Object>
+				<xr:Object>DocumentJournal.Документы</xr:Object>
+				<xr:Object>DataProcessor.ПанелиПростойИнтерфейс.Command.Бухгалтерия</xr:Object>
+				<xr:Object>DataProcessor.ПанелиПростойИнтерфейс.Command.Помощь</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_Интерфейс</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_НалогиИОтчеты</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_МобильноеПриложение</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_БанковскиеСчета</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_Подразделения</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_РегистрацииВНалоговыхОрганах</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_УчетнаяПолитика</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_ПомощникПоПереходуНаУСН</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_НачальныеОстатки</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_ЛимитыОстаткаКассы</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_ПечатьАртикулов</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_НастройкаЭлектроннойПочты</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_ВыгрузитьДанныеВЛокальнуюВерсию</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_УдалениеПомеченныхОбъектов</xr:Object>
+				<xr:Object>Catalog.Организации.Command.ПростойИнтерфейс_ДругиеНастройки</xr:Object>
+				<xr:Object>DataProcessor.ПанелиПростойИнтерфейс.Command.ФинансовыйАнализ</xr:Object>
+				<xr:Object>DataProcessor.ПанелиПростойИнтерфейс.Command.СписокЗадач</xr:Object>
+				<xr:Object>DataProcessor.ПанелиПростойИнтерфейс.Command.Отчетность</xr:Object>
+				<xr:Object>DataProcessor.ПанелиПростойИнтерфейс.Command.НалогиИОтчеты</xr:Object>
+				<xr:Object>DataProcessor.ПанелиПростойИнтерфейс.Command.Налоги</xr:Object>
+				<xr:Object>DataProcessor.ПанелиПростойИнтерфейс.Command.Анализ</xr:Object>
+				<xr:Object>DataProcessor.ПанелиПростойИнтерфейс.Command.Контрагенты</xr:Object>
+				<xr:Object>DataProcessor.ПанелиПростойИнтерфейс.Command.Товары</xr:Object>
+				<xr:Object>DataProcessor.ПанелиПростойИнтерфейс.Command.Настройки</xr:Object>
+				<xr:Object>DocumentJournal.Документы.Command.Документы</xr:Object>
+				<xr:Object>DocumentJournal.Деньги.Command.Деньги</xr:Object>
+			</Content>
+		</Properties>
+	</FunctionalOption>
+</MetaDataObject>

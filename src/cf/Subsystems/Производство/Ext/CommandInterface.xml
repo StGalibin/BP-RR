@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandsVisibility>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизациюПроизводство">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОтчетыПроизводство">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="CommonCommand.ДополнительныеОтчетыПроизводство">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="0:35c1c434-4b72-4c2d-a1b4-43f583f42466">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизациюПроизводство">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиПроизводство">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОтчетыПроизводство">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Производство.Subsystem.ВыпускПродукции</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.Переработка</Subsystem>
+		<Subsystem>Subsystem.Производство.Subsystem.ПередачаВПереработку</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Информация</Group>
+		<Group>CommandGroup.Отчеты</Group>
+		<Group>CommandGroup.СтандартныеОтчеты</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>ActionsPanelReports</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelImportant</Group>
+	</GroupsOrder>
+</CommandInterface>

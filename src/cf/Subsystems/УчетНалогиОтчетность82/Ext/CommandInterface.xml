@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandsVisibility>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизацию">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиУчетНалогиОтчетность82">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОборотноСальдоваяВедомость.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ШахматнаяВедомость.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОборотноСальдоваяВедомостьПоСчету.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОборотыСчета.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.АнализСчета.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.КарточкаСчета.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.АнализСубконто.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОборотыМеждуСубконто.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.КарточкаСубконто.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.СводныеПроводки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОтчетПоПроводкам.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ГлавнаяКнига.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.УниверсальныйОтчетПоМетаданным.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ДанныеПервичныхДокументов">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ПанельОтчетовРегистрыНалоговогоУчета82">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизацию">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиУчетНалогиОтчетность82">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОборотноСальдоваяВедомость.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ШахматнаяВедомость.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОборотноСальдоваяВедомостьПоСчету.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОборотыСчета.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.АнализСчета.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.КарточкаСчета.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.АнализСубконто.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОборотыМеждуСубконто.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.КарточкаСубконто.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.СводныеПроводки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ОтчетПоПроводкам.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.ГлавнаяКнига.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Report.УниверсальныйОтчетПоМетаданным.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизацию">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиУчетНалогиОтчетность82">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОтчетыУчетНалогиОтчетность82">
+			<CommandGroup>CommandGroup.Отчеты</CommandGroup>
+		</Command>
+		<Command name="Report.ОборотноСальдоваяВедомость.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="Report.ШахматнаяВедомость.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="Report.ОборотноСальдоваяВедомостьПоСчету.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="Report.ОборотыСчета.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="Report.АнализСчета.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="Report.КарточкаСчета.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="Report.АнализСубконто.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="Report.ОборотыМеждуСубконто.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="Report.КарточкаСубконто.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="Report.СводныеПроводки.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="Report.ОтчетПоПроводкам.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="Report.ГлавнаяКнига.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="Report.УниверсальныйОтчетПоМетаданным.StandardCommand.Open">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДанныеПервичныхДокументов">
+			<CommandGroup>NavigationPanelSeeAlso</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОценкаРискаНалоговойПроверки">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.КорреспонденцииСчетов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ПанельОтчетовРегистрыНалоговогоУчета82">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.ВедениеУчета</Subsystem>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.АвизоПрочее</Subsystem>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.ЗакрытиеПериода</Subsystem>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.РегламентированныеОтчеты</Subsystem>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.ОтчетыДляМалыхПредприятий</Subsystem>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.НДС</Subsystem>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.НалогНаПрибыль</Subsystem>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.УСН</Subsystem>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.Патент</Subsystem>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.ДоходыИРасходыИП</Subsystem>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.СтраховыеВзносыИП</Subsystem>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.ИмущественныеНалоги</Subsystem>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.ОтчетыДляРуководителя</Subsystem>
+		<Subsystem/>
+		<Subsystem>Subsystem.УчетНалогиОтчетность82.Subsystem.РегистрыБУСубъектовМалогоПредпринимательства</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Сервис</Group>
+		<Group>CommandGroup.Отчеты</Group>
+		<Group>CommandGroup.СтандартныеОтчеты</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelImportant</Group>
+	</GroupsOrder>
+</CommandInterface>

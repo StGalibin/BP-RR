@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandsVisibility>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизацию">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.ДатыЗапретаИзменения.Command.ДатыЗапретаЗагрузкиДанных">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОтчетыОперации">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.УдалениеПомеченныхОбъектов.Command.УдалениеПомеченныхОбъектов">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="CommonCommand.ДополнительныеОтчетыОперации">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="0:22e5db22-b100-4d75-a227-dd7e44d0271e">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизацию">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ДатыЗапретаИзменения.Command.ДатыЗапретаИзмененияДанных">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УдалениеПомеченныхОбъектов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ГрупповоеПерепроведениеДокументов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ДатыЗапретаИзменения.Command.ДатыЗапретаЗагрузкиДанных">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиОперации">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОтчетыОперации">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УдалениеПомеченныхОбъектов.Command.УдалениеПомеченныхОбъектов">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Операции.Subsystem.БухгалтерскийУчет</Subsystem>
+		<Subsystem>Subsystem.Операции.Subsystem.ЗакрытиеПериода</Subsystem>
+		<Subsystem>Subsystem.Операции.Subsystem.АвизоПрочее</Subsystem>
+		<Subsystem>Subsystem.Операции.Subsystem.РучныеОперацииПоНДС</Subsystem>
+		<Subsystem>Subsystem.Операции.Subsystem.РучныеОперацииПоУСН</Subsystem>
+		<Subsystem>Subsystem.Операции.Subsystem.РучныеОперацииИП</Subsystem>
+		<Subsystem>Subsystem.Операции.Subsystem.ИзменениеРежимаНалогообложения</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Информация</Group>
+		<Group>CommandGroup.Отчеты</Group>
+		<Group>CommandGroup.СтандартныеОтчеты</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>ActionsPanelReports</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelImportant</Group>
+	</GroupsOrder>
+</CommandInterface>

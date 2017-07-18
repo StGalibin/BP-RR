@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandsVisibility>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизациюОСНМА">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ОбъектыПереданныеВАренду.Command.ОбъектыПереданныеВАренду">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DocumentJournal.ДокументыПоОС.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Report.ОбъектыПереданныеВАренду.Command.ОбъектыПереданныеВАренду">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.ОборотноСальдоваяВедомостьОС82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ШахматнаяВедомостьОС82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОборотноСальдоваяВедомостьПоСчетуОС82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОборотыСчетаОС82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.АнализСчетаОС82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.КарточкаСчетаОС82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.АнализСубконтоОС82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОборотыМеждуСубконтоОС82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.КарточкаСубконтоОС82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.СводныеПроводкиОС82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОтчетПоПроводкамОС82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ГлавнаяКнигаОС82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизациюОСНМА">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Report.ВедомостьАмортизацииОСБухгалтерскийУчет.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИнвентарнаяКнигаОС.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ОбъектыПереданныеВАренду.Command.ОбъектыПереданныеВАренду">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="DocumentJournal.ДокументыПоОС.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.ОсновныеСредстваИНМА82.Subsystem.ПоступлениеОсновныхСредств</Subsystem>
+		<Subsystem>Subsystem.ОсновныеСредстваИНМА82.Subsystem.УчетОсновныхСредств</Subsystem>
+		<Subsystem>Subsystem.ОсновныеСредстваИНМА82.Subsystem.ВыбытиеОсновныхСредств</Subsystem>
+		<Subsystem>Subsystem.ОсновныеСредстваИНМА82.Subsystem.АмортизацияОС</Subsystem>
+		<Subsystem>Subsystem.ОсновныеСредстваИНМА82.Subsystem.АвизоОС</Subsystem>
+		<Subsystem>Subsystem.ОсновныеСредстваИНМА82.Subsystem.НематериальныеАктивы</Subsystem>
+		<Subsystem>Subsystem.ОсновныеСредстваИНМА82.Subsystem.АмортизацияНМА</Subsystem>
+		<Subsystem>Subsystem.ОсновныеСредстваИНМА82.Subsystem.СправочникиИНастройки</Subsystem>
+		<Subsystem>Subsystem.ОсновныеСредстваИНМА82.Subsystem.ДополнительныеОтчетыОбработки</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Сервис</Group>
+		<Group>CommandGroup.Отчеты</Group>
+		<Group>CommandGroup.СтандартныеОтчеты</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>ActionsPanelReports</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelImportant</Group>
+	</GroupsOrder>
+</CommandInterface>

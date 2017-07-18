@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<CommandsVisibility>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизациюПроизводство">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиПроизводство82">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DocumentJournal.ПроизводственныеДокументы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизациюПроизводство">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиПроизводство82">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="CommonCommand.УстановитьОсновнуюОрганизациюПроизводство">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиПроизводство82">
+			<CommandGroup>CommandGroup.Сервис</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОтчетыПроизводство82">
+			<CommandGroup>CommandGroup.Отчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОборотноСальдоваяВедомостьПроизводство82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ШахматнаяВедомостьПроизводство82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОборотноСальдоваяВедомостьПоСчетуПроизводство82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОборотыСчетаПроизводство82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.АнализСчетаПроизводство82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.КарточкаСчетаПроизводство82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.АнализСубконтоПроизводство82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОборотыМеждуСубконтоПроизводство82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.КарточкаСубконтоПроизводство82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.СводныеПроводкиПроизводство82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ОтчетПоПроводкамПроизводство82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ГлавнаяКнигаПроизводство82">
+			<CommandGroup>CommandGroup.СтандартныеОтчеты</CommandGroup>
+		</Command>
+		<Command name="0:e06f671a-c8e4-4d49-8223-5904a7723dd8">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DocumentJournal.ПроизводственныеДокументы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.Производство82.Subsystem.ВыпускПродукции</Subsystem>
+		<Subsystem>Subsystem.Производство82.Subsystem.Переработка</Subsystem>
+		<Subsystem>Subsystem.Производство82.Subsystem.ПередачаВПереработку</Subsystem>
+		<Subsystem>Subsystem.Производство82.Subsystem.СправочникиИНастройки</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Сервис</Group>
+		<Group>CommandGroup.Отчеты</Group>
+		<Group>CommandGroup.СтандартныеОтчеты</Group>
+		<Group>ActionsPanelTools</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>NavigationPanelImportant</Group>
+	</GroupsOrder>
+</CommandInterface>

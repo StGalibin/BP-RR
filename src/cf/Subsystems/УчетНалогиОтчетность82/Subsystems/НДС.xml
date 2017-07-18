@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Subsystem uuid="c272a1ef-c132-4abe-826c-ee8c7b9b796b">
+		<Properties>
+			<Name>НДС</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>НДС</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВосстановлениеНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВосстановлениеНДСПоОбъектамНедвижимости</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтражениеНачисленияНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтражениеНДСКВычету</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПодтверждениеНулевойСтавкиНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РаспределениеНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СписаниеНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ФормированиеЗаписейКнигиПокупок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ФормированиеЗаписейКнигиПродаж</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ЖурналУчетаСчетовФактур</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.КнигаПокупок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.КнигаПродаж</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.НаличиеСчетовФактур</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализРаспределенияНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеНДСпоСМРхозспособом</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.РегистрацияСчетовФактурНаАванс</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.РегистрацияСчетовФактурНалоговогоАгента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.РегистрацияСчетовФактурНаСуммовыеРазницы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.РегламентныеОперацииНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.АнализСостоянияНалоговогоУчетаПоНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КнигаПокупокДляПередачиВЭлектронномВиде</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЖурналУчетаСчетовФактурДляПередачиВЭлектронномВиде</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.КнигаПродажДляПередачиВЭлектронномВиде</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДопЛистКнигиПродажДляПередачиВЭлектронномВиде</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ДопЛистКнигиПокупокДляПередачиВЭлектронномВиде</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ДокументыПоУчетуНДСДляПередачиВЭлектронномВиде</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПомощникПоУчетуНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастройкиНДС82</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ФормированиеЗаписейРаздела7ДекларацииНДС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РеестрДокументовПодтверждающихНалоговуюЛьготуПоНДС</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
