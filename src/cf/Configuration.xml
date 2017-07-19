@@ -2875,6 +2875,7 @@
 			<CommonModule>ЭлектронныйДокументооборотСФССКлиент</CommonModule>
 			<CommonModule>ЭлементыЗатрат</CommonModule>
 			<CommonModule>ЭлементыЗатратНастройкаПараметровУчета</CommonModule>
+			<CommonModule>Доб_РаботаСДоговорами</CommonModule>
 			<CommonAttribute>ОбластьДанныхВспомогательныеДанные</CommonAttribute>
 			<CommonAttribute>ОбластьДанныхОсновныеДанные</CommonAttribute>
 			<ExchangePlan>АвтономнаяРабота</ExchangePlan>
@@ -3358,6 +3359,7 @@
 			<EventSubscription>УстановитьФункциональныеОпцииИспользуетсяСинхронизацияДанных</EventSubscription>
 			<EventSubscription>УстановитьФункциональныеОпцииИспользуетсяУСН</EventSubscription>
 			<EventSubscription>УстановитьФункциональныеОпцииРозничнаяТорговля</EventSubscription>
+			<EventSubscription>ДоговорОбработкаПроверкиЗаполнения</EventSubscription>
 			<ScheduledJob>ВсеОбновленияНовостей</ScheduledJob>
 			<ScheduledJob>ВсеОбновленияОблачногоАрхива</ScheduledJob>
 			<ScheduledJob>ВсеОбновленияСПАРКРискиОбщее</ScheduledJob>
