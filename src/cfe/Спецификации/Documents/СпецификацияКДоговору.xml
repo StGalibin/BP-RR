@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Document uuid="9be5959e-b114-4dc8-9856-f1be3805d571">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.СпецификацияКДоговору" category="Object">
+				<xr:TypeId>b633a499-885c-40be-bd3f-bd34244eed3b</xr:TypeId>
+				<xr:ValueId>8e3ef53c-af8b-46cc-a7ae-61bf18532ad4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.СпецификацияКДоговору" category="Ref">
+				<xr:TypeId>a9263714-4c4e-4f9a-8a92-d14a9c05adc3</xr:TypeId>
+				<xr:ValueId>a60abbb8-8ea5-4fbb-9dac-9faca07255e3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.СпецификацияКДоговору" category="Selection">
+				<xr:TypeId>3512b185-c7b1-4be5-8a34-01732b01d477</xr:TypeId>
+				<xr:ValueId>3bf73139-690b-4d2e-bd29-5583c26d137c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.СпецификацияКДоговору" category="List">
+				<xr:TypeId>02607420-b657-4571-bc71-00973bd50465</xr:TypeId>
+				<xr:ValueId>bdef7a17-5d5a-4c37-8219-75d70bf7198f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.СпецификацияКДоговору" category="Manager">
+				<xr:TypeId>ec3c2da1-87dd-4498-9519-afc8b90074ad</xr:TypeId>
+				<xr:ValueId>ba3cf410-91a3-46aa-adad-3d1d7cee8543</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СпецификацияКДоговору</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>
