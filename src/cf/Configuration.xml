@@ -2875,7 +2875,7 @@
 			<CommonModule>ЭлектронныйДокументооборотСФССКлиент</CommonModule>
 			<CommonModule>ЭлементыЗатрат</CommonModule>
 			<CommonModule>ЭлементыЗатратНастройкаПараметровУчета</CommonModule>
-			<CommonModule>Доб_РаботаСДоговорами</CommonModule>
+			<CommonModule>Доб_РаботаСДоговорамиИСпецификациями</CommonModule>
 			<CommonAttribute>ОбластьДанныхВспомогательныеДанные</CommonAttribute>
 			<CommonAttribute>ОбластьДанныхОсновныеДанные</CommonAttribute>
 			<ExchangePlan>АвтономнаяРабота</ExchangePlan>
@@ -3360,6 +3360,7 @@
 			<EventSubscription>УстановитьФункциональныеОпцииИспользуетсяУСН</EventSubscription>
 			<EventSubscription>УстановитьФункциональныеОпцииРозничнаяТорговля</EventSubscription>
 			<EventSubscription>ДоговорОбработкаПроверкиЗаполнения</EventSubscription>
+			<EventSubscription>ДокументыРеализацииПриПроведении</EventSubscription>
 			<ScheduledJob>ВсеОбновленияНовостей</ScheduledJob>
 			<ScheduledJob>ВсеОбновленияОблачногоАрхива</ScheduledJob>
 			<ScheduledJob>ВсеОбновленияСПАРКРискиОбщее</ScheduledJob>
@@ -5483,6 +5484,7 @@
 			<Document>ФормированиеУставногоКапитала</Document>
 			<Document>ЭлектронныйДокументВходящий</Document>
 			<Document>ЭлектронныйДокументИсходящий</Document>
+			<Document>СпецификацияКДоговору</Document>
 			<DocumentNumerator>ПерсонифицированныйУчет</DocumentNumerator>
 			<Sequence>УдалитьВзаиморасчеты20</Sequence>
 			<Sequence>УдалитьВзаиморасчеты30</Sequence>
@@ -6038,6 +6040,7 @@
 			<Enum>ЧастиЖурналаУчетаСчетовФактур</Enum>
 			<Enum>ЭлементыЗатрат</Enum>
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
+			<Enum>СтатусыСпецификаций</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализВзносовВФонды</Report>
 			<Report>АнализДвиженийДенежныхСредств</Report>
@@ -7127,6 +7130,8 @@
 			<InformationRegister>ШаблоныПечатиМашиночитаемыхФорм</InformationRegister>
 			<InformationRegister>ШаблоныЭВФОтчетовСтатистики</InformationRegister>
 			<InformationRegister>ШтрихкодыНоменклатуры</InformationRegister>
+			<InformationRegister>НумерацияСпецификацийДоговоров</InformationRegister>
+			<InformationRegister>СтатусыСпецификаций</InformationRegister>
 			<AccumulationRegister>АвансовыеПлатежиИностранцевПоНДФЛ</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыСДепонентами</AccumulationRegister>
 			<AccumulationRegister>ВзаиморасчетыССотрудниками</AccumulationRegister>
@@ -7206,6 +7211,7 @@
 			<AccumulationRegister>УдалитьРасчетыПоСтраховымВзносам</AccumulationRegister>
 			<AccumulationRegister>УдалитьСтраховыеВзносыСведенияОДоходах</AccumulationRegister>
 			<AccumulationRegister>УплатаНДФЛНалоговымиАгентамиКРаспределению</AccumulationRegister>
+			<AccumulationRegister>СпецификацииДоговоров</AccumulationRegister>
 			<ChartOfCharacteristicTypes>ВидыСубконтоХозрасчетные</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>КатегорииНовостей</ChartOfCharacteristicTypes>

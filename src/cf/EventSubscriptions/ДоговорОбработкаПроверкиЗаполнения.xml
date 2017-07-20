@@ -14,7 +14,7 @@
 				<v8:Type>cfg:CatalogObject.ДоговорыКонтрагентов</v8:Type>
 			</Source>
 			<Event>FillCheckProcessing</Event>
-			<Handler>CommonModule.Доб_РаботаСДоговорами.ДоговорОбработкаПроверкиЗаполненияОбработкаПроверкиЗаполнения</Handler>
+			<Handler>CommonModule.Доб_РаботаСДоговорамиИСпецификациями.ДоговорОбработкаПроверкиЗаполненияОбработкаПроверкиЗаполнения</Handler>
 		</Properties>
 	</EventSubscription>
 </MetaDataObject>
