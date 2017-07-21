@@ -7,6 +7,7 @@
 	<Events>
 		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -197,6 +198,9 @@
 								<ContextMenu name="ТоварыУправлениеПоискомКонтекстноеМеню" id="69"/>
 								<ExtendedTooltip name="ТоварыУправлениеПоискомРасширеннаяПодсказка" id="70"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ТоварыПриИзменении</Event>
+							</Events>
 							<ChildItems>
 								<LabelField name="ТоварыНомерСтроки" id="71">
 									<DataPath>Объект.Товары.LineNumber</DataPath>
@@ -209,15 +213,36 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТоварыНоменклатураКонтекстноеМеню" id="75"/>
 									<ExtendedTooltip name="ТоварыНоменклатураРасширеннаяПодсказка" id="76"/>
+									<Events>
+										<Event name="OnChange">ТоварыНоменклатураПриИзменении</Event>
+									</Events>
 								</InputField>
 								<InputField name="ТоварыЕдиницаИзмерения" id="77">
 									<DataPath>Объект.Товары.ЕдиницаИзмерения</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ед. изм.</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТоварыЕдиницаИзмеренияКонтекстноеМеню" id="78"/>
 									<ExtendedTooltip name="ТоварыЕдиницаИзмеренияРасширеннаяПодсказка" id="79"/>
 								</InputField>
 								<InputField name="ТоварыКоэффициент" id="80">
 									<DataPath>Объект.Товары.Коэффициент</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>К</v8:content>
+										</v8:item>
+									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТоварыКоэффициентКонтекстноеМеню" id="81"/>
 									<ExtendedTooltip name="ТоварыКоэффициентРасширеннаяПодсказка" id="82"/>
@@ -227,12 +252,18 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТоварыКоличествоКонтекстноеМеню" id="84"/>
 									<ExtendedTooltip name="ТоварыКоличествоРасширеннаяПодсказка" id="85"/>
+									<Events>
+										<Event name="OnChange">ТоварыКоличествоПриИзменении</Event>
+									</Events>
 								</InputField>
 								<InputField name="ТоварыЦена" id="86">
 									<DataPath>Объект.Товары.Цена</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТоварыЦенаКонтекстноеМеню" id="87"/>
 									<ExtendedTooltip name="ТоварыЦенаРасширеннаяПодсказка" id="88"/>
+									<Events>
+										<Event name="OnChange">ТоварыЦенаПриИзменении</Event>
+									</Events>
 								</InputField>
 								<InputField name="ТоварыСумма" id="89">
 									<DataPath>Объект.Товары.Сумма</DataPath>
@@ -271,52 +302,231 @@
 							<ContextMenu name="ОтветственныйКонтекстноеМеню" id="23"/>
 							<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="24"/>
 						</InputField>
-						<UsualGroup name="Группа4" id="104">
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПодписи" id="141">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписи</v8:content>
+						</v8:item>
+					</Title>
+					<Group>HorizontalIfPossible</Group>
+					<ExtendedTooltip name="ГруппаПодписиРасширеннаяПодсказка" id="142"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПодписиЛевая" id="143">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Представитель контрагента</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Уполномоченный от имени контрагента</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
 							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="105"/>
+							<United>false</United>
+							<ExtendedTooltip name="ГруппаПодписиЛеваяРасширеннаяПодсказка" id="144"/>
 							<ChildItems>
-								<InputField name="Руководитель" id="34">
-									<DataPath>Объект.Руководитель</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="РуководительКонтекстноеМеню" id="35"/>
-									<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="36"/>
-								</InputField>
-								<InputField name="ДолжностьРуководителя" id="37">
-									<DataPath>Объект.ДолжностьРуководителя</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДолжностьРуководителяКонтекстноеМеню" id="38"/>
-									<ExtendedTooltip name="ДолжностьРуководителяРасширеннаяПодсказка" id="39"/>
-								</InputField>
-								<InputField name="ЗаРуководителяПоПриказу" id="49">
-									<DataPath>Объект.ЗаРуководителяПоПриказу</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ЗаРуководителяПоПриказуКонтекстноеМеню" id="50"/>
-									<ExtendedTooltip name="ЗаРуководителяПоПриказуРасширеннаяПодсказка" id="51"/>
-								</InputField>
-								<InputField name="РуководительКонтрагента" id="40">
-									<DataPath>Объект.РуководительКонтрагента</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="РуководительКонтрагентаКонтекстноеМеню" id="41"/>
-									<ExtendedTooltip name="РуководительКонтрагентаРасширеннаяПодсказка" id="42"/>
-								</InputField>
-								<InputField name="ДолжностьРуководителяКонтрагента" id="43">
-									<DataPath>Объект.ДолжностьРуководителяКонтрагента</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДолжностьРуководителяКонтрагентаКонтекстноеМеню" id="44"/>
-									<ExtendedTooltip name="ДолжностьРуководителяКонтрагентаРасширеннаяПодсказка" id="45"/>
-								</InputField>
-								<InputField name="ЗаРуководителяКонтрагентаПоПриказу" id="46">
+								<UsualGroup name="ГруппаРуководительКонтрагента" id="145">
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаРуководительКонтрагентаРасширеннаяПодсказка" id="146"/>
+									<ChildItems>
+										<InputField name="ПолРуководителя" id="147">
+											<DataPath>Объект.ПолРуководителяКонтрагента</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Width>7</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ListChoiceMode>true</ListChoiceMode>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Г-н</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ПолФизическогоЛица.EnumValue.Мужской</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Г-жа</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ПолФизическогоЛица.EnumValue.Женский</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<DropListWidth>7</DropListWidth>
+											<ContextMenu name="ПолРуководителяКонтекстноеМеню" id="148"/>
+											<ExtendedTooltip name="ПолРуководителяРасширеннаяПодсказка" id="149"/>
+										</InputField>
+										<InputField name="РуководительКонтрагента" id="150">
+											<DataPath>Объект.РуководительКонтрагента</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Руководитель</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<ChoiceButton>true</ChoiceButton>
+											<ContextMenu name="РуководительКонтрагентаКонтекстноеМеню" id="151"/>
+											<ExtendedTooltip name="РуководительКонтрагентаРасширеннаяПодсказка" id="152"/>
+											<Events>
+												<Event name="OnChange">РуководительКонтрагентаПриИзменении</Event>
+												<Event name="StartChoice">РуководительКонтрагентаНачалоВыбора</Event>
+											</Events>
+										</InputField>
+										<Button name="ПоказатьСклоненияРуководительКонтрагента" id="153">
+											<Type>Hyperlink</Type>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<CommandName>Form.Command.ПоказатьСклоненияРуководительКонтрагента</CommandName>
+											<ExtendedTooltip name="ПоказатьСклоненияРуководительКонтрагентаРасширеннаяПодсказка" id="154"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаДолжностьРуководителяКонтрагента" id="155">
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДолжностьРуководителяКонтрагентаРасширеннаяПодсказка" id="156"/>
+									<ChildItems>
+										<InputField name="ДолжностьРуководителяКонтрагента" id="157">
+											<DataPath>Объект.ДолжностьРуководителяКонтрагента</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Должность</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДолжностьРуководителяКонтрагентаКонтекстноеМеню" id="158"/>
+											<ExtendedTooltip name="ДолжностьРуководителяКонтрагентаРасширеннаяПодсказка" id="159"/>
+											<Events>
+												<Event name="OnChange">ДолжностьРуководителяКонтрагентаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<Button name="ПоказатьСклоненияДолжностьРуководителяКонтрагента" id="160">
+											<Type>Hyperlink</Type>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<CommandName>Form.Command.ПоказатьСклоненияДолжностьРуководителяКонтрагента</CommandName>
+											<ExtendedTooltip name="ПоказатьСклоненияДолжностьРуководителяКонтрагентаРасширеннаяПодсказка" id="161"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="ЗаРуководителяКонтрагентаПоПриказу" id="162">
 									<DataPath>Объект.ЗаРуководителяКонтрагентаПоПриказу</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ЗаРуководителяКонтрагентаПоПриказуКонтекстноеМеню" id="47"/>
-									<ExtendedTooltip name="ЗаРуководителяКонтрагентаПоПриказуРасширеннаяПодсказка" id="48"/>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>На основании</v8:content>
+										</v8:item>
+									</Title>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доверенности, приказа</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ЗаРуководителяКонтрагентаПоПриказуКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ЗаРуководителяКонтрагентаПоПриказуРасширеннаяПодсказка" id="164"/>
 								</InputField>
-								<InputField name="ПолРуководителяКонтрагента" id="52">
-									<DataPath>Объект.ПолРуководителяКонтрагента</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ПолРуководителяКонтрагентаКонтекстноеМеню" id="53"/>
-									<ExtendedTooltip name="ПолРуководителяКонтрагентаРасширеннаяПодсказка" id="54"/>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПодписиПравая" id="168">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Представитель организации</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Уполномоченный от имени организации</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ExtendedTooltip name="ГруппаПодписиПраваяРасширеннаяПодсказка" id="169"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаРуководитель" id="170">
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаРуководительРасширеннаяПодсказка" id="171"/>
+									<ChildItems>
+										<InputField name="Руководитель" id="172">
+											<DataPath>Объект.Руководитель</DataPath>
+											<ContextMenu name="РуководительКонтекстноеМеню" id="173"/>
+											<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="174"/>
+										</InputField>
+										<Button name="ПоказатьСклоненияРуководитель" id="175">
+											<Type>Hyperlink</Type>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<CommandName>Form.Command.ПоказатьСклоненияРуководитель</CommandName>
+											<ExtendedTooltip name="ПоказатьСклоненияРуководительРасширеннаяПодсказка" id="176"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаДолжностьРуководителя" id="177">
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДолжностьРуководителяРасширеннаяПодсказка" id="178"/>
+									<ChildItems>
+										<InputField name="ДолжностьРуководителя" id="179">
+											<DataPath>Объект.ДолжностьРуководителя</DataPath>
+											<EditTextUpdate>OnValueChange</EditTextUpdate>
+											<ContextMenu name="ДолжностьРуководителяКонтекстноеМеню" id="180"/>
+											<ExtendedTooltip name="ДолжностьРуководителяРасширеннаяПодсказка" id="181"/>
+											<Events>
+												<Event name="AutoComplete">ДолжностьРуководителяАвтоПодбор</Event>
+												<Event name="TextEditEnd">ДолжностьРуководителяОкончаниеВводаТекста</Event>
+												<Event name="ChoiceProcessing">ДолжностьРуководителяОбработкаВыбора</Event>
+											</Events>
+										</InputField>
+										<Button name="ПоказатьСклоненияДолжностьРуководителя" id="182">
+											<Type>Hyperlink</Type>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<CommandName>Form.Command.ПоказатьСклоненияДолжностьРуководителя</CommandName>
+											<ExtendedTooltip name="ПоказатьСклоненияДолжностьРуководителяРасширеннаяПодсказка" id="183"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="ЗаРуководителяПоПриказу" id="184">
+									<DataPath>Объект.ЗаРуководителяПоПриказу</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>На основании</v8:content>
+										</v8:item>
+									</Title>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доверенности, приказа</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="ЗаРуководителяПоПриказуКонтекстноеМеню" id="185"/>
+									<ExtendedTooltip name="ЗаРуководителяПоПриказуРасширеннаяПодсказка" id="186"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -337,7 +547,6 @@
 					<v8:content>Итоги</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>style:ИтогиФонГруппы</BackColor>
@@ -346,6 +555,7 @@
 				<InputField name="Комментарий" id="25">
 					<DataPath>Объект.Комментарий</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="27"/>
 				</InputField>
@@ -441,6 +651,72 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="СклоненияДолжностьРуководителяКонтрагента" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склонения должность руководителя контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="СклоненияРуководительКонтрагента" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склонения руководитель контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ИзмененоПредставлениеДолжностьРуководителяКонтрагента" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменено представление должность руководителя контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИзмененоПредставлениеРуководительКонтрагента" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменено представление руководитель контрагента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийРеквизитСклонения" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий реквизит склонения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьТипыЦенНоменклатуры" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать типы цен номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ЗакрытьОткрытьСпецификацию" id="1">
@@ -466,6 +742,66 @@
 			</Title>
 			<Action>ПодборТовары</Action>
 			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="ПоказатьСклоненияДолжностьРуководителя" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склонения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склонения должности руководителя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСклоненияДолжностьРуководителя</Action>
+		</Command>
+		<Command name="ПоказатьСклоненияДолжностьРуководителяКонтрагента" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склонения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склонения должности руководителя контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСклоненияДолжностьРуководителяКонтрагента</Action>
+		</Command>
+		<Command name="ПоказатьСклоненияРуководитель" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склонения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склонения полного имени руководителя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСклоненияРуководитель</Action>
+		</Command>
+		<Command name="ПоказатьСклоненияРуководительКонтрагента" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склонения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склонения полного имени руководителя контрагента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСклоненияРуководительКонтрагента</Action>
 		</Command>
 	</Commands>
 </Form>

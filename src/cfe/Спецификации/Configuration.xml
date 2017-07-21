@@ -54,8 +54,48 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>Продажи</Subsystem>
+			<StyleItem>ФонУправляющегоПоля</StyleItem>
+			<StyleItem>ИтогиФонГруппы</StyleItem>
+			<StyleItem>РамкаСеткиТаблицы</StyleItem>
+			<StyleItem>ГиперссылкаТабличнойЧасти</StyleItem>
+			<StyleItem>ЦветФонаНекорректногоКонтрагентаВДокументе</StyleItem>
+			<CommonPicture>СкопироватьВБуферОбмена</CommonPicture>
+			<CommonPicture>СостоянияДокумента</CommonPicture>
+			<CommonPicture>ЗаполнитьФорму</CommonPicture>
+			<CommonPicture>ВставитьИзБуфераОбмена</CommonPicture>
+			<FunctionalOption>ИспользоватьКонтрольныеЗнакиГИСМ</FunctionalOption>
+			<FunctionalOption>Новости_РазрешенаРаботаСНовостями</FunctionalOption>
+			<CommonCommand>ДополнительныеСведенияКоманднаяПанель</CommonCommand>
+			<CommonCommand>СтруктураПодчиненности</CommonCommand>
+			<CommonCommand>ПрисоединенныеФайлыБП</CommonCommand>
+			<CommonCommand>ПоказатьДвиженияДокумента</CommonCommand>
+			<CommonCommand>ОтправитьПоЭлектроннойПочте</CommonCommand>
+			<CommonCommand>ИсторияИзменений</CommonCommand>
+			<Constant>ИспользоватьКонтрольныеЗнакиГИСМ</Constant>
+			<Constant>РазрешенаРаботаСНовостями</Constant>
 			<Catalog>ДоговорыКонтрагентов</Catalog>
+			<Catalog>ПрочиеДоходыИРасходы</Catalog>
+			<Catalog>КлассификаторЕдиницИзмерения</Catalog>
+			<Catalog>Контрагенты</Catalog>
+			<Catalog>Склады</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>Номенклатура</Catalog>
+			<Catalog>Патенты</Catalog>
+			<Catalog>Валюты</Catalog>
+			<Catalog>ПодразделенияОрганизаций</Catalog>
+			<Catalog>НомераГТД</Catalog>
+			<Catalog>Организации</Catalog>
+			<Catalog>СтраныМира</Catalog>
+			<Catalog>КонтрольныеЗнакиГИСМ</Catalog>
+			<Catalog>БанковскиеСчета</Catalog>
 			<Document>СпецификацияКДоговору</Document>
+			<Document>СчетНаОплатуПокупателю</Document>
+			<Document>СчетФактураВыданный</Document>
+			<Document>РеализацияТоваровУслуг</Document>
+			<Enum>ВидыДоговоровКонтрагентов</Enum>
+			<Enum>СтавкиНДС</Enum>
+			<Enum>ВидыЭД</Enum>
+			<ChartOfAccounts>Хозрасчетный</ChartOfAccounts>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

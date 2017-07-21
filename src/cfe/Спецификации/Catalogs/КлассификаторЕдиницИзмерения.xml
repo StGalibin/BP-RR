@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<Catalog uuid="24e49c10-3e95-4481-802f-f694c2ad81f7">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.КлассификаторЕдиницИзмерения" category="Object">
+				<xr:TypeId>89c8de03-22f4-4c6d-a53b-5e981acfa738</xr:TypeId>
+				<xr:ValueId>b143191c-937e-4149-9805-4b5ab4430fcb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.КлассификаторЕдиницИзмерения" category="Ref">
+				<xr:TypeId>2e40b2d7-6c5a-419c-9a96-1f9cc3e7bea2</xr:TypeId>
+				<xr:ValueId>1e385022-21ab-458a-9d4b-c0297cc86def</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.КлассификаторЕдиницИзмерения" category="Selection">
+				<xr:TypeId>63d52a7c-2b51-493d-92c7-a10db3a6798b</xr:TypeId>
+				<xr:ValueId>ba87d9a9-0a30-4104-91be-4fdeaca88743</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.КлассификаторЕдиницИзмерения" category="List">
+				<xr:TypeId>43cd0f6b-aecc-4fa8-88c1-e94577a01a72</xr:TypeId>
+				<xr:ValueId>085c04aa-e8c7-44d7-a0f8-bdefe1c4b535</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.КлассификаторЕдиницИзмерения" category="Manager">
+				<xr:TypeId>52b7e4f8-f23e-47e5-a550-0cd68b1be13b</xr:TypeId>
+				<xr:ValueId>c4f6249b-507f-44f8-af2f-50e6b5e4d317</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КлассификаторЕдиницИзмерения</Name>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

@@ -28,7 +28,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Спецификация к договору</v8:content>
+					<v8:content>Спецификация</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -147,17 +147,10 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>true</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>ShowError</FillChecking>
+					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
-					<ChoiceParameters>
-						<app:item name="Отбор.ТипСклада">
-							<app:value xsi:type="v8:FixedArray">
-								<v8:Value xsi:type="xr:DesignTimeRef">Enum.ТипыСкладов.EnumValue.ОптовыйСклад</v8:Value>
-								<v8:Value xsi:type="xr:DesignTimeRef">Enum.ТипыСкладов.EnumValue.РозничныйМагазин</v8:Value>
-							</app:value>
-						</app:item>
-					</ChoiceParameters>
+					<ChoiceParameters/>
 					<QuickChoice>Auto</QuickChoice>
 					<CreateOnInput>Auto</CreateOnInput>
 					<ChoiceForm/>
@@ -492,7 +485,7 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
+					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
@@ -1431,6 +1424,24 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Template>Печать</Template>
+			<Command uuid="5abaf08c-7b42-4960-acf8-41d609ab4071">
+				<Properties>
+					<Name>Печать</Name>
+					<Synonym/>
+					<Comment/>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.СпецификацияКДоговору</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>
