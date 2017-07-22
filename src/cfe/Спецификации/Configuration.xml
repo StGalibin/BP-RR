@@ -1,44 +1,44 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
-	<Configuration uuid="6fa258e3-728b-478b-adf8-5143e6fcd248">
+	<Configuration uuid="0fc00a1b-f185-4973-b428-d5cf4109fe0a">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>9cd510cd-abfc-11d4-9434-004095e12fc7</xr:ClassId>
-				<xr:ObjectId>c987b2bb-7487-4faf-9737-61915d246a99</xr:ObjectId>
+				<xr:ObjectId>df09ec68-7286-4efc-8b7f-738f13bbad75</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
-				<xr:ObjectId>73a41b6f-53e1-4274-bc71-eb2069e1e814</xr:ObjectId>
+				<xr:ObjectId>97064ecd-f229-4db9-876a-fbce210923df</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
-				<xr:ObjectId>6f224c29-f980-4b9b-916a-813a91cab177</xr:ObjectId>
+				<xr:ObjectId>1ad2b5c6-2e59-4015-b58b-0b995cdbdf17</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>9de14907-ec23-4a07-96f0-85521cb6b53b</xr:ClassId>
-				<xr:ObjectId>daf8930d-bdfa-4f0b-801a-78c83e079373</xr:ObjectId>
+				<xr:ObjectId>69673881-e822-49b2-b5bc-4080c4226827</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
-				<xr:ObjectId>fd50d84e-2930-45f8-87fb-5674098ddfe3</xr:ObjectId>
+				<xr:ObjectId>7f577476-4831-44c0-9539-d3bb07a976cf</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>84b7b533-7373-476d-a73c-7babe1b9059b</xr:ObjectId>
+				<xr:ObjectId>cc36bd4a-4bb2-4430-bd5b-e90418ece700</xr:ObjectId>
 			</xr:ContainedObject>
 		</InternalInfo>
 		<Properties>
-			<Name>Спецификации к договору</Name>
+			<Name>Расширение1</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Спецификации к договору</v8:content>
+					<v8:content>Расширение1</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<ConfigurationExtensionPurpose>AddOn</ConfigurationExtensionPurpose>
+			<ConfigurationExtensionPurpose>Customization</ConfigurationExtensionPurpose>
 			<ObjectBelonging>Adopted</ObjectBelonging>
-			<NamePrefix>Спецификации_</NamePrefix>
+			<NamePrefix>Расш1_</NamePrefix>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_8</ConfigurationExtensionCompatibilityMode>
 			<DefaultRunMode>ManagedApplication</DefaultRunMode>
 			<UsePurposes>
@@ -53,7 +53,6 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<Subsystem>Продажи</Subsystem>
 			<StyleItem>ФонУправляющегоПоля</StyleItem>
 			<StyleItem>ИтогиФонГруппы</StyleItem>
 			<StyleItem>РамкаСеткиТаблицы</StyleItem>
@@ -73,7 +72,6 @@
 			<CommonCommand>ИсторияИзменений</CommonCommand>
 			<Constant>ИспользоватьКонтрольныеЗнакиГИСМ</Constant>
 			<Constant>РазрешенаРаботаСНовостями</Constant>
-			<Catalog>ДоговорыКонтрагентов</Catalog>
 			<Catalog>ПрочиеДоходыИРасходы</Catalog>
 			<Catalog>КлассификаторЕдиницИзмерения</Catalog>
 			<Catalog>Контрагенты</Catalog>
@@ -86,12 +84,13 @@
 			<Catalog>НомераГТД</Catalog>
 			<Catalog>Организации</Catalog>
 			<Catalog>СтраныМира</Catalog>
+			<Catalog>ДоговорыКонтрагентов</Catalog>
 			<Catalog>КонтрольныеЗнакиГИСМ</Catalog>
 			<Catalog>БанковскиеСчета</Catalog>
-			<Document>СпецификацияКДоговору</Document>
+			<Document>РеализацияТоваровУслуг</Document>
 			<Document>СчетНаОплатуПокупателю</Document>
 			<Document>СчетФактураВыданный</Document>
-			<Document>РеализацияТоваровУслуг</Document>
+			<Document>СпецификацияКДоговору</Document>
 			<Enum>ВидыДоговоровКонтрагентов</Enum>
 			<Enum>СтавкиНДС</Enum>
 			<Enum>ВидыЭД</Enum>

@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
-	<Enum uuid="7c57a46d-74c1-48e6-b7a4-0cc53d7a9291">
+	<Enum uuid="cba5b0b1-9fdf-48b0-a99c-69ffc9ad6f6d">
 		<InternalInfo>
 			<xr:GeneratedType name="EnumRef.СтавкиНДС" category="Ref">
-				<xr:TypeId>a87061e0-5748-438e-b64e-3ff0066e8412</xr:TypeId>
-				<xr:ValueId>f5a22b2f-0406-4a73-9ea5-f3e13aa9345f</xr:ValueId>
+				<xr:TypeId>7c382d1a-de44-4deb-b79c-332e12eeafaf</xr:TypeId>
+				<xr:ValueId>6bd3ac2d-b4eb-4a9a-be0c-1c73cc4e02e2</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="EnumManager.СтавкиНДС" category="Manager">
-				<xr:TypeId>a2af6f9a-4210-4175-8e0f-3cbf1e07772e</xr:TypeId>
-				<xr:ValueId>a1068173-1ec6-43aa-9f64-93a3d11f131b</xr:ValueId>
+				<xr:TypeId>d8721652-ea54-4c92-8bbe-5b359b5c02cd</xr:TypeId>
+				<xr:ValueId>5831d91f-66ff-45fd-bf32-70051adf5f05</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="EnumList.СтавкиНДС" category="List">
-				<xr:TypeId>cef0fbc2-7a66-4ba9-af01-9dbce137559b</xr:TypeId>
-				<xr:ValueId>d7b3cd17-b286-4f43-b1a0-d0501cd6d3ab</xr:ValueId>
+				<xr:TypeId>5bf02c36-1372-4b8a-a3ff-3c60272cf333</xr:TypeId>
+				<xr:ValueId>5da0156c-3ba8-489f-a963-a4dc41c72dee</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>

@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
-	<Document uuid="7ffe69bc-dfca-499f-812a-512c84792771">
+	<Document uuid="e9a1f6fe-e11d-415c-8ccb-602914267c9b">
 		<InternalInfo>
 			<xr:GeneratedType name="DocumentObject.СчетНаОплатуПокупателю" category="Object">
-				<xr:TypeId>424661fd-d2f0-4756-ac23-4407d53912b2</xr:TypeId>
-				<xr:ValueId>f33dd2b6-a56d-4c51-99d4-8f94edeca802</xr:ValueId>
+				<xr:TypeId>b2cd0ef7-b357-49ce-aa48-d98ef18bdd04</xr:TypeId>
+				<xr:ValueId>c20df306-e51e-4714-bc76-5c43768ecef1</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentRef.СчетНаОплатуПокупателю" category="Ref">
-				<xr:TypeId>f4f3ad09-a50d-4ab3-977d-1973d2e1a00e</xr:TypeId>
-				<xr:ValueId>e3c7d7ee-548b-4a40-9a52-22babd1a79c6</xr:ValueId>
+				<xr:TypeId>2827823e-2ca4-40ae-bc21-7140cd3c214c</xr:TypeId>
+				<xr:ValueId>c076fe58-1e67-4972-ab0f-e46111cdc9b1</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentSelection.СчетНаОплатуПокупателю" category="Selection">
-				<xr:TypeId>db6540f1-6523-48e0-88d1-d42e478e2149</xr:TypeId>
-				<xr:ValueId>c7018f55-c70a-49b2-906f-26a4e55e28e4</xr:ValueId>
+				<xr:TypeId>89687e0a-9ddd-4150-bb57-6dbb21b5696b</xr:TypeId>
+				<xr:ValueId>706c4da5-9564-4d12-932e-2e55b69b48fc</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentList.СчетНаОплатуПокупателю" category="List">
-				<xr:TypeId>d194f90e-4f08-4381-a3ac-0e3775532541</xr:TypeId>
-				<xr:ValueId>239d711b-8c5b-4dd7-a0d1-058365dc820e</xr:ValueId>
+				<xr:TypeId>4474f2c6-ec04-4211-86a2-b53fc2343092</xr:TypeId>
+				<xr:ValueId>dc64f116-01d2-4d80-a1d6-83e73b5d3129</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="DocumentManager.СчетНаОплатуПокупателю" category="Manager">
-				<xr:TypeId>f9e2e2f7-0650-4739-863e-22e9a18e5bee</xr:TypeId>
-				<xr:ValueId>3146becf-490e-41fe-a5f6-b419de72bd12</xr:ValueId>
+				<xr:TypeId>c2cc5322-9f94-41b5-bb5b-0a757f76c04e</xr:TypeId>
+				<xr:ValueId>867790ce-7bad-4433-a2ec-669f792da9c4</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>

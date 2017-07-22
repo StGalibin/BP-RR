@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
-	<Catalog uuid="06435880-619f-4a5a-a2e0-f9ae70627fee">
+	<Catalog uuid="cacaa6c3-e1e1-4347-a9bb-1fe74aa3e31b">
 		<InternalInfo>
 			<xr:GeneratedType name="CatalogObject.Патенты" category="Object">
-				<xr:TypeId>a685fecd-5969-4250-b65f-7d4b68d8aeb2</xr:TypeId>
-				<xr:ValueId>0e7f5f31-4885-44c9-8e87-7d9fba49a93c</xr:ValueId>
+				<xr:TypeId>f3c58a87-ab6a-4874-91ea-538c7d9c5b74</xr:TypeId>
+				<xr:ValueId>ba14579f-7529-4e9f-8d8f-9484cbf40314</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogRef.Патенты" category="Ref">
-				<xr:TypeId>57c3ece6-7229-48d8-ba43-94ae7fa5dfd5</xr:TypeId>
-				<xr:ValueId>9c89d910-12a0-48e5-bc9e-26def1774fc7</xr:ValueId>
+				<xr:TypeId>dc87e853-0ed5-4960-9764-b0723a9b7b89</xr:TypeId>
+				<xr:ValueId>3cc6d0c9-ed48-4059-b803-906527911354</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogSelection.Патенты" category="Selection">
-				<xr:TypeId>59233036-192f-481c-a8f7-0f3fda430f57</xr:TypeId>
-				<xr:ValueId>406ebbb4-2978-41a8-bd49-6f91c31a67c8</xr:ValueId>
+				<xr:TypeId>e4104401-27dc-4b40-a736-0dfaa5e94793</xr:TypeId>
+				<xr:ValueId>368693cb-f953-412e-844b-42a9e4a3bd2c</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogList.Патенты" category="List">
-				<xr:TypeId>8ae8f490-5bb6-4bf0-a874-339bb9deebaf</xr:TypeId>
-				<xr:ValueId>ba7843cb-78bd-42e3-919a-0abb11722d74</xr:ValueId>
+				<xr:TypeId>b641f8a4-dbf4-4efc-b19e-a103aeed5894</xr:TypeId>
+				<xr:ValueId>5862bdde-f00f-48e0-ad34-56543822d1d6</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogManager.Патенты" category="Manager">
-				<xr:TypeId>c84dce85-52a7-456c-823d-fb4bd51c3e11</xr:TypeId>
-				<xr:ValueId>4a9a2f6f-aed4-4d72-9b2b-72943571b35f</xr:ValueId>
+				<xr:TypeId>d5bacac9-f1bd-4047-a2aa-6b194c208e09</xr:TypeId>
+				<xr:ValueId>64603aec-b8d6-4335-bbee-578f0e896b25</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>

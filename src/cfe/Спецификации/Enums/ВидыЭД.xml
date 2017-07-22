@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
-	<Enum uuid="760bfbb4-0774-4753-bfa1-45364551561e">
+	<Enum uuid="5f0f2919-f1ac-4955-bf52-c5c281872902">
 		<InternalInfo>
 			<xr:GeneratedType name="EnumRef.ВидыЭД" category="Ref">
-				<xr:TypeId>e6123bdd-8c91-40f6-ab57-db27404b8db9</xr:TypeId>
-				<xr:ValueId>2f42c8fb-fb25-4330-aff1-d27cfebe9f54</xr:ValueId>
+				<xr:TypeId>74100324-8151-4a3b-a65b-92403e1f8fb7</xr:TypeId>
+				<xr:ValueId>6b87d25a-320f-404f-965e-c8a97a91d155</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="EnumManager.ВидыЭД" category="Manager">
-				<xr:TypeId>038617c7-48d5-4a4d-ad9c-625a1256b1d7</xr:TypeId>
-				<xr:ValueId>8c77fc23-60cd-469c-84f5-4596e1b2e366</xr:ValueId>
+				<xr:TypeId>80739aaa-aa50-4b5a-b9fe-2ea7d219dcce</xr:TypeId>
+				<xr:ValueId>31c2fec1-1bd7-4b6d-afa4-3d1dbe653795</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="EnumList.ВидыЭД" category="List">
-				<xr:TypeId>ae1a8b9b-7abf-4c5d-9c9d-abb8aa04dd46</xr:TypeId>
-				<xr:ValueId>494f612b-d221-4982-b6aa-5cbe75c05b45</xr:ValueId>
+				<xr:TypeId>317c3250-4b98-436a-ac20-1f50da3e9ff9</xr:TypeId>
+				<xr:ValueId>4caabda9-a075-466b-b519-9b9ba486eed9</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>

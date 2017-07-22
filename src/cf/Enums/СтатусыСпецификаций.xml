@@ -90,25 +90,13 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
-			<EnumValue uuid="1107da2b-ee6b-4c46-8833-d2e32f2b819f">
-				<Properties>
-					<Name>НеСогласован</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>На согласовании</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
 			<EnumValue uuid="b2c5da68-fb24-4c19-993c-a2a4e06d5669">
 				<Properties>
-					<Name>КОтгрузке</Name>
+					<Name>ВРаботе</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>К отгрузке</v8:content>
+							<v8:content>В работе</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

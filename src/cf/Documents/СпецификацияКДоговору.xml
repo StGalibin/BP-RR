@@ -52,8 +52,8 @@
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Document.СпецификацияКДоговору.Form.ФормаДокумента</DefaultObjectForm>
-			<DefaultListForm/>
-			<DefaultChoiceForm/>
+			<DefaultListForm>Document.СпецификацияКДоговору.Form.ФормаСписка</DefaultListForm>
+			<DefaultChoiceForm>Document.СпецификацияКДоговору.Form.ФормаВыбора</DefaultChoiceForm>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryListForm/>
 			<AuxiliaryChoiceForm/>
@@ -228,12 +228,12 @@
 					<ChoiceParameterLinks>
 						<xr:Link>
 							<xr:Name>Отбор.Владелец</xr:Name>
-							<xr:DataPath xsi:type="xs:string">0:76fa3c69-0377-471a-97ca-44878a98cd8c</xr:DataPath>
+							<xr:DataPath xsi:type="xs:string">Document.СпецификацияКДоговору.Attribute.Контрагент</xr:DataPath>
 							<xr:ValueChange>Clear</xr:ValueChange>
 						</xr:Link>
 						<xr:Link>
 							<xr:Name>Отбор.Организация</xr:Name>
-							<xr:DataPath xsi:type="xs:string">0:e5e68584-86d3-4844-942f-fc10db6433e6</xr:DataPath>
+							<xr:DataPath xsi:type="xs:string">Document.СпецификацияКДоговору.Attribute.Организация</xr:DataPath>
 							<xr:ValueChange>Clear</xr:ValueChange>
 						</xr:Link>
 					</ChoiceParameterLinks>
@@ -525,7 +525,13 @@
 					<FillValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Организация</xr:Name>
+							<xr:DataPath xsi:type="xs:string">Document.СпецификацияКДоговору.Attribute.Организация</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
 					<ChoiceParameters/>
 					<QuickChoice>Auto</QuickChoice>
 					<CreateOnInput>Auto</CreateOnInput>
@@ -1068,6 +1074,8 @@
 				</Properties>
 			</Attribute>
 			<Form>ФормаДокумента</Form>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаВыбора</Form>
 			<TabularSection uuid="79600507-72e6-4b4a-9ed1-af36b8158004">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.СпецификацияКДоговору.Товары" category="TabularSection">
@@ -1424,24 +1432,7 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Template>Печать</Template>
-			<Command uuid="5abaf08c-7b42-4960-acf8-41d609ab4071">
-				<Properties>
-					<Name>Печать</Name>
-					<Synonym/>
-					<Comment/>
-					<Group>FormCommandBarImportant</Group>
-					<CommandParameterType>
-						<v8:Type>cfg:DocumentRef.СпецификацияКДоговору</v8:Type>
-					</CommandParameterType>
-					<ParameterUseMode>Multiple</ParameterUseMode>
-					<ModifiesData>false</ModifiesData>
-					<Representation>Auto</Representation>
-					<ToolTip/>
-					<Picture/>
-					<Shortcut/>
-				</Properties>
-			</Command>
+			<Template>Спецификация</Template>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>

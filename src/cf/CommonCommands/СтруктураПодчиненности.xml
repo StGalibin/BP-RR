@@ -91,6 +91,7 @@
 				<v8:Type>cfg:DocumentRef.ПередачаОборудованияВМонтаж</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПередачаНМА</v8:Type>
 				<v8:Type>cfg:DocumentRef.ОтчетОРозничныхПродажах</v8:Type>
+				<v8:Type>cfg:DocumentRef.СпецификацияКДоговору</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПерерасчетНДФЛ</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПодтверждениеЗачисленияЗарплаты</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВозвратОСОтАрендатора</v8:Type>
@@ -105,6 +106,7 @@
 				<v8:Type>cfg:DocumentRef.ЗаявлениеОВвозеТоваров</v8:Type>
 				<v8:Type>cfg:DocumentRef.РегистрацияОплатыОсновныхСредствДляИП</v8:Type>
 				<v8:Type>cfg:DocumentRef.РозничнаяПродажа</v8:Type>
+				<v8:Type>cfg:DocumentRef.ЗакрытиеСпецификации</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеСостоянияОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВедомостьНаВыплатуЗарплатыВБанк</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПачкаДокументовСПВ_1</v8:Type>

@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
-	<Catalog uuid="6e254ea1-0332-4995-84c8-54bee2ed07d9">
+	<Catalog uuid="92b908f6-23c9-4b01-8c99-cfe069ef8431">
 		<InternalInfo>
 			<xr:GeneratedType name="CatalogObject.ПрочиеДоходыИРасходы" category="Object">
-				<xr:TypeId>ac43560d-6455-4c4e-aa84-ee86dda6448d</xr:TypeId>
-				<xr:ValueId>6edb131c-f53e-411b-a0f0-20943184f5f3</xr:ValueId>
+				<xr:TypeId>2caef9b4-2ef1-48cf-8b2e-6247e9ca4ab0</xr:TypeId>
+				<xr:ValueId>8a6f80d0-63f0-4a50-8b38-5d600f29aaf2</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogRef.ПрочиеДоходыИРасходы" category="Ref">
-				<xr:TypeId>4a6619fc-d703-4913-9331-114228dfef03</xr:TypeId>
-				<xr:ValueId>40c18278-9d6a-42bc-b293-78c110caf22c</xr:ValueId>
+				<xr:TypeId>7f3e4952-94dd-4afd-962a-3daf0bb5bf58</xr:TypeId>
+				<xr:ValueId>7f78ecba-d1bf-4efd-bacf-a16b41e6b444</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogSelection.ПрочиеДоходыИРасходы" category="Selection">
-				<xr:TypeId>1289afb4-3a05-43b5-adb5-1fe42348182f</xr:TypeId>
-				<xr:ValueId>a4f16254-bee4-4249-9d8a-03e63fe85e21</xr:ValueId>
+				<xr:TypeId>068447c0-42c3-4224-bcf4-ad1f6198d2b6</xr:TypeId>
+				<xr:ValueId>1459e133-1aaa-4ced-a851-3d6f1244d275</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogList.ПрочиеДоходыИРасходы" category="List">
-				<xr:TypeId>5a6b1b09-44a3-48fe-a214-2e05a62fa182</xr:TypeId>
-				<xr:ValueId>917071a9-3a7e-449c-8723-e2a7408acfab</xr:ValueId>
+				<xr:TypeId>e05d3ccc-3e9d-47bc-85e3-bff2aae0be9e</xr:TypeId>
+				<xr:ValueId>0ddfb2bb-5479-4975-b262-d0be22bdff9f</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="CatalogManager.ПрочиеДоходыИРасходы" category="Manager">
-				<xr:TypeId>9c38c2df-9cf7-4a76-8caa-8e1b1993b50a</xr:TypeId>
-				<xr:ValueId>6181b8bd-09de-455e-b2c0-a357203c9c12</xr:ValueId>
+				<xr:TypeId>99f082a5-0ed0-47cf-90b8-44dc8e68aa37</xr:TypeId>
+				<xr:ValueId>57fecf94-d54f-4b68-8c09-99844f1b8823</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>

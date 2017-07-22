@@ -5237,6 +5237,7 @@
 			<Catalog>ШаблоныМагнитныхКарт</Catalog>
 			<Catalog>ЭДПрисоединенныеФайлы</Catalog>
 			<Catalog>ЭлектронныеПредставленияРегламентированныхОтчетов</Catalog>
+			<Catalog>ПричиныЗакрытияСпецификаций</Catalog>
 			<Document>АвансовыйОтчет</Document>
 			<Document>АвансовыйПлатежИностранцаПоНДФЛ</Document>
 			<Document>АктОбОказанииПроизводственныхУслуг</Document>
@@ -5485,6 +5486,7 @@
 			<Document>ЭлектронныйДокументВходящий</Document>
 			<Document>ЭлектронныйДокументИсходящий</Document>
 			<Document>СпецификацияКДоговору</Document>
+			<Document>ЗакрытиеСпецификации</Document>
 			<DocumentNumerator>ПерсонифицированныйУчет</DocumentNumerator>
 			<Sequence>УдалитьВзаиморасчеты20</Sequence>
 			<Sequence>УдалитьВзаиморасчеты30</Sequence>

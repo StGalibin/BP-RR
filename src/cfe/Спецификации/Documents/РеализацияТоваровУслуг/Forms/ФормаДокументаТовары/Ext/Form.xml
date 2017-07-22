@@ -1200,6 +1200,7 @@
 			</UseAlways>
 			<Columns>
 				<AdditionalColumns table="Объект.Услуги"/>
+				<AdditionalColumns table="Объект.АгентскиеУслуги"/>
 				<AdditionalColumns table="Объект.Товары">
 					<Column name="Всего" id="1">
 						<Title>
@@ -1292,7 +1293,6 @@
 						</Type>
 					</Column>
 				</AdditionalColumns>
-				<AdditionalColumns table="Объект.АгентскиеУслуги"/>
 			</Columns>
 		</Attribute>
 		<Attribute name="ИтогиВсего" id="3">
@@ -1625,8 +1625,8 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>cfg:CatalogRef.Патенты</v8:Type>
 				<v8:Type>xs:string</v8:Type>
+				<v8:Type>cfg:CatalogRef.Патенты</v8:Type>
 				<v8:StringQualifiers>
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
@@ -3085,6 +3085,7 @@
 				</UseAlways>
 				<Columns>
 					<AdditionalColumns table="Объект.Услуги"/>
+					<AdditionalColumns table="Объект.АгентскиеУслуги"/>
 					<AdditionalColumns table="Объект.Товары">
 						<Column name="Всего" id="1">
 							<Title>
@@ -3177,7 +3178,6 @@
 							</Type>
 						</Column>
 					</AdditionalColumns>
-					<AdditionalColumns table="Объект.АгентскиеУслуги"/>
 				</Columns>
 			</Attribute>
 			<Attribute name="ИтогиВсего" id="3">
@@ -3510,8 +3510,8 @@
 					</v8:item>
 				</Title>
 				<Type>
-					<v8:Type>cfg:CatalogRef.Патенты</v8:Type>
 					<v8:Type>xs:string</v8:Type>
+					<v8:Type>cfg:CatalogRef.Патенты</v8:Type>
 					<v8:StringQualifiers>
 						<v8:Length>0</v8:Length>
 						<v8:AllowedLength>Variable</v8:AllowedLength>

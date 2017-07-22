@@ -91,6 +91,7 @@
 				<v8:Type>cfg:DocumentRef.ПередачаОборудованияВМонтаж</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПередачаНМА</v8:Type>
 				<v8:Type>cfg:DocumentRef.ОтчетОРозничныхПродажах</v8:Type>
+				<v8:Type>cfg:DocumentRef.СпецификацияКДоговору</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПерерасчетНДФЛ</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПодтверждениеЗачисленияЗарплаты</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПачкаДокументовАДВ_1</v8:Type>
@@ -104,6 +105,7 @@
 				<v8:Type>cfg:DocumentRef.ЗаявлениеОВвозеТоваров</v8:Type>
 				<v8:Type>cfg:DocumentRef.РегистрацияОплатыОсновныхСредствДляИП</v8:Type>
 				<v8:Type>cfg:DocumentRef.РозничнаяПродажа</v8:Type>
+				<v8:Type>cfg:DocumentRef.ЗакрытиеСпецификации</v8:Type>
 				<v8:Type>cfg:DocumentRef.ИзменениеСостоянияОС</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВедомостьНаВыплатуЗарплатыВБанк</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПачкаДокументовСПВ_1</v8:Type>
@@ -212,6 +214,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияОтгруженныхТоваров.Attribute.ДокументОтгрузки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияОтгруженныхТоваров.TabularSection.ЗачетАвансов.Attribute.ДокументАванса</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияТоваровУслуг.Attribute.СчетНаОплатуПокупателю</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияТоваровУслуг.Attribute.СпецификацияКДоговору</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияТоваровУслуг.TabularSection.Товары.Attribute.ДокументОприходования</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияТоваровУслуг.TabularSection.ЗачетАвансов.Attribute.ДокументАванса</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.РеализацияУслугПоПереработке.TabularSection.ЗачетАвансов.Attribute.ДокументАванса</xr:Item>
@@ -264,6 +267,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ФормированиеЗаписейКнигиПродаж.TabularSection.НеОтражаетсяВКниге.Attribute.СчетФактура</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ФормированиеЗаписейКнигиПродаж.TabularSection.НеОтражаетсяВКниге.Attribute.ДокументОплаты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ФормированиеЗаписейРаздела7ДекларацииНДС.TabularSection.НеоблагаемыеНДСОперации.Attribute.ДокументРеализации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗакрытиеСпецификации.Attribute.Спецификация</xr:Item>
 			</Content>
 			<DefaultForm/>
 			<AuxiliaryForm/>

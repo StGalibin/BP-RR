@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
-	<Constant uuid="522429fb-cc5a-4394-8f7d-7fbc3b6f2762">
+	<Constant uuid="1a96c9cd-7f91-4ac9-b99c-aa93e5d064b0">
 		<InternalInfo>
 			<xr:GeneratedType name="ConstantManager.ИспользоватьКонтрольныеЗнакиГИСМ" category="Manager">
-				<xr:TypeId>29ba6233-ed50-4bd4-9053-ff97012cefc7</xr:TypeId>
-				<xr:ValueId>b881aaf3-c849-4582-a3ed-10018a8fcb48</xr:ValueId>
+				<xr:TypeId>f83dcaf7-ba6c-4674-87d4-85125f8ee627</xr:TypeId>
+				<xr:ValueId>6097a64e-b398-46ef-98c3-a4ab18da0d18</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="ConstantValueManager.ИспользоватьКонтрольныеЗнакиГИСМ" category="ValueManager">
-				<xr:TypeId>bbff0fae-9379-48d7-9d1f-f28368613c43</xr:TypeId>
-				<xr:ValueId>2fb7cff1-407f-4809-8b6e-2bd588fb88e7</xr:ValueId>
+				<xr:TypeId>c898e500-d254-4376-a11c-99ee6f3fbdae</xr:TypeId>
+				<xr:ValueId>9ea4315f-ad0e-4ae6-afb4-d5a8398de03f</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>

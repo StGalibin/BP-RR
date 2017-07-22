@@ -318,7 +318,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Всего на общую сумму: ___________ руб. (______________________ рублей), в т.ч. НДС (18%): __________руб. (____________________________ рубля ___ копеек).</v8:content>
+							<v8:content>Всего на общую сумму: [СуммаДокумента] руб. ([СуммаДокументаПрописью]), в т.ч. НДС (18%): [СуммаНДС] руб. ([СуммаНДСПрописью]).</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -332,12 +332,6 @@
 			<c>
 				<c>
 					<f>20</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отгрузочные реквизиты:</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 		</row>
@@ -348,12 +342,11 @@
 			<formatIndex>17</formatIndex>
 			<c>
 				<c>
-					<f>21</f>
+					<f>22</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>1. Наименование грузополучателя (полное и сокращенное): [ГрузополучательНаименованиеПолное] / [ГрузополучательНаименованиеСокращенное]
-</v8:content>
+							<v8:content>Отгрузочные реквизиты:</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -366,11 +359,12 @@
 			<formatIndex>17</formatIndex>
 			<c>
 				<c>
-					<f>21</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>2. ИНН/КПП грузополучателя: [ИНН]/[КПП];</v8:content>
+							<v8:content>1. Наименование грузополучателя (полное и сокращенное): [ПолноеНаименование] / [СокращенноеНаименование]
+</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -383,11 +377,11 @@
 			<formatIndex>17</formatIndex>
 			<c>
 				<c>
-					<f>21</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>3. Почтовый адрес грузополучателя, телефон: [ГрузополучательПочтовыйАдрес], тел.: [ГрузополучательТелефон]</v8:content>
+							<v8:content>2. ИНН/КПП грузополучателя: [ИНН]/[КПП];</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -400,11 +394,11 @@
 			<formatIndex>17</formatIndex>
 			<c>
 				<c>
-					<f>21</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>4. Место нахождения (адрес) грузополучателя: [ГрузополучательФактическийАдрес]</v8:content>
+							<v8:content>3. Почтовый адрес грузополучателя, телефон: [ПочтовыйАдрес], тел.: [Телефоны]</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -417,11 +411,11 @@
 			<formatIndex>17</formatIndex>
 			<c>
 				<c>
-					<f>21</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>5. Условие оплаты: Покупатель производит 100 % оплату Продукции в течение трех календарных дней путем перечисления денежных средств на расчетный счет Поставщика, за каждую партию поставляемой продукции в соответствии с действующим Договором поставки нефтепродуктов № [НомерДоговора] от [ДатаДоговора]</v8:content>
+							<v8:content>4. Место нахождения (адрес) грузополучателя: [ФактическийАдрес]</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -434,7 +428,24 @@
 			<formatIndex>17</formatIndex>
 			<c>
 				<c>
-					<f>21</f>
+					<f>23</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>5. Условие оплаты: Покупатель производит 100 % оплату Продукции в течение трех календарных дней путем перечисления денежных средств на расчетный счет Поставщика, за каждую партию поставляемой продукции в соответствии с действующим Договором поставки нефтепродуктов № [НомерДоговора] от [ДатаДоговора]</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>23</index>
+		<row>
+			<formatIndex>17</formatIndex>
+			<c>
+				<c>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -446,7 +457,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>23</index>
+		<index>24</index>
 		<row>
 			<formatIndex>17</formatIndex>
 			<c>
@@ -463,12 +474,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>24</index>
+		<index>25</index>
 		<row>
 			<formatIndex>17</formatIndex>
 			<c>
 				<c>
-					<f>21</f>
+					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -489,7 +500,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>25</index>
+		<index>26</index>
 		<row>
 			<formatIndex>17</formatIndex>
 			<c>
@@ -500,12 +511,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>28</index>
+		<index>29</index>
 		<row>
 			<formatIndex>17</formatIndex>
 			<c>
 				<c>
-					<f>22</f>
+					<f>24</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -517,7 +528,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>29</index>
+		<index>30</index>
 		<row>
 			<formatIndex>17</formatIndex>
 			<c>
@@ -528,12 +539,12 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>30</index>
+		<index>31</index>
 		<row>
 			<formatIndex>5</formatIndex>
 			<c>
 				<c>
-					<f>23</f>
+					<f>25</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -544,32 +555,32 @@
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>26</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>26</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>26</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>26</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>27</f>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>25</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>23</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -580,64 +591,22 @@
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>26</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>26</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>26</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>24</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>31</index>
-		<row>
-			<formatIndex>26</formatIndex>
-			<c>
-				<c>
-					<f>27</f>
-				</c>
-			</c>
-			<c>
-				<i>5</i>
-				<c>
-					<f>28</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>27</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>8</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>8</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>8</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>8</f>
+					<f>26</f>
 				</c>
 			</c>
 		</row>
@@ -645,11 +614,10 @@
 	<rowsItem>
 		<index>32</index>
 		<row>
-			<formatIndex>5</formatIndex>
+			<formatIndex>28</formatIndex>
 			<c>
 				<c>
 					<f>29</f>
-					<parameter>ПодписантОрганизация</parameter>
 				</c>
 			</c>
 			<c>
@@ -661,7 +629,6 @@
 			<c>
 				<c>
 					<f>29</f>
-					<parameter>ПодписантКонтрагент</parameter>
 				</c>
 			</c>
 			<c>
@@ -693,17 +660,19 @@
 			<c>
 				<c>
 					<f>31</f>
+					<parameter>ПодписантОрганизация</parameter>
 				</c>
 			</c>
 			<c>
 				<i>5</i>
 				<c>
-					<f>30</f>
+					<f>32</f>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>31</f>
+					<parameter>ПодписантКонтрагент</parameter>
 				</c>
 			</c>
 			<c>
@@ -734,7 +703,49 @@
 			<formatIndex>5</formatIndex>
 			<c>
 				<c>
+					<f>33</f>
+				</c>
+			</c>
+			<c>
+				<i>5</i>
+				<c>
 					<f>32</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>33</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>8</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>8</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>8</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>8</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>35</index>
+		<row>
+			<formatIndex>5</formatIndex>
+			<c>
+				<c>
+					<f>34</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -746,12 +757,12 @@
 			<c>
 				<i>5</i>
 				<c>
-					<f>30</f>
+					<f>32</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>32</f>
+					<f>34</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -783,9 +794,9 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>33</defaultFormatIndex>
-	<height>35</height>
-	<vgRows>35</vgRows>
+	<defaultFormatIndex>35</defaultFormatIndex>
+	<height>36</height>
+	<vgRows>36</vgRows>
 	<merge>
 		<r>0</r>
 		<c>0</c>
@@ -823,11 +834,6 @@
 	</merge>
 	<merge>
 		<r>15</r>
-		<c>0</c>
-		<w>10</w>
-	</merge>
-	<merge>
-		<r>16</r>
 		<c>0</c>
 		<w>10</w>
 	</merge>
@@ -877,7 +883,7 @@
 		<w>10</w>
 	</merge>
 	<merge>
-		<r>28</r>
+		<r>26</r>
 		<c>0</c>
 		<w>10</w>
 	</merge>
@@ -889,12 +895,7 @@
 	<merge>
 		<r>30</r>
 		<c>0</c>
-		<w>4</w>
-	</merge>
-	<merge>
-		<r>30</r>
-		<c>6</c>
-		<w>4</w>
+		<w>10</w>
 	</merge>
 	<merge>
 		<r>31</r>
@@ -933,6 +934,16 @@
 	</merge>
 	<merge>
 		<r>34</r>
+		<c>6</c>
+		<w>4</w>
+	</merge>
+	<merge>
+		<r>35</r>
+		<c>0</c>
+		<w>4</w>
+	</merge>
+	<merge>
+		<r>35</r>
 		<c>6</c>
 		<w>4</w>
 	</merge>
@@ -941,7 +952,7 @@
 		<area>
 			<type>Rows</type>
 			<beginRow>12</beginRow>
-			<endRow>25</endRow>
+			<endRow>26</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -950,8 +961,8 @@
 		<name>Подвал</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>28</beginRow>
-			<endRow>34</endRow>
+			<beginRow>29</beginRow>
+			<endRow>35</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -1116,6 +1127,17 @@
 		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
+		<font>2</font>
+		<horizontalAlignment>Justify</horizontalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Template</fillType>
+	</format>
+	<format>
+		<font>2</font>
+		<horizontalAlignment>Justify</horizontalAlignment>
+		<textPlacement>Wrap</textPlacement>
+	</format>
+	<format>
 		<horizontalAlignment>Justify</horizontalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Template</fillType>
@@ -1130,6 +1152,7 @@
 		<height>90</height>
 		<width>72</width>
 		<horizontalAlignment>Left</horizontalAlignment>
+		<fillType>Template</fillType>
 	</format>
 	<format>
 		<font>0</font>

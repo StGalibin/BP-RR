@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.4">
+	<Item id="eb910a3e-ce6c-491b-8ef8-007ce183b344">
+		<Name>ОтказКлиентаОтПоставки</Name>
+		<Code>000000002</Code>
+		<Description>Отказ клиента от поставки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="323406a6-9514-4671-8d7b-c08d35243b99">
+		<Name>ОтклоненияМерныхТоваров</Name>
+		<Code>000000001</Code>
+		<Description>Отклонения мерных товаров</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

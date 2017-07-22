@@ -29,9 +29,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.АвансовыйОтчет.TabularSection.ОплатаПоставщикам.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.АктОбОказанииПроизводственныхУслуг.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.АктСверкиВзаиморасчетов.Attribute.ДоговорКонтрагента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратОСОтАрендатора.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратТоваровОтПокупателя.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратТоваровПоставщику.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыдачаДенежныхДокументов.Attribute.ДоговорКонтрагента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыкупПредметовЛизинга.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ГТДИмпорт.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ГТДИмпорт.Attribute.ДоговорКонтрагентаРегл</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.Доверенность.Attribute.ДоговорКонтрагента</xr:Item>
@@ -43,15 +45,18 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаПоступления.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаРеализации.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.КорректировкаРеализации.TabularSection.АгентскиеУслуги.Attribute.ДоговорКонтрагента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеПеней.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОказаниеУслуг.TabularSection.Контрагенты.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОплатаПлатежнойКартой.TabularSection.РасшифровкаПлатежа.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтражениеНачисленияНДС.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтражениеНДСКВычету.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчетКомиссионераОПродажах.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчетКомитентуОПродажах.Attribute.ДоговорКонтрагента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчетОператораСистемыПлатон.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.Партия.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаНМА.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаОС.Attribute.ДоговорКонтрагента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаОСВАренду.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаТоваров.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПлатежноеПоручение.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеВЛизинг.Attribute.ДоговорКонтрагента</xr:Item>
@@ -71,11 +76,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетНаОплатуПоставщика.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетФактураВыданный.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетФактураПолученный.Attribute.ДоговорКонтрагента</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыкупПредметовЛизинга.Attribute.ДоговорКонтрагента</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.НачислениеПеней.Attribute.ДоговорКонтрагента</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтчетОператораСистемыПлатон.Attribute.ДоговорКонтрагента</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.ПередачаОСВАренду.Attribute.ДоговорКонтрагента</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Document.ВозвратОСОтАрендатора.Attribute.ДоговорКонтрагента</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СпецификацияКДоговору.Attribute.ДоговорКонтрагента</xr:Item>
 			</Content>
 			<DefaultForm/>
 			<AuxiliaryForm/>
