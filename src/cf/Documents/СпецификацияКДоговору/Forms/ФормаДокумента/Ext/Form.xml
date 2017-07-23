@@ -250,6 +250,7 @@
 									<UserVisible>
 										<xr:Common>false</xr:Common>
 									</UserVisible>
+									<ReadOnly>true</ReadOnly>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -280,21 +281,30 @@
 								</InputField>
 								<InputField name="ТоварыСтавкаНДС" id="92">
 									<DataPath>Объект.Товары.СтавкаНДС</DataPath>
+									<UserVisible>
+										<xr:Common>false</xr:Common>
+									</UserVisible>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТоварыСтавкаНДСКонтекстноеМеню" id="93"/>
 									<ExtendedTooltip name="ТоварыСтавкаНДСРасширеннаяПодсказка" id="94"/>
-								</InputField>
-								<InputField name="ТоварыСуммаНДС" id="95">
-									<DataPath>Объект.Товары.СуммаНДС</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ТоварыСуммаНДСКонтекстноеМеню" id="96"/>
-									<ExtendedTooltip name="ТоварыСуммаНДСРасширеннаяПодсказка" id="97"/>
 								</InputField>
 								<InputField name="ТоварыСумма" id="89">
 									<DataPath>Объект.Товары.Сумма</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТоварыСуммаКонтекстноеМеню" id="90"/>
 									<ExtendedTooltip name="ТоварыСуммаРасширеннаяПодсказка" id="91"/>
+								</InputField>
+								<InputField name="ТоварыСуммаНДС" id="95">
+									<DataPath>Объект.Товары.СуммаНДС</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>в т.ч. НДС</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТоварыСуммаНДСКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="ТоварыСуммаНДСРасширеннаяПодсказка" id="97"/>
 								</InputField>
 							</ChildItems>
 						</Table>

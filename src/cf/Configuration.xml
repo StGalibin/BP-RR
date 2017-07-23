@@ -3361,6 +3361,7 @@
 			<EventSubscription>УстановитьФункциональныеОпцииРозничнаяТорговля</EventSubscription>
 			<EventSubscription>ДоговорОбработкаПроверкиЗаполнения</EventSubscription>
 			<EventSubscription>ДокументыРеализацииПриПроведении</EventSubscription>
+			<EventSubscription>РеализацияТоваровУслугОбработкаЗаполнения</EventSubscription>
 			<ScheduledJob>ВсеОбновленияНовостей</ScheduledJob>
 			<ScheduledJob>ВсеОбновленияОблачногоАрхива</ScheduledJob>
 			<ScheduledJob>ВсеОбновленияСПАРКРискиОбщее</ScheduledJob>
