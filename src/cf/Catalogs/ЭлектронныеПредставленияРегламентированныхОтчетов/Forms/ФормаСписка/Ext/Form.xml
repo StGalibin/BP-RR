@@ -673,12 +673,6 @@
 						<Event name="OnChange">СписокПриИзменении</Event>
 					</Events>
 					<ChildItems>
-						<LabelField name="СписокКод" id="165">
-							<DataPath>~Список.Code</DataPath>
-							<Width>6</Width>
-							<ContextMenu name="СписокКодКонтекстноеМеню" id="166"/>
-							<ExtendedTooltip name="СписокКодExtendedTooltip" id="553"/>
-						</LabelField>
 						<LabelField name="СписокНаименование" id="167">
 							<DataPath>Список.Description</DataPath>
 							<Width>10</Width>
@@ -720,18 +714,6 @@
 							<Width>11</Width>
 							<ContextMenu name="СписокПолучательКонтекстноеМеню" id="194"/>
 							<ExtendedTooltip name="СписокПолучательExtendedTooltip" id="559"/>
-						</LabelField>
-						<LabelField name="СписокВерсияПредставление" id="171">
-							<DataPath>~Список.ВерсияПредставление</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Вид</v8:content>
-								</v8:item>
-							</Title>
-							<Width>4</Width>
-							<ContextMenu name="СписокВерсияПредставлениеКонтекстноеМеню" id="172"/>
-							<ExtendedTooltip name="СписокВерсияПредставлениеExtendedTooltip" id="560"/>
 						</LabelField>
 						<LabelField name="СписокПредставлениеВерсии" id="187">
 							<DataPath>Список.ПредставлениеВерсии</DataPath>

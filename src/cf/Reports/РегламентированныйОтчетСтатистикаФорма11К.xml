@@ -42,6 +42,7 @@
 			<Form>ФормаОтчета2015Кв1</Form>
 			<Form>ФормаОтчета2016Кв1</Form>
 			<Form>ФормаОтчета2017Кв1</Form>
+			<Form>ФормаОтчета2018Кв1</Form>
 			<Template>АтрибВыгрузкиXML2012Кв1</Template>
 			<Template>СхемаВыгрузкиXML2012Кв1</Template>
 			<Template>АтрибВыгрузкиXML2013Кв1</Template>
@@ -52,6 +53,8 @@
 			<Template>СхемаВыгрузкиXML2016Кв1</Template>
 			<Template>АтрибВыгрузкиXML2017Кв1</Template>
 			<Template>СхемаВыгрузкиXML2017Кв1</Template>
+			<Template>АтрибВыгрузкиXML2018Кв1</Template>
+			<Template>СхемаВыгрузкиXML2018Кв1</Template>
 			<Template>ФормаОтчета2010Кв1_ФормаОтчета</Template>
 			<Template>ФормаОтчета2011Кв1_ФормаОтчета</Template>
 			<Template>ФормаОтчета2012Кв1_ФормаОтчета</Template>
@@ -62,15 +65,20 @@
 			<Template>ФормаОтчета2016Кв1_Подразделения</Template>
 			<Template>ФормаОтчета2017Кв1_Титульный</Template>
 			<Template>ФормаОтчета2017Кв1_Подразделения</Template>
+			<Template>ФормаОтчета2018Кв1_Титульный</Template>
+			<Template>ФормаОтчета2018Кв1_Подразделения</Template>
 			<Template>СоставПоказателей2013Кв1</Template>
 			<Template>СоставПоказателей2015Кв1</Template>
 			<Template>СоставПоказателей2016Кв1</Template>
 			<Template>ШаблонРосстата2016Кв1</Template>
 			<Template>ШаблонРосстата2017Кв1</Template>
+			<Template>ШаблонРосстата2018Кв1</Template>
 			<Template>Списки2016кв1</Template>
 			<Template>Списки2017кв1</Template>
+			<Template>Списки2018кв1</Template>
 			<Template>НастройкиЗагрузкиXML2016Кв1</Template>
 			<Template>НастройкиЗагрузкиXML2017Кв1</Template>
+			<Template>НастройкиЗагрузкиXML2018Кв1</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

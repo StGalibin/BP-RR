@@ -553,6 +553,40 @@
 					</Parameter>
 				</ChildObjects>
 			</Operation>
+			<Operation uuid="2158afd3-66ba-414c-bca4-489f0196ba9e">
+				<Properties>
+					<Name>VerifyAdress</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Verify adress</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType>v8:ValueStorage</XDTOReturningValueType>
+					<Nillable>false</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>VerifyAdress</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects>
+					<Parameter uuid="7a8e5bc5-42c7-41a5-ade4-cacebee632dc">
+						<Properties>
+							<Name>Adress</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Adress</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<XDTOValueType>v8:ValueStorage</XDTOValueType>
+							<Nillable>false</Nillable>
+							<TransferDirection>In</TransferDirection>
+						</Properties>
+					</Parameter>
+				</ChildObjects>
+			</Operation>
 		</ChildObjects>
 	</WebService>
 </MetaDataObject>

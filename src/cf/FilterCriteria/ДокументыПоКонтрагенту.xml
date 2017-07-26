@@ -75,6 +75,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетНаОплатуПоставщика.Attribute.Контрагент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетФактураВыданный.Attribute.Контрагент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СчетФактураПолученный.Attribute.Контрагент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СпецификацияКДоговору.Attribute.Контрагент</xr:Item>
 			</Content>
 			<DefaultForm/>
 			<AuxiliaryForm/>

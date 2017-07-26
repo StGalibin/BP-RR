@@ -77,17 +77,6 @@
 					<ContextMenu name="СписокУчетнаяЗаписьКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="СписокУчетнаяЗаписьExtendedTooltip" id="17"/>
 				</LabelField>
-				<LabelField name="СписокИмяРесурса" id="6">
-					<DataPath>~Список.ИмяРесурса</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Ресурс</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="СписокИмяРесурсаКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="СписокИмяРесурсаExtendedTooltip" id="18"/>
-				</LabelField>
 				<LabelField name="СписокДатаФайла" id="8">
 					<DataPath>Список.ДатаФайла</DataPath>
 					<Title>
@@ -104,12 +93,6 @@
 					<ContextMenu name="СписокРазмерКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="СписокРазмерExtendedTooltip" id="20"/>
 				</LabelField>
-				<CheckBoxField name="СписокРасшифрован" id="12">
-					<DataPath>~Список.Расшифрован</DataPath>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="СписокРасшифрованКонтекстноеМеню" id="13"/>
-					<ExtendedTooltip name="СписокРасшифрованExtendedTooltip" id="21"/>
-				</CheckBoxField>
 			</ChildItems>
 		</Table>
 	</ChildItems>

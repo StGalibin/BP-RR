@@ -4263,6 +4263,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ЗакрытиеСпецификации</name>
+		<right>
+			<name>InteractiveDelete</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ДополнительныеУсловия</name>
 		<right>
 			<name>InteractiveDelete</name>
@@ -7685,6 +7692,13 @@
 		</right>
 		<right>
 			<name>TotalsControl</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.СпецификацияКДоговору</name>
+		<right>
+			<name>InteractiveDelete</name>
 			<value>false</value>
 		</right>
 	</object>

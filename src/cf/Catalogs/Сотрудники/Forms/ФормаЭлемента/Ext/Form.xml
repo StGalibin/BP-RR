@@ -30,13 +30,31 @@
 				<ExtendedTooltip name="ОформитьДокументExtendedTooltip" id="617"/>
 			</Popup>
 			<ButtonGroup name="ФормаГруппаКомандФормы" id="701">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Команды формы</v8:content>
+					</v8:item>
+				</Title>
 				<CommandSource>Form</CommandSource>
 				<ExtendedTooltip name="ФормаГруппаКомандФормыРасширеннаяПодсказка" id="702"/>
 				<ChildItems>
 					<ButtonGroup name="ГруппаВажныеКоманды" id="746">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Важные команды</v8:content>
+							</v8:item>
+						</Title>
 						<ExtendedTooltip name="ГруппаВажныеКомандыРасширеннаяПодсказка" id="747"/>
 					</ButtonGroup>
 					<ButtonGroup name="ГруппаГлобальныеКоманды" id="748">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Глобальные команды</v8:content>
+							</v8:item>
+						</Title>
 						<CommandSource>FormCommandPanelGlobalCommands</CommandSource>
 						<ExtendedTooltip name="ГруппаГлобальныеКомандыРасширеннаяПодсказка" id="749"/>
 					</ButtonGroup>
@@ -82,6 +100,12 @@
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ФИОНомерИдентификаторы" id="195">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Личные сведения</v8:content>
+				</v8:item>
+			</Title>
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
@@ -120,12 +144,24 @@
 					<ExtendedTooltip name="КодExtendedTooltip" id="634"/>
 				</InputField>
 				<UsualGroup name="ГруппаФИОТабельныйНомер" id="602">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФИО и табельный номер</v8:content>
+						</v8:item>
+					</Title>
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаФИОТабельныйНомерExtendedTooltip" id="620"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаФИОРасшифровка" id="603">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расшифровка ФИО</v8:content>
+								</v8:item>
+							</Title>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<United>false</United>
@@ -133,6 +169,12 @@
 							<ExtendedTooltip name="ГруппаФИОРасшифровкаExtendedTooltip" id="621"/>
 							<ChildItems>
 								<UsualGroup name="НаименованиеИзменитьГруппа" id="744">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ФИО</v8:content>
+										</v8:item>
+									</Title>
 									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
@@ -163,7 +205,7 @@
 											<CommandName>Form.Command.Склонения</CommandName>
 											<ExtendedTooltip name="СклоненияРасширеннаяПодсказка" id="757"/>
 										</Button>
-										<LabelDecoration name="СотрудникИзменилФИО" id="916">
+										<LabelDecoration name="ИзменитьФИО" id="916">
 											<UserVisible>
 												<xr:Common>false</xr:Common>
 											</UserVisible>
@@ -175,8 +217,8 @@
 												</v8:item>
 											</Title>
 											<Hyperlink>true</Hyperlink>
-											<ContextMenu name="СотрудникИзменилФИОКонтекстноеМеню" id="917"/>
-											<ExtendedTooltip name="СотрудникИзменилФИОExtendedTooltip" id="918"/>
+											<ContextMenu name="ИзменитьФИОКонтекстноеМеню" id="917"/>
+											<ExtendedTooltip name="ИзменитьФИОРасширеннаяПодсказка" id="918"/>
 											<Events>
 												<Event name="Click">СотрудникИзменилФИОНажатие</Event>
 											</Events>
@@ -196,9 +238,12 @@
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ГруппаПолноеИмя" id="539">
-									<UserVisible>
-										<xr:Common>false</xr:Common>
-									</UserVisible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ФИО полностью</v8:content>
+										</v8:item>
+									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -212,6 +257,9 @@
 									<ChildItems>
 										<LabelField name="Фамилия" id="156">
 											<DataPath>ФИОФизическихЛиц.Фамилия</DataPath>
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
 											<Width>14</Width>
 											<HorizontalStretch>false</HorizontalStretch>
 											<BackColor>style:FormBackColor</BackColor>
@@ -221,6 +269,9 @@
 										</LabelField>
 										<LabelField name="Имя" id="158">
 											<DataPath>ФИОФизическихЛиц.Имя</DataPath>
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
 											<ReadOnly>true</ReadOnly>
 											<TitleLocation>Left</TitleLocation>
 											<Width>10</Width>
@@ -231,6 +282,9 @@
 										</LabelField>
 										<LabelField name="Отчество" id="160">
 											<DataPath>ФИОФизическихЛиц.Отчество</DataPath>
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
 											<ReadOnly>true</ReadOnly>
 											<TitleLocation>Left</TitleLocation>
 											<Width>14</Width>
@@ -258,6 +312,12 @@
 					<ExtendedTooltip name="ГруппаДатаРожденияПолИННСНИЛСExtendedTooltip" id="635"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаДатаРожденияПол" id="600">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пол и дата рождения</v8:content>
+								</v8:item>
+							</Title>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
@@ -305,6 +365,12 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="РегистрационныеНомера" id="582">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ИНН и СНИЛС</v8:content>
+								</v8:item>
+							</Title>
 							<TitleTextColor>style:ПоясняющийТекст</TitleTextColor>
 							<TitleFont ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 							<Group>Vertical</Group>
@@ -409,7 +475,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа вид документа, серия и номер</v8:content>
+									<v8:content>Вид документа, серия и номер</v8:content>
 								</v8:item>
 							</Title>
 							<ToolTip>
@@ -476,7 +542,7 @@
 											<ToolTipRepresentation>Balloon</ToolTipRepresentation>
 											<Width>5</Width>
 											<HorizontalStretch>false</HorizontalStretch>
-											<AutoMarkIncomplete>true</AutoMarkIncomplete>
+											<AutoMarkIncomplete>false</AutoMarkIncomplete>
 											<ContextMenu name="ДокументыФизическихЛицСерияКонтекстноеМеню" id="839"/>
 											<ExtendedTooltip name="ДокументыФизическихЛицСерияExtendedTooltip" id="840"/>
 											<Events>
@@ -867,6 +933,12 @@
 											<ExtendedTooltip name="ТекущиеНачисленияExtendedTooltip" id="676"/>
 											<ChildItems>
 												<UsualGroup name="ТекущаяТарифнаяСтавкаГруппа" id="750">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Текущая тарифная ставка</v8:content>
+														</v8:item>
+													</Title>
 													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
@@ -935,6 +1007,12 @@
 															<ExtendedTooltip name="ПлановыйАвансРасширеннаяПодсказка" id="711"/>
 														</InputField>
 														<UsualGroup name="ГруппаАванс" id="735">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Способ выплаты и размер аванса</v8:content>
+																</v8:item>
+															</Title>
 															<Group>Horizontal</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
@@ -971,11 +1049,23 @@
 																		</InputField>
 																		<Pages name="АвансРазмерГруппа" id="717">
 																			<EnableContentChange>true</EnableContentChange>
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Размер аванса</v8:content>
+																				</v8:item>
+																			</Title>
 																			<PagesRepresentation>None</PagesRepresentation>
 																			<ExtendedTooltip name="АвансРазмерГруппаExtendedTooltip" id="718"/>
 																			<ChildItems>
 																				<Page name="АвансРазмерГруппаСтраницаФиксированнойСуммой" id="719">
 																					<EnableContentChange>true</EnableContentChange>
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Аванс суммой</v8:content>
+																						</v8:item>
+																					</Title>
 																					<Group>Horizontal</Group>
 																					<ExtendedTooltip name="АвансРазмерГруппаСтраницаФиксированнойСуммойExtendedTooltip" id="720"/>
 																					<ChildItems>
@@ -1005,6 +1095,12 @@
 																				</Page>
 																				<Page name="АвансРазмерГруппаСтраницаПроцентомОтТарифа" id="727">
 																					<EnableContentChange>true</EnableContentChange>
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Аванс процентом</v8:content>
+																						</v8:item>
+																					</Title>
 																					<Group>Horizontal</Group>
 																					<ExtendedTooltip name="АвансРазмерГруппаСтраницаПроцентомОтТарифаExtendedTooltip" id="728"/>
 																					<ChildItems>
@@ -1083,6 +1179,12 @@
 					<ExtendedTooltip name="КадровыеДокументыРасширеннаяПодсказка" id="741"/>
 				</Button>
 				<UsualGroup name="ГруппаВыплатаЗарплаты" id="763">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выплата зарплаты</v8:content>
+						</v8:item>
+					</Title>
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
@@ -1267,6 +1369,12 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаДополнительнаяИнформация" id="579">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительная информация</v8:content>
+				</v8:item>
+			</Title>
 			<Group>Vertical</Group>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДополнительнаяИнформацияExtendedTooltip" id="680"/>
@@ -1285,9 +1393,6 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаПредставление" id="172">
-			<UserVisible>
-				<xr:Common>false</xr:Common>
-			</UserVisible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1300,6 +1405,9 @@
 			<ChildItems>
 				<LabelField name="СотрудникНаименование" id="517">
 					<DataPath>СотрудникНаименование</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
 					<TitleLocation>None</TitleLocation>
 					<ToolTip>
 						<v8:item>
@@ -1315,6 +1423,12 @@
 					<ExtendedTooltip name="СотрудникНаименованиеExtendedTooltip" id="683"/>
 				</LabelField>
 				<UsualGroup name="ГруппаПредставлениеПереключатель" id="695">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Управление представлением</v8:content>
+						</v8:item>
+					</Title>
 					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
@@ -1322,6 +1436,9 @@
 					<ChildItems>
 						<CheckBoxField name="ДополнитьПредставление" id="260">
 							<DataPath>ДополнятьПредставление</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
 							<TitleLocation>Right</TitleLocation>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ДополнитьПредставлениеКонтекстноеМеню" id="261"/>
@@ -1332,6 +1449,9 @@
 						</CheckBoxField>
 						<InputField name="УточнениеНаименования" id="262">
 							<DataPath>Сотрудник.УточнениеНаименования</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
 							<TitleLocation>None</TitleLocation>
 							<Width>15</Width>
 							<HorizontalStretch>false</HorizontalStretch>
@@ -1346,16 +1466,21 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаВАрхиве" id="551">
-			<UserVisible>
-				<xr:Common>false</xr:Common>
-			</UserVisible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Архив</v8:content>
+				</v8:item>
+			</Title>
 			<Group>Vertical</Group>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаВАрхивеExtendedTooltip" id="692"/>
 			<ChildItems>
 				<CheckBoxField name="ВАрхиве" id="199">
 					<DataPath>Сотрудник.ВАрхиве</DataPath>
-					<Visible>false</Visible>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -3208,6 +3333,17 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.БанковскиеСчета</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьНесколькоОрганизаций" id="146">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать несколько организаций</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>

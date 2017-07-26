@@ -69,6 +69,9 @@
 			<ChildItems>
 				<LabelField name="Ссылка" id="16">
 					<DataPath>Список.Ref</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
 					<ContextMenu name="СсылкаКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="18"/>
 				</LabelField>
@@ -108,10 +111,10 @@
 					<ContextMenu name="СодержаниеКонтекстноеМеню" id="47"/>
 					<ExtendedTooltip name="СодержаниеРасширеннаяПодсказка" id="48"/>
 				</LabelField>
-				<LabelField name="ДатаСообщения" id="49">
-					<DataPath>~Список.ДатаСообщения</DataPath>
-					<ContextMenu name="ДатаСообщенияКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="ДатаСообщенияРасширеннаяПодсказка" id="51"/>
+				<LabelField name="ДатаСоздания" id="49">
+					<DataPath>Список.ДатаСоздания</DataPath>
+					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="51"/>
 				</LabelField>
 				<LabelField name="ДатаОтправки" id="52">
 					<DataPath>Список.ДатаОтправки</DataPath>
@@ -157,11 +160,6 @@
 					<DataPath>Список.АдресРегистрации</DataPath>
 					<ContextMenu name="АдресРегистрацииКонтекстноеМеню" id="77"/>
 					<ExtendedTooltip name="АдресРегистрацииРасширеннаяПодсказка" id="78"/>
-				</LabelField>
-				<LabelField name="АдресФактический" id="79">
-					<DataPath>~Список.АдресФактический</DataPath>
-					<ContextMenu name="АдресФактическийКонтекстноеМеню" id="80"/>
-					<ExtendedTooltip name="АдресФактическийРасширеннаяПодсказка" id="81"/>
 				</LabelField>
 			</ChildItems>
 		</Table>

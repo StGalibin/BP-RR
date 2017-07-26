@@ -78,6 +78,7 @@
 			<SequenceFilling>AutoFillOff</SequenceFilling>
 			<RegisterRecords>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ИПРБП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.СпецификацииДоговоров</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НДСЗаписиКнигиПродаж</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.НДСНачисленный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ИПМПЗ</xr:Item>

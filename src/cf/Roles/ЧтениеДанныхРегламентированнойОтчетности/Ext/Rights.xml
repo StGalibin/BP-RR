@@ -166,6 +166,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Report.РегламентированноеУведомлениеНалоговаяЛьготаРегИнвестПроекты</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Report.РегламентированныйОтчетСтатистикаФормаПМ</name>
 		<right>
 			<name>Use</name>

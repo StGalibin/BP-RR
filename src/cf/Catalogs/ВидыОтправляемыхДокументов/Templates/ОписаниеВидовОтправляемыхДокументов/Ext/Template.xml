@@ -31318,6 +31318,77 @@
 		<row>
 			<c>
 				<c>
+					<f>23</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЗаявлениеОПримененииНалоговойЛьготыУчастникамиРегиональныхИнвестиционныхПроектов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>14</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявление о применении налоговой льготы участниками региональных инвестиционных проектов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявление о применении налоговой льготы участниками региональных инвестиционных проектов, для которых не требуется включение в реестр участников региональных инвестиционных проектов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>23</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>(Не требуется)</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФНС</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>28</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИсходящееУведомлениеФНС</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>458</index>
+		<row>
+			<c>
+				<c>
 					<f>17</f>
 					<tl>
 						<v8:item>
@@ -31367,7 +31438,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>458</index>
+		<index>459</index>
 		<row>
 			<c>
 				<c>
@@ -31439,8 +31510,8 @@
 	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>41</defaultFormatIndex>
-	<height>459</height>
-	<vgRows>459</vgRows>
+	<height>460</height>
+	<vgRows>460</vgRows>
 	<namedItem xsi:type="NamedItemCells">
 		<name>Группа_001</name>
 		<area>
@@ -31546,7 +31617,7 @@
 		<area>
 			<type>Rows</type>
 			<beginRow>427</beginRow>
-			<endRow>456</endRow>
+			<endRow>457</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -31555,8 +31626,8 @@
 		<name>Группа_012</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>457</beginRow>
-			<endRow>458</endRow>
+			<beginRow>458</beginRow>
+			<endRow>459</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>

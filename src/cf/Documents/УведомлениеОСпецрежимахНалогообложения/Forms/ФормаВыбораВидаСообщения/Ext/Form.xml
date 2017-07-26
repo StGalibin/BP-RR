@@ -99,6 +99,8 @@
 				<InputField name="ВидыСообщенийНаименование" id="4">
 					<DataPath>ВидыСообщений.Наименование</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoCellHeight>true</AutoCellHeight>
+					<MultiLine>true</MultiLine>
 					<ContextMenu name="ВидыСообщенийНаименованиеКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="ВидыСообщенийНаименованиеExtendedTooltip" id="12"/>
 				</InputField>
