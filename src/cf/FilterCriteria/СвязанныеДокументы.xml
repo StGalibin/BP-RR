@@ -53,6 +53,7 @@
 				<v8:Type>cfg:DocumentRef.ПоступлениеНаРасчетныйСчет</v8:Type>
 				<v8:Type>cfg:DocumentRef.КорректировкаРеализации</v8:Type>
 				<v8:Type>cfg:DocumentRef.НачислениеПеней</v8:Type>
+				<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
 				<v8:Type>cfg:DocumentRef.РасходныйКассовыйОрдер</v8:Type>
 				<v8:Type>cfg:DocumentRef.АктСверкиВзаиморасчетов</v8:Type>
 				<v8:Type>cfg:DocumentRef.ОперацияБух</v8:Type>
@@ -267,6 +268,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ФормированиеЗаписейКнигиПродаж.TabularSection.НеОтражаетсяВКниге.Attribute.СчетФактура</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ФормированиеЗаписейКнигиПродаж.TabularSection.НеОтражаетсяВКниге.Attribute.ДокументОплаты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ФормированиеЗаписейРаздела7ДекларацииНДС.TabularSection.НеоблагаемыеНДСОперации.Attribute.ДокументРеализации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.СпецификацияКДоговору.Attribute.ДоговорКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗакрытиеСпецификации.Attribute.Спецификация</xr:Item>
 			</Content>
 			<DefaultForm/>

@@ -3010,6 +3010,12 @@
 				<Description>Участие в российских и иностранных организациях</Description>
 				<IsFolder>false</IsFolder>
 			</Item>
+			<Item id="da15a7af-4cf0-40e3-bcae-adbb9ddc81a8">
+				<Name>ЗаявлениеОПримененииНалоговойЛьготыУчастникамиРегиональныхИнвестиционныхПроектов</Name>
+				<Code>000000445</Code>
+				<Description>Заявление о применении налоговой льготы участниками региональных инвестиционных проектов</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
 		</ChildItems>
 	</Item>
 </PredefinedData>

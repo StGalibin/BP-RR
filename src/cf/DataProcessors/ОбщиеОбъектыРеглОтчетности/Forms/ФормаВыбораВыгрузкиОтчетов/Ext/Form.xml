@@ -131,12 +131,6 @@
 					<ContextMenu name="ЖурналОтчетовНомерКонтекстноеМеню" id="37"/>
 					<ExtendedTooltip name="ЖурналОтчетовНомерРасширеннаяПодсказка" id="64"/>
 				</LabelField>
-				<LabelField name="ЖурналОтчетовПериод" id="38">
-					<DataPath>~ЖурналОтчетов.Период</DataPath>
-					<Visible>false</Visible>
-					<ContextMenu name="ЖурналОтчетовПериодКонтекстноеМеню" id="39"/>
-					<ExtendedTooltip name="ЖурналОтчетовПериодExtendedTooltip" id="60"/>
-				</LabelField>
 				<LabelField name="ЖурналОтчетовПредставлениеПериода" id="49">
 					<DataPath>ЖурналОтчетов.ПредставлениеПериода</DataPath>
 					<Title>
@@ -154,56 +148,10 @@
 					<ContextMenu name="ЖурналОтчетовОрганизацияКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="ЖурналОтчетовОрганизацияExtendedTooltip" id="62"/>
 				</LabelField>
-				<LabelField name="ЖурналОтчетовКодНалоговогоОргана" id="30">
-					<DataPath>~ЖурналОтчетов.КодИМНС</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ИФНС</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="ЖурналОтчетовКодНалоговогоОрганаКонтекстноеМеню" id="31"/>
-					<ExtendedTooltip name="ЖурналОтчетовКодНалоговогоОрганаExtendedTooltip" id="63"/>
-				</LabelField>
-				<LabelField name="ЖурналОтчетовПредставлениеВида" id="47">
-					<DataPath>~ЖурналОтчетов.ПредставлениеВида</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Вид</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="ЖурналОтчетовПредставлениеВидаКонтекстноеМеню" id="48"/>
-					<ExtendedTooltip name="ЖурналОтчетовПредставлениеВидаExtendedTooltip" id="65"/>
-				</LabelField>
 				<LabelField name="ЖурналОтчетовКомментарий" id="28">
 					<DataPath>ЖурналОтчетов.Комментарий</DataPath>
 					<ContextMenu name="ЖурналОтчетовКомментарийКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="ЖурналОтчетовКомментарийExtendedTooltip" id="66"/>
-				</LabelField>
-				<LabelField name="ЖурналОтчетовДатаНачала" id="12">
-					<DataPath>~ЖурналОтчетов.ДатаНачала</DataPath>
-					<Visible>false</Visible>
-					<ContextMenu name="ЖурналОтчетовДатаНачалаКонтекстноеМеню" id="13"/>
-					<ExtendedTooltip name="ЖурналОтчетовДатаНачалаExtendedTooltip" id="67"/>
-				</LabelField>
-				<LabelField name="ЖурналОтчетовДатаОкончания" id="14">
-					<DataPath>~ЖурналОтчетов.ДатаОкончания</DataPath>
-					<Visible>false</Visible>
-					<ContextMenu name="ЖурналОтчетовДатаОкончанияКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="ЖурналОтчетовДатаОкончанияExtendedTooltip" id="68"/>
-				</LabelField>
-				<LabelField name="ЖурналОтчетовПериодичность" id="18">
-					<DataPath>~ЖурналОтчетов.Периодичность</DataPath>
-					<Visible>false</Visible>
-					<ContextMenu name="ЖурналОтчетовПериодичностьКонтекстноеМеню" id="19"/>
-					<ExtendedTooltip name="ЖурналОтчетовПериодичностьExtendedTooltip" id="69"/>
-				</LabelField>
-				<LabelField name="ЖурналОтчетовИсточникОтчета" id="6">
-					<DataPath>~ЖурналОтчетов.ИсточникОтчета</DataPath>
-					<Visible>false</Visible>
-					<ContextMenu name="ЖурналОтчетовИсточникОтчетаКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="ЖурналОтчетовИсточникОтчетаExtendedTooltip" id="70"/>
 				</LabelField>
 			</ChildItems>
 		</Table>

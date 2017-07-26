@@ -574,7 +574,7 @@
 													<Title formatted="true">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>1. Удалите загруженные документы из Клиента банка</v8:content>
+															<v8:content>1. Проверьте загруженные документы в Клиент банке и удалите подмененные</v8:content>
 														</v8:item>
 													</Title>
 													<ContextMenu name="ДекорацияИнструкцияФайлИзменен1КонтекстноеМеню" id="41"/>
@@ -603,18 +603,54 @@
 												</LabelDecoration>
 											</ChildItems>
 										</UsualGroup>
-										<LabelDecoration name="ДекорацияПроверкаУспешнаТекстСообщения7" id="177">
-											<AutoMaxWidth>false</AutoMaxWidth>
-											<Title formatted="false">
+										<UsualGroup name="ГруппаФайл" id="267">
+											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>После закрытия окна файл будет удален</v8:content>
+													<v8:content>Группа файл</v8:content>
 												</v8:item>
 											</Title>
-											<ContextMenu name="ДекорацияПроверкаУспешнаТекстСообщения7КонтекстноеМеню" id="178"/>
-											<ExtendedTooltip name="ДекорацияПроверкаУспешнаТекстСообщения7РасширеннаяПодсказка" id="179"/>
-										</LabelDecoration>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа файл</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаФайлРасширеннаяПодсказка" id="268"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияИнструкцияФайлИзмененТекстСообщения6" id="177">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Измененный вирусом файл удален с диска для безопасности</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияИнструкцияФайлИзмененТекстСообщения6КонтекстноеМеню" id="178"/>
+													<ExtendedTooltip name="ДекорацияИнструкцияФайлИзмененТекстСообщения6РасширеннаяПодсказка" id="179"/>
+												</LabelDecoration>
+												<LabelDecoration name="ДекорацияИнструкцияФайлИзмененТекстСообщения7" id="269">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>60</MaxWidth>
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Вы можете посмотреть &lt;link ОткрытьИзмененныйФайл&gt;текст удаленного файла&lt;/&gt; и сохранить его для дальнейшего анализа&lt;link ОткрытьИзмененныйФайл&gt;&lt;/&gt;</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияИнструкцияФайлИзмененТекстСообщения7КонтекстноеМеню" id="270"/>
+													<ExtendedTooltip name="ДекорацияИнструкцияФайлИзмененТекстСообщения7РасширеннаяПодсказка" id="271"/>
+													<Events>
+														<Event name="URLProcessing">ДекорацияИнструкцияФайлИзмененТекстСообщения7ОбработкаНавигационнойСсылки</Event>
+													</Events>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="ГруппаЗагруженнаяВыпискаПроверенаФайлИзменен" id="186">
+											<Visible>false</Visible>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -812,6 +848,7 @@
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ГруппаЗагруженнаяВыпискаФайлУдален" id="262">
+									<Visible>false</Visible>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -1056,6 +1093,32 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Подтверждаю, что Клиент банка проверен и в нем все платежи корректны</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресИзмененногоФайла" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес измененного файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="БлокироватьЗакрытиеФормы" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Блокировать закрытие формы</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

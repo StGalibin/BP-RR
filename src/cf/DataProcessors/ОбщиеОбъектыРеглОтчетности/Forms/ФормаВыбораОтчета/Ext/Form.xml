@@ -155,7 +155,7 @@
 					<ExtendedTooltip name="ЖурналОтчетовОрганизацияExtendedTooltip" id="62"/>
 				</LabelField>
 				<LabelField name="ЖурналОтчетовКодНалоговогоОргана" id="30">
-					<DataPath>~ЖурналОтчетов.КодИМНС</DataPath>
+					<DataPath>ЖурналОтчетов.КодНалоговогоОргана</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>

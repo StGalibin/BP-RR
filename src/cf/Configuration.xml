@@ -49,7 +49,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Фирма "1С"</Vendor>
-			<Version>3.0.51.21</Version>
+			<Version>3.0.51.22</Version>
 			<UpdateCatalogAddress>http://downloads.v8.1c.ru/tmplts/</UpdateCatalogAddress>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -1461,6 +1461,12 @@
 			<Role>ЧтениеЦенНоменклатуры</Role>
 			<Role>ЧтениеШаблоновДоговоров</Role>
 			<Role>ЧтениеЭД</Role>
+			<Role>ЧтениеСпецификаций</Role>
+			<Role>ИзменениеСпецификаций</Role>
+			<Role>РаботаСДоверенностями</Role>
+			<Role>ПодсистемаПокупки</Role>
+			<Role>ЧтениеДокументовПоступления</Role>
+			<Role>ЧтениеФинансовыхДокументов</Role>
 			<CommonTemplate>WebЦветаRGB</CommonTemplate>
 			<CommonTemplate>ДополнительныйЛистКнигиПокупок1137</CommonTemplate>
 			<CommonTemplate>ДополнительныйЛистКнигиПокупок1137_2017</CommonTemplate>
@@ -6146,6 +6152,7 @@
 			<Report>РегламентированноеУведомлениеЗачетНалога</Report>
 			<Report>РегламентированноеУведомлениеИзменениеПараметраУСН</Report>
 			<Report>РегламентированноеУведомлениеИсключениеПроверки</Report>
+			<Report>РегламентированноеУведомлениеНалоговаяЛьготаРегИнвестПроекты</Report>
 			<Report>РегламентированноеУведомлениеНевозможностьПредоставления</Report>
 			<Report>РегламентированноеУведомлениеОтказОтУСН</Report>
 			<Report>РегламентированноеУведомлениеПереходНаУСН</Report>
@@ -6414,6 +6421,7 @@
 			<Report>УнифицированнаяФормаТ13</Report>
 			<Report>ФинансовыйАнализ</Report>
 			<Report>ШахматнаяВедомость</Report>
+			<Report>АнализСпецификаций</Report>
 			<Report>ЭкспрессПроверкаВеденияУчета</Report>
 			<DataProcessor>АвтоматическоеИзвлечениеТекстов</DataProcessor>
 			<DataProcessor>АктивныеПользователи</DataProcessor>

@@ -76,7 +76,9 @@
 						<InputField name="ОтборТекущееПодразделение" id="64">
 							<DataPath>ОтборТекущееПодразделение</DataPath>
 							<TitleLocation>None</TitleLocation>
+							<ChoiceButton>true</ChoiceButton>
 							<OpenButton>false</OpenButton>
+							<ChooseType>false</ChooseType>
 							<ChoiceParameterLinks>
 								<xr:Link>
 									<xr:Name>Отбор.Владелец</xr:Name>
