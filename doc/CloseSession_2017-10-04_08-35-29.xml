@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<DataPaket Version="3.15" DateTime="03.10.2017 23:59:34" Type="Aggregated" AZSCode="1">
+	<Sessions>
+		<Session SessionNum="31" StartDateTime="03.10.2017 0:05:32" EndDateTime="03.10.2017 23:56:40" UserName="Красовская Н.">
+			<Tanks>
+				<Tank TankNum="1" StartFuelVolume="9575,09" EndFactVolume="" EndDensity="" EndTemperature="" EndHeight="" EndMass="" EndWater="" TankExtCode="" DeadRest="40" DeadRestLiter="500"/>
+			</Tanks>
+			<Hoses>
+				<Hose HoseNum="1" StartCounter="278316,05" EndCounter="282139,75" PumpNum="1" NumInPump="1" HoseType="1"/>
+			</Hoses>
+			<OutcomesByRetail>
+				<OutcomeByRetail TankNum="1" HoseName="1" FuelName="Аи92" PaymentModeName="Карта Банка" AgentName=" &lt;Не выбрано&gt;" CardCode="" PartnerName=" &lt;Не выбран&gt;" PartnerINN="" TankExtCode="" FuelExtCode="" PaymentModeExtCode="" AgentExtCode="" PartnerExtCode="" Volume="48,65" Amount="1678,43" Mass="0" OrigPrice="34,5" OrderCount="12" Remark=""/>
+				<OutcomeByRetail TankNum="1" HoseName="1" FuelName="Аи92" PaymentModeName="Наличные без чека" AgentName=" &lt;Не выбрано&gt;" CardCode="" PartnerName=" &lt;Не выбран&gt;" PartnerINN="" TankExtCode="" FuelExtCode="" PaymentModeExtCode="" AgentExtCode="" PartnerExtCode="" Volume="3444,66" Amount="117118,44" Mass="0" OrigPrice="34,5" OrderCount="239" Remark="1"/>
+				<OutcomeByRetail TankNum="1" HoseName="1" FuelName="Аи92" PaymentModeName="Наличные с чеком " AgentName=" &lt;Не выбрано&gt;" CardCode="" PartnerName=" &lt;Не выбран&gt;" PartnerINN="" TankExtCode="" FuelExtCode="" PaymentModeExtCode="" AgentExtCode="" PartnerExtCode="" Volume="319,83" Amount="10874,22" Mass="0" OrigPrice="34,5" OrderCount="22" Remark="1"/>
+				<OutcomeByRetail TankNum="1" HoseName="1" FuelName="Аи92" PaymentModeName="Переливы" AgentName=" &lt;Не выбрано&gt;" CardCode="" PartnerName=" &lt;Не выбран&gt;" PartnerINN="" TankExtCode="" FuelExtCode="" PaymentModeExtCode="" AgentExtCode="" PartnerExtCode="" Volume="0,56" Amount="0" Mass="0" OrigPrice="34,5" OrderCount="56" Remark=""/>
+				<OutcomeByRetail TankNum="1" HoseName="1" FuelName="Аи92" PaymentModeName="Тех. прокачка" AgentName=" &lt;Не выбрано&gt;" CardCode="" PartnerName=" &lt;Не выбран&gt;" PartnerINN="" TankExtCode="" FuelExtCode="" PaymentModeExtCode="" AgentExtCode="" PartnerExtCode="" Volume="10" Amount="345" Mass="0" OrigPrice="34,5" OrderCount="1" Remark=""/>
+			</OutcomesByRetail>
+			<OutcomesByWholesale/>
+			<IncomesByDischarge/>
+			<IncomesByWholesale/>
+			<ItemOutcomesByRetail/>
+			<ItemOutcomesByPaysheet/>
+			<CashFlow>
+				<Cash DocTypeID="6" DocTypeName="Отпуск топлива" CashID="0" CashName=" &lt;Не выбран&gt;" Remark="" Amount="127992,66"/>
+			</CashFlow>
+			<OutcomesByCoupon/>
+			<OutcomesByOffice/>
+			<OutcomesByCards/>
+			<HosesLocking/>
+			<TechReturns>
+				<TechReturn Num="1" DateTime="03.10.2017 11:11:37" FuelName="Аи92" FuelExtCode="" TankNum="1" TankExtCode="" Volume="10" Mass="0" Density="0"/>
+			</TechReturns>
+			<SurplusPostings/>
+			<LossRetirements/>
+			<TradeDocsInBills/>
+			<TradeDocsOutBills/>
+			<TradeDocsInActs/>
+			<TradeDocsOutActs/>
+			<TradeDocsMoveItems/>
+			<ItemRests/>
+		</Session>
+	</Sessions>
+</DataPaket>
